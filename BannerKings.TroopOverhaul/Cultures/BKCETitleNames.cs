@@ -594,37 +594,37 @@ namespace BannerKings.CulturesExpanded.Cultures
                 aserai,
                 new TextObject("{=!}Khalifa"),
                 new TextObject("{=!}Khalifa"),
-                new TextObject("{=!}Khilaafat"));
+                new TextObject("{=!}Khilaafa"));
 
             AseraiKing = CulturalTitleName.CreateKingdom("AseraiKing",
                 aserai,
                 new TextObject("{=U0MEYHty}Sultan"),
                 new TextObject("{=DQXH6NeY}Sultana"),
-                new TextObject("{=DQXH6NeY}Sultanate"));
+                new TextObject("{=!}Saltana"));
 
             AseraiDuke = CulturalTitleName.CreateDuchy("AseraiDuke",
                 aserai,
-                new TextObject("{=9dUqWF9A}Emir"),
-                new TextObject("{=MVjsWtcZ}Emira"),
-                new TextObject("{=MVjsWtcZ}Emirate"));
+                new TextObject("{=!}Amiir"),
+                new TextObject("{=!}Amiira"),
+                new TextObject("{=!}Imaara"));
 
             AseraiCount = CulturalTitleName.CreateCounty("AseraiCount",
                 aserai,
-                new TextObject("{=b2fGz9XO}Sheikh"),
-                new TextObject("{=AUoParHT}Shaykah"),
-                new TextObject("{=V4ra7Por}Sheikhdom"));
+                new TextObject("{=!}Shayk"),
+                new TextObject("{=!}Shaykah"),
+                new TextObject("{=!}Mashyaka"));
 
             AseraiBaron = CulturalTitleName.CreateBarony("AseraiBaron",
                 aserai,
                 new TextObject("{=shJ1hjYg}Wali"),
                 new TextObject("{=LYY1ZegU}Walia"),
-                new TextObject("{=qOLmvS0B}Barony"));
+                new TextObject("{=!}Walya"));
 
             AseraiLord = CulturalTitleName.CreateLordship("AseraiLord",
                 aserai,
                 new TextObject("{=YNNXm6GE}Mawlaa"),
                 new TextObject("{=VGXsX6Ue}Beghum"),
-                new TextObject("{=dwMA32rq}Lordship"));
+                new TextObject("{=!}Daya"));
 
             AseraiPrince = CulturalTitleName.CreatePrince("AseraiPrince",
                 aserai,
