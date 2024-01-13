@@ -96,6 +96,15 @@ namespace BannerKings.CulturesExpanded.Cultures
         public CulturalPopulationName DarshiSlaves { get; set; }
         #endregion Darshi
 
+
+        #region Bragantia
+        public CulturalPopulationName BragantiaNobles { get; set; }
+        public CulturalPopulationName BragantiaCraftsmen { get; set; }
+        public CulturalPopulationName BragantiaTenants { get; set; }
+        public CulturalPopulationName BragantiaSerfs { get; set; }
+        public CulturalPopulationName BragantiaSlaves { get; set; }
+        #endregion Bragantia
+
         public override IEnumerable<CulturalPopulationName> All
         {
             get
@@ -141,6 +150,12 @@ namespace BannerKings.CulturesExpanded.Cultures
                 yield return DarshiTenants;
                 yield return DarshiSerfs;
                 yield return DarshiSlaves;
+
+                yield return BragantiaNobles;
+                yield return BragantiaCraftsmen;
+                yield return BragantiaTenants;
+                yield return BragantiaSerfs;
+                yield return BragantiaSlaves;
             }
         }
 
@@ -157,6 +172,7 @@ namespace BannerKings.CulturesExpanded.Cultures
             var massa = cultures.First(x => x.StringId == "massa");
             var nord = cultures.First(x => x.StringId == "nord");
             var vakken = cultures.First(x => x.StringId == "vakken");
+            var bragantia = cultures.First(x => x.StringId == "bragantia");
 
             #region Empire
             EmpireNobles = CulturalPopulationName.CreateNobles("EmpireNobles",
@@ -355,6 +371,28 @@ namespace BannerKings.CulturesExpanded.Cultures
                 darshi,
                 new TextObject("{=!}Parastaran"));
             #endregion Darshi
+
+            #region Bragantia
+            BragantiaNobles = CulturalPopulationName.CreateNobles("BragantiaNobles",
+                bragantia,
+                new TextObject("{=!}Nobres"));
+
+            BragantiaCraftsmen = CulturalPopulationName.CreateCraftsmen("BragantiaCraftsmen",
+                bragantia,
+               new TextObject("{=!}Artesãos"));
+
+            BragantiaTenants = CulturalPopulationName.CreateTenants("BragantiaTenants",
+                bragantia,
+                new TextObject("{=!}Colonos"));
+
+            BragantiaSerfs = CulturalPopulationName.CreateSerfs("BragantiaSerfs",
+                bragantia,
+                new TextObject("{=!}Servos"));
+
+            BragantiaSlaves = CulturalPopulationName.CreateSlaves("BragantiaSlaves",
+                bragantia,
+                new TextObject("{=!}Escravos"));
+            #endregion Bragantia
 
             #region Sturgia
             SturgiaNobles = CulturalPopulationName.CreateNobles("SturgiaNobles",
