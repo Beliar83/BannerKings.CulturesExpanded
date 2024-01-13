@@ -47,11 +47,13 @@ namespace BannerKings.CulturesExpanded
             BannerKingsConfig.Instance.AddInitializer(BKCEFaiths.Instance);
             BannerKingsConfig.Instance.AddInitializer(BKCEReligions.Instance);
             BannerKingsConfig.Instance.AddInitializer(BKCELanguages.Instance);
+            BannerKingsConfig.Instance.AddInitializer(BKCEMarketGroups.Instance);
 
             BannerKingsConfig.Instance.CultureModel = new BKCECultureModel();
             BannerKingsConfig.Instance.ReligionModel = new BKCEReligionModel();
             BannerKingsConfig.Instance.LegitimacyModel = new BKCELegitimacyModel();
 
+            BKCEFeats.Instance.Initialize();
             BannerKingsConfig.Instance.TitlesGeneratorPath = BasePath.Name + "Modules/BannerKings.CulturesExpanded/ModuleData/titles.xml";
         }
 
