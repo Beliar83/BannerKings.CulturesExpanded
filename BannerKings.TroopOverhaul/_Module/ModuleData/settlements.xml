@@ -44,7 +44,7 @@
       <Area type="Bog" name="{=iXA5SttU}Bog" />
     </CommonAreas>
   </Settlement>
-  <Settlement id="village_Isles_2" name="{=!}Praya Salga" posX="97.892" posY="317.385" culture="Culture.bragantia" text="{=Settlements.Settlement.text.castle_village_ES4_1}Lavenia is a fishing village on the northeastern shores of the Perassic Sea. The nearby castle guards one of the main passages over the network of lakes and salt lagoons known as the Calsea, one of the gateways to Aserai lands.">
+  <Settlement id="village_Isles_2" name="{=!}Praja Salga" posX="97.892" posY="317.385" culture="Culture.bragantia" text="{=Settlements.Settlement.text.castle_village_ES4_1}Lavenia is a fishing village on the northeastern shores of the Perassic Sea. The nearby castle guards one of the main passages over the network of lakes and salt lagoons known as the Calsea, one of the gateways to Aserai lands.">
     <Components>
       <Village id="village_Isles_2_comp" village_type="VillageType.salt_mine" hearth="378" gate_rotation="0.008" bound="Settlement.castle_Isles" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
     </Components>
@@ -83,7 +83,7 @@
       <Area type="Bog" name="{=iXA5SttU}Bog" />
     </CommonAreas>
   </Settlement>
-  <Settlement id="village_Isles_5" name="{=!}Outejro" posX="72.604" posY="295.218" culture="Culture.bragantia" text="{=Settlements.Settlement.text.castle_village_ES4_1}Lavenia is a fishing village on the northeastern shores of the Perassic Sea. The nearby castle guards one of the main passages over the network of lakes and salt lagoons known as the Calsea, one of the gateways to Aserai lands.">
+  <Settlement id="village_Isles_5" name="{=!}Outeiro" posX="72.604" posY="295.218" culture="Culture.bragantia" text="{=Settlements.Settlement.text.castle_village_ES4_1}Lavenia is a fishing village on the northeastern shores of the Perassic Sea. The nearby castle guards one of the main passages over the network of lakes and salt lagoons known as the Calsea, one of the gateways to Aserai lands.">
     <Components>
       <Village id="village_Isles_5_comp" village_type="VillageType.fisherman" hearth="378" gate_rotation="0.008" bound="Settlement.town_Isles" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
     </Components>
