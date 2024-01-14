@@ -48,6 +48,7 @@ namespace BannerKings.CulturesExpanded
             BannerKingsConfig.Instance.AddInitializer(BKCEReligions.Instance);
             BannerKingsConfig.Instance.AddInitializer(BKCELanguages.Instance);
             BannerKingsConfig.Instance.AddInitializer(BKCEMarketGroups.Instance);
+            BannerKingsConfig.Instance.AddInitializer(BKCEShippingLanes.Instance);
 
             BannerKingsConfig.Instance.CultureModel = new BKCECultureModel();
             BannerKingsConfig.Instance.ReligionModel = new BKCEReligionModel();
