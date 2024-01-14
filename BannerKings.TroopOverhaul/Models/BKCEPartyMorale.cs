@@ -2,6 +2,7 @@
 using BannerKings.Models.Vanilla;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
+using TaleWorlds.Core;
 
 namespace BannerKings.CulturesExpanded.Models
 {
@@ -32,6 +33,14 @@ namespace BannerKings.CulturesExpanded.Models
                 if (BannerKingsConfig.Instance.ReligionsManager.HasBlessing(leader, BKCEDivinities.Instance.VineGoddess))
                 {
                     result.Add(8f, BKCEDivinities.Instance.VineGoddess.Name);
+                }
+            }
+
+            if (mobileParty.IsLordParty)
+            {
+                if (TaleWorlds.CampaignSystem.Campaign.Current.MapSceneWrapper.GetFaceTerrainType(mobileParty.CurrentNavigationFace) == TerrainType.Swamp)
+                {
+                    result.AddFactor(-12f, new TaleWorlds.Localization.TextObject("{=!}Sailing"));
                 }
             }
 
