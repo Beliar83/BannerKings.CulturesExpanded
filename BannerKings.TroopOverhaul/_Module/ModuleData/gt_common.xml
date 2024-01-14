@@ -21,6 +21,42 @@
 		text="{=!}Calradoi" />
 		
 	<string
+		id="str_faction_formal_name_for_culture.kannic"
+		text="{=!}Kannic Politeia" />
+		
+	<string
+		id="str_faction_formal_name_for_culture.massa"
+		text="{=!}Massa Kingdom" />
+		
+	<string
+		id="str_faction_formal_name_for_culture.darshi"
+		text="{=!}Darshi Empire" />
+		
+	<string
+		id="str_faction_formal_name_for_culture.geroia"
+		text="{=!}Geroian Dukedom" />
+		
+	<string
+		id="str_faction_formal_name_for_culture.siri"
+		text="{=!}Siri Queendom" />
+		
+	<string
+		id="str_faction_formal_name_for_culture.vakken"
+		text="{=!}Vakken Realm" />
+		
+	<string
+		id="str_faction_formal_name_for_culture.nord"
+		text="{=!}Jumne Realm" />
+		
+	<string
+		id="str_faction_formal_name_for_culture.bragantia"
+		text="{=!}Bragantian County" />
+		
+	<string
+		id="str_faction_formal_name_for_culture.geroia"
+		text="{=!}Geroian Dukedom" />
+		
+	<string
 		id="str_culture_rich_name.darshi"
 		text="{=IHhWB1aa}Darshi" />
 	<string
@@ -60,6 +96,28 @@
 		text="{=!}Massa" />
 	<string
 		id="str_culture_description.massa"
-		text="{=!}The Massa are one of the many Wilunding tribes, known to the Calradoi as Vlandians, that came from west-over-seas. Like their Wilunding kin, they migrated to Calradia in search of greener, more bountiful land. However, they were not accepted by their kin, and instead forced to fend for themselves. The Massa gathered in their last mass migration, and rode the sea southwards, to a densely wooded peninsula, inhabited by beasts and the Widugauja - native tribes with no kingdom to speak of." />
+		text="{=!}The Massa are one of the many Wilunding tribes, known to the Calradoi as Vlandians, that came from west-over-seas. Like their Wilunding kin, they migrated to Calradia in search of greener, more bountiful land. However, they were not accepted by their kin, and instead forced to fend for themselves. The Massa gathered in their last great migration, and rode the sea southwards, to a densely wooded peninsula they call Niuja Landa. A land ripe with both fruit and disease, inhabited by beasts and the Widugauja - native tribes with no kingdom to speak of." />
 
+
+	<string
+		id="str_culture_rich_name.balion"
+		text="{=!}Balion" />
+	<string
+		id="str_culture_description.balion"
+		text="{=!}Balion is the land from whence the Wilunding came: the kingdom of west-over-seas. Many Wilunding tribes left their home for the prospect of more bountiful land, leaving much of Balion uninhabited. However, the Island-Kingdom still reaches Calradia through trade connections and occasional adventurers." />
+	
+	<string
+		id="str_culture_rich_name.bragantia"
+		text="{=!}Biscanja" />
+	<string
+		id="str_culture_description.bragantia"
+		text="{=!}The Biscan Isles have long been colonized by the Calradoi, not long after the founding of Charasea. In the height of the Empire's wealth and decadence, Calradoi aristocrats would cruise around the isles on pleasure-boats, and build private villas by the picturesque, cliffy shores. Brigantia was the center of the Isles' commerce, shipping fine wines, olives and products from west-over-seas, as well as a hotspot for northern furs and hides to be distributed in all directions. Common folk at the isles lived in relative peace, if not for the Jumne raiders when the Empire could not afford to patrol its shores, and mostly raised local cattle on the lush, grassy hills. With the Advent of the Wilunding, Imperial administration was supplanted by a migration of Massa rulers. Contrary to their reputation, these rulers conquered the Isles peacefully, and have merged with the locals. Folks of this mixed culture now call themselves Biscanjans, unifying their Calradoi legacy with the Massa language." />
+	
+	<string
+		id="str_culture_rich_name.kannic"
+		text="{=!}Kannic" />
+	<string
+		id="str_culture_description.kannic"
+		text="{=!}The Kannic are an ancient Calradian civilization based on the southern coasts of the Perass and Jade seas. They first built Razih, and later proceeded to colonize the entire southern coast. They were renowned for their masonry and shipbuilding: before the Calradoi or the Geroiako dominated the seas, it was the domain of the Kannic triremes, adorned with the vines of their goddess. The Vine Goddess, Ailatyn, guides the Kannic both in trade and war. To other cultures, they seem avaricious, but to the Kannic, making profit is a holy endeavour. The remainings of the Kannic now lie at Lys - their last large colony -, for much of their original lands have been taken by the Nahawasi, something for which the Kannic carry deep resentment. Their pristine stone cities, they say, shall one day be cleansed from the hut-dwelling nomads." />
+	
 </strings>
