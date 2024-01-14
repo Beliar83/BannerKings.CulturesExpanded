@@ -137,7 +137,7 @@
            name="{=!}de Bragantja"
            tier="4"
            owner="Hero.bk_bragantia_1"
-           culture="Culture.massa"
+           culture="Culture.bragantia"
            super_faction="Kingdom.bragantia"
            is_noble="true"
            banner_key="8.159.22.1528.1528.764.764.1.0.0.316.123.171.483.483.764.764.1.0.0.125.143.116.281.296.755.777.1.0.0" />

@@ -40,7 +40,7 @@
 		  primary_banner_color="0xff198304" 
 		  secondary_banner_color="0xff9E2007" label_color="FF850C6D" color="FF674A73" color2="FFDFC8A3" alternative_color="FFffffff" 
 		  alternative_color2="FF660653" 
-		  culture="Culture.massa" 
+		  culture="Culture.bragantia" 
 		  settlement_banner_mesh="encounter_flag_c" 
 		  flag_mesh="info_screen_flags_a" 
 		  name="{=!}Bragantja" 
