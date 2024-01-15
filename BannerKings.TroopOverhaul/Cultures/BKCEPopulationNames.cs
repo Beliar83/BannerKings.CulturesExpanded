@@ -96,7 +96,6 @@ namespace BannerKings.CulturesExpanded.Cultures
         public CulturalPopulationName DarshiSlaves { get; set; }
         #endregion Darshi
 
-
         #region Bragantia
         public CulturalPopulationName BragantiaNobles { get; set; }
         public CulturalPopulationName BragantiaCraftsmen { get; set; }
@@ -104,6 +103,14 @@ namespace BannerKings.CulturesExpanded.Cultures
         public CulturalPopulationName BragantiaSerfs { get; set; }
         public CulturalPopulationName BragantiaSlaves { get; set; }
         #endregion Bragantia
+
+        #region Balion
+        public CulturalPopulationName BalionNobles { get; set; }
+        public CulturalPopulationName BalionCraftsmen { get; set; }
+        public CulturalPopulationName BalionTenants { get; set; }
+        public CulturalPopulationName BalionSerfs { get; set; }
+        public CulturalPopulationName BalionSlaves { get; set; }
+        #endregion Balion
 
         public override IEnumerable<CulturalPopulationName> All
         {
@@ -156,6 +163,24 @@ namespace BannerKings.CulturesExpanded.Cultures
                 yield return BragantiaTenants;
                 yield return BragantiaSerfs;
                 yield return BragantiaSlaves;
+
+                yield return MassaNobles;
+                yield return MassaCraftsmen;
+                yield return MassaTenants;
+                yield return MassaSerfs;
+                yield return MassaSlaves;
+
+                yield return JumneNobles;
+                yield return JumneCraftsmen;
+                yield return JumneTenants;
+                yield return JumneSerfs;
+                yield return JumneSlaves;
+
+                yield return BalionNobles;
+                yield return BalionCraftsmen;
+                yield return BalionTenants;
+                yield return BalionSerfs;
+                yield return BalionSlaves;
             }
         }
 
@@ -173,6 +198,7 @@ namespace BannerKings.CulturesExpanded.Cultures
             var nord = cultures.First(x => x.StringId == "nord");
             var vakken = cultures.First(x => x.StringId == "vakken");
             var bragantia = cultures.First(x => x.StringId == "bragantia");
+            var balion = cultures.First(x => x.StringId == "balion");
 
             #region Empire
             EmpireNobles = CulturalPopulationName.CreateNobles("EmpireNobles",
@@ -261,6 +287,50 @@ namespace BannerKings.CulturesExpanded.Cultures
                 vlandia,
                 new TextObject("{=!}Theowe"));
             #endregion Vlandia
+
+            #region Jumne
+            JumneNobles = CulturalPopulationName.CreateNobles("JumneNobles",
+                nord,
+                new TextObject("{=!}Athalborin"));
+
+            JumneCraftsmen = CulturalPopulationName.CreateCraftsmen("JumneCraftsmen",
+                nord,
+               new TextObject("{=!}Smithar"));
+
+            JumneTenants = CulturalPopulationName.CreateTenants("JumneTenants",
+                nord,
+                new TextObject("{=!}Karlar"));
+
+            JumneSerfs = CulturalPopulationName.CreateSerfs("JumneSerfs",
+                nord,
+                new TextObject("{=!}Leysingjar"));
+
+            JumneSlaves = CulturalPopulationName.CreateSlaves("JumneSlaves",
+                nord,
+                new TextObject("{=!}Thraelar"));
+            #endregion Jumne
+
+            #region Balion
+            BalionNobles = CulturalPopulationName.CreateNobles("BalionNobles",
+                balion,
+                new TextObject("{=!}Aethele"));
+
+            BalionCraftsmen = CulturalPopulationName.CreateCraftsmen("BalionCraftsmen",
+                balion,
+               new TextObject("{=!}Smithas"));
+
+            BalionTenants = CulturalPopulationName.CreateTenants("BalionTenants",
+                balion,
+                new TextObject("{=!}Ceorlas"));
+
+            BalionSerfs = CulturalPopulationName.CreateSerfs("BalionSerfs",
+                balion,
+                new TextObject("{=!}Cottas"));
+
+            BalionSlaves = CulturalPopulationName.CreateSlaves("BalionSlaves",
+                balion,
+                new TextObject("{=!}Theowe"));
+            #endregion Balion
 
             #region Massa
             MassaNobles = CulturalPopulationName.CreateNobles("MassaNobles",
