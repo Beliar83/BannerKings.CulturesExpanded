@@ -12,6 +12,9 @@ namespace BannerKings.CulturesExpanded.Cultures
         public MarketGroup NordGroup = new MarketGroup("nord");
         public MarketGroup VakkenGroup = new MarketGroup("vakken");
         public MarketGroup BragantiaGroup = new MarketGroup("bragantia");
+        public MarketGroup KannicGroup = new MarketGroup("kannic");
+        public MarketGroup DarshiGroup = new MarketGroup("darshi");
+        public MarketGroup GeroiaGroup = new MarketGroup("geroia");
 
         public override IEnumerable<MarketGroup> All
         {
@@ -22,6 +25,9 @@ namespace BannerKings.CulturesExpanded.Cultures
                 yield return NordGroup; 
                 yield return VakkenGroup;
                 yield return BragantiaGroup;
+                yield return KannicGroup;
+                yield return DarshiGroup;
+                yield return GeroiaGroup;
             }
         }
 
@@ -36,6 +42,37 @@ namespace BannerKings.CulturesExpanded.Cultures
             var vlandia = cultures.First(x => x.StringId == "vlandia");
             var empire = cultures.First(x => x.StringId == "empire");
             var sturgia = cultures.First(x => x.StringId == "sturgia");
+            var kannic = cultures.First(x => x.StringId == "kannic");
+            var darshi = cultures.First(x => x.StringId == "darshi");
+            var khuzait = cultures.First(x => x.StringId == "khuzait");
+            var geroia = cultures.First(x => x.StringId == "geroia");
+            var bragantia = cultures.First(x => x.StringId == "bragantia");
+
+            GeroiaGroup.Initialize(null,
+              null,
+              geroia,
+              new Dictionary<CultureObject, float>
+              {
+                    { aserai, 0.2f },
+                    { empire, 0.8f }
+              });
+
+            KannicGroup.Initialize(null,
+               null,
+               kannic,
+               new Dictionary<CultureObject, float>
+               {
+                    { aserai, 0.5f }
+               });
+
+            DarshiGroup.Initialize(null,
+               null,
+               darshi,
+               new Dictionary<CultureObject, float>
+               {
+                    { aserai, 0.2f },
+                    { khuzait, 0.2f }
+               });
 
             SiriGroup.Initialize(null,
                 null,
@@ -55,7 +92,7 @@ namespace BannerKings.CulturesExpanded.Cultures
 
             BragantiaGroup.Initialize(null,
                 null,
-                massa,
+                bragantia,
                 new Dictionary<CultureObject, float>
                 {
                     { vlandia, 0.6f },
