@@ -1,4 +1,5 @@
-﻿using BannerKings.Models.Vanilla;
+﻿using BannerKings.CulturesExpanded.Cultures;
+using BannerKings.Models.Vanilla;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
@@ -20,6 +21,21 @@ namespace BannerKings.CulturesExpanded.Models
             }
 
             return wage;
+        }
+
+        public override int GetTroopRecruitmentCost(CharacterObject troop, Hero buyerHero, bool withoutItemCost = false)
+        {
+            float cost = base.GetTroopRecruitmentCost(troop, buyerHero, withoutItemCost);
+
+            if (buyerHero.Culture.HasFeat(BKCEFeats.Instance.Siri1))
+            {
+                if (!troop.HasMount() && troop.Equipment.HasWeaponOfClass(WeaponClass.Bow))
+                {
+                    cost *= 1f + BKCEFeats.Instance.Siri1.EffectBonus;
+                }
+            }
+
+            return (int)cost;
         }
     }
 }

@@ -37,6 +37,12 @@ namespace BannerKings.CulturesExpanded
             campaignStarter.AddModel(new BKCEPartyHealingModel());
             campaignStarter.AddModel(new BKCEPartyMorale());
             campaignStarter.AddModel(new BKCEPriceModel());
+            campaignStarter.AddModel(new BKCESecurityModel());
+            campaignStarter.AddModel(new BKCETaxModel());
+            campaignStarter.AddModel(new BKCETroopUpgradeModel());
+            campaignStarter.AddModel(new BKCEVillageProductionModel());
+            campaignStarter.AddModel(new BKCEEconomyModel());
+            campaignStarter.AddModel(new BKCEMilitiaModel());
 
             BannerKingsConfig.Instance.AddInitializer(BKTORecruitSpawns.Instance);
             BannerKingsConfig.Instance.AddInitializer(BKCEPopulationNames.Instance);

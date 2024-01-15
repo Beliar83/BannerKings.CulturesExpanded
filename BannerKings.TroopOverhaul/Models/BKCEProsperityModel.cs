@@ -1,4 +1,5 @@
-﻿using BannerKings.CulturesExpanded.Religions;
+﻿using BannerKings.CulturesExpanded.Cultures;
+using BannerKings.CulturesExpanded.Religions;
 using BannerKings.Extensions;
 using BannerKings.Managers.Institutions.Religions;
 using BannerKings.Models.Vanilla;
@@ -28,6 +29,7 @@ namespace BannerKings.CulturesExpanded.Models
                 }
             }
 
+            Utils.Helpers.ApplyFeat(BKCEFeats.Instance.Massa2, fortification.Owner, ref result);
             return result;
         }
 

@@ -1,4 +1,5 @@
-﻿using BannerKings.CulturesExpanded.Religions;
+﻿using BannerKings.CulturesExpanded.Cultures;
+using BannerKings.CulturesExpanded.Religions;
 using BannerKings.Models.Vanilla;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -38,7 +39,8 @@ namespace BannerKings.CulturesExpanded.Models
 
             if (mobileParty.IsLordParty)
             {
-                if (TaleWorlds.CampaignSystem.Campaign.Current.MapSceneWrapper.GetFaceTerrainType(mobileParty.CurrentNavigationFace) == TerrainType.Swamp)
+                if (mobileParty.ActualClan.Culture.HasFeat(BKCEFeats.Instance.SailingSpeed) &&
+                    TaleWorlds.CampaignSystem.Campaign.Current.MapSceneWrapper.GetFaceTerrainType(mobileParty.CurrentNavigationFace) == TerrainType.Swamp)
                 {
                     result.AddFactor(-12f, new TaleWorlds.Localization.TextObject("{=!}Sailing"));
                 }
