@@ -7,6 +7,88 @@
     </xsl:template>
 
     <!-- This only hides all vanilla troops -->
+	
+	<xsl:template match="NPCCharacter[@id='mountain_bandits_bandit']/Equipments">
+        <Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.merchants_hat" />
+				<equipment slot="Body" id="Item.footmans_tunic" />
+				<equipment slot="Leg" id="Item.leather_shoes" />
+				<equipment slot="Item0" id="Item.AR_shield_infantry_r" />
+				<equipment slot="Item2" id="Item.empire_mace_1_t2" />
+				<equipment slot="Item3" id="Item.AR_crude_javelin" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+				<equipment slot="Leg" id="Item.DZ_empire_boots_b" />
+				<equipment slot="Item0" id="Item.AR_shield_infantry_r" />
+				<equipment slot="Item2" id="Item.small_spurred_axe_t2" />
+				<equipment slot="Item3" id="Item.AR_crude_javelin" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Body" id="Item.sleeveless_studded_fur_armor" />
+				<equipment slot="Leg" id="Item.DZ_empire_boots_b" />
+				<equipment slot="Item0" id="Item.AR_shield_infantry_r" />
+				<equipment slot="Item2" id="Item.small_bit_axe_t2" />
+				<equipment slot="Item3" id="Item.AR_crude_javelin" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Body" id="Item.studded_fur_armor" />
+				<equipment slot="Leg" id="Item.DZ_empire_boots_b" />
+				<equipment slot="Item0" id="Item.AR_shield_infantry_r" />
+				<equipment slot="Item2" id="Item.falchion_sword_t2" />
+				<equipment slot="Item3" id="Item.empire_throwingknife_t5" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Body" id="Item.armored_baggy_trunks" />
+				<equipment slot="Leg" id="Item.DZ_empire_boots_b" />
+				<equipment slot="Item0" id="Item.AR_shield_infantry_r" />
+				<equipment slot="Item2" id="Item.small_spurred_axe_t2" />
+				<equipment slot="Item3" id="Item.empire_throwingknife_t5" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Body" id="Item.AR_empire_armor_k" />
+				<equipment slot="Leg" id="Item.DZ_empire_boots_b" />
+				<equipment slot="Item0" id="Item.AR_shield_infantry_r" />
+				<equipment slot="Item2" id="Item.small_bit_axe_t2" />
+				<equipment slot="Item3" id="Item.empire_throwingknife_t5" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Body" id="Item.layered_leather_tunic" />
+				<equipment slot="Leg" id="Item.DZ_empire_boots_b" />
+				<equipment slot="Item0" id="Item.AR_shield_infantry_r" />
+				<equipment slot="Item2" id="Item.falchion_sword_t2" />
+				<equipment slot="Item3" id="Item.AR_imperial_spear_t2" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.AR_roman_hat_a2" />
+				<equipment slot="Cape" id="Item.ao_focale" />
+				<equipment slot="Body" id="Item.imperial_padded_cloth" />
+				<equipment slot="Leg" id="Item.DZ_empire_boots_b" />
+				<equipment slot="Item0" id="Item.AR_shield_infantry_r" />
+				<equipment slot="Item2" id="Item.empire_sword_1_t2" />
+				<equipment slot="Item3" id="Item.AR_imperial_spear_t2" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.AR_roman_hat_a" />
+				<equipment slot="Cape" id="Item.ao_focale" />
+				<equipment slot="Body" id="Item.sackcloth_tunic" />
+				<equipment slot="Leg" id="Item.DZ_empire_boots_b" />
+				<equipment slot="Item0" id="Item.AR_shield_infantry_r" />
+				<equipment slot="Item2" id="Item.falchion_sword_t2" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.imperial_cloth_coif" />
+				<equipment slot="Cape" id="Item.ao_focale" />
+				<equipment slot="Body" id="Item.leather_tunic" />
+				<equipment slot="Leg" id="Item.DZ_empire_boots_b" />
+				<equipment slot="Item0" id="Item.AR_shield_infantry_r" />
+				<equipment slot="Item2" id="Item.iron_spatha_sword_t2" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t2" civilian="true" />
+		</Equipments>
+    </xsl:template>
+
 
     <xsl:template match='NPCCharacter[@id="aserai_recruit"]'>
         <xsl:copy>

@@ -1083,69 +1083,69 @@
   
   <EquipmentRoster id="bk_balion_thingman_e2">
 	<EquipmentSet>
-		<equipment slot="Head" id="Item.tv_vlandia_helmet_a5" />
-		<equipment slot="Body" id="Item.TV_vlandia_armor_r" />
-		<equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
-		<equipment slot="Leg" id="Item.mail_chausses" />
-		<equipment slot="Cape" id="Item.TV_vlandia_shoulders_h" />
-		<equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
-		<equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
-		<equipment slot="Item2" id="Item.tall_heater_shield" />
-		<equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
+		<Equipment slot="Head" id="Item.tv_vlandia_helmet_a5" />
+		<Equipment slot="Body" id="Item.TV_vlandia_armor_r" />
+		<Equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
+		<Equipment slot="Leg" id="Item.mail_chausses" />
+		<Equipment slot="Cape" id="Item.TV_vlandia_shoulders_h" />
+		<Equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
+		<Equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
+		<Equipment slot="Item2" id="Item.tall_heater_shield" />
+		<Equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
 	</EquipmentSet>
 	<EquipmentSet>
-		<equipment slot="Head" id="Item.tv_vlandia_helmet_b5" />
-		<equipment slot="Body" id="Item.TV_vlandia_armor_r" />
-		<equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
-		<equipment slot="Leg" id="Item.mail_chausses" />
-		<equipment slot="Cape" id="Item.TV_vlandia_shoulders_g" />
-		<equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
-		<equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
-		<equipment slot="Item2" id="Item.tall_heater_shield" />
-		<equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
+		<Equipment slot="Head" id="Item.tv_vlandia_helmet_b5" />
+		<Equipment slot="Body" id="Item.TV_vlandia_armor_r" />
+		<Equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
+		<Equipment slot="Leg" id="Item.mail_chausses" />
+		<Equipment slot="Cape" id="Item.TV_vlandia_shoulders_g" />
+		<Equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
+		<Equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
+		<Equipment slot="Item2" id="Item.tall_heater_shield" />
+		<Equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
 	</EquipmentSet>
 	<EquipmentSet>
-		<equipment slot="Head" id="Item.tv_vlandia_helmet_j2" />
-		<equipment slot="Body" id="Item.AR_vlandia_armor_p2" />
-		<equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
-		<equipment slot="Leg" id="Item.mail_chausses" />
-		<equipment slot="Cape" id="Item.TV_vlandia_shoulders_j" />
-		<equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
-		<equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
-		<equipment slot="Item2" id="Item.tall_heater_shield" />
-		<equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
+		<Equipment slot="Head" id="Item.tv_vlandia_helmet_j2" />
+		<Equipment slot="Body" id="Item.AR_vlandia_armor_p2" />
+		<Equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
+		<Equipment slot="Leg" id="Item.mail_chausses" />
+		<Equipment slot="Cape" id="Item.TV_vlandia_shoulders_j" />
+		<Equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
+		<Equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
+		<Equipment slot="Item2" id="Item.tall_heater_shield" />
+		<Equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
 	</EquipmentSet>
 	<EquipmentSet>
-		<equipment slot="Head" id="Item.tv_vlandia_helmet_a5" />
-		<equipment slot="Body" id="Item.TV_vlandia_armor_r" />
-		<equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
-		<equipment slot="Leg" id="Item.mail_chausses" />
-		<equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
-		<equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
-		<equipment slot="Item2" id="Item.tall_heater_shield" />
-		<equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
+		<Equipment slot="Head" id="Item.tv_vlandia_helmet_a5" />
+		<Equipment slot="Body" id="Item.TV_vlandia_armor_r" />
+		<Equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
+		<Equipment slot="Leg" id="Item.mail_chausses" />
+		<Equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
+		<Equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
+		<Equipment slot="Item2" id="Item.tall_heater_shield" />
+		<Equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
 	</EquipmentSet>
 	<EquipmentSet>
-		<equipment slot="Head" id="Item.tv_vlandia_helmet_c5" />
-		<equipment slot="Body" id="Item.TV_vlandia_armor_b" />
-		<equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
-		<equipment slot="Leg" id="Item.mail_chausses" />
-		<equipment slot="Cape" id="Item.cape_1" />
-		<equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
-		<equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
-		<equipment slot="Item2" id="Item.tall_heater_shield" />
-		<equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
+		<Equipment slot="Head" id="Item.tv_vlandia_helmet_c5" />
+		<Equipment slot="Body" id="Item.TV_vlandia_armor_b" />
+		<Equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
+		<Equipment slot="Leg" id="Item.mail_chausses" />
+		<Equipment slot="Cape" id="Item.cape_1" />
+		<Equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
+		<Equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
+		<Equipment slot="Item2" id="Item.tall_heater_shield" />
+		<Equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
 	</EquipmentSet>
 	<EquipmentSet>
-		<equipment slot="Head" id="Item.tv_vlandia_helmet_t4" />
-		<equipment slot="Body" id="Item.AR_vlandia_armor_p" />
-		<equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
-		<equipment slot="Leg" id="Item.mail_chausses" />
-		<equipment slot="Cape" id="Item.el_cloak_1" />
-		<equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
-		<equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
-		<equipment slot="Item2" id="Item.tall_heater_shield" />
-		<equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
+		<Equipment slot="Head" id="Item.tv_vlandia_helmet_t4" />
+		<Equipment slot="Body" id="Item.AR_vlandia_armor_p" />
+		<Equipment slot="Gloves" id="Item.hmj_plated_mail_mittens" />
+		<Equipment slot="Leg" id="Item.mail_chausses" />
+		<Equipment slot="Cape" id="Item.el_cloak_1" />
+		<Equipment slot="Item0" id="Item.bk_vlandia_2haxe_t5" />
+		<Equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
+		<Equipment slot="Item2" id="Item.tall_heater_shield" />
+		<Equipment slot="Item3" id="Item.northern_throwing_axe_1_t1" />
 	</EquipmentSet>
   </EquipmentRoster>
 

@@ -138,7 +138,7 @@ namespace BannerKings.CulturesExpanded.Cultures
             Vakken3.Initialize("BKCE_vakken_swidden",
                 "{=!}Swidden Agriculture: Agriculture and livestock villages are 30% less productive.",
                 -0.3f,
-                true,
+                false,
                 FeatObject.AdditionType.AddFactor);
 
             SouthernAgriculture = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_south_production"));

@@ -21,6 +21,47 @@ namespace BannerKings.CulturesExpanded
         public RecruitSpawn SturgiaCavalry { get; } = new RecruitSpawn();
         #endregion sturgia
 
+        #region Nord
+        public RecruitSpawn NordMeleeT1 { get; } = new RecruitSpawn();
+        public RecruitSpawn NordRangedT1 { get; } = new RecruitSpawn();
+        public RecruitSpawn NordMeleeT2 { get; } = new RecruitSpawn();
+        public RecruitSpawn NordRangedT2 { get; } = new RecruitSpawn();
+        public RecruitSpawn NordMeleeT3 { get; } = new RecruitSpawn();
+        public RecruitSpawn NordNoble { get; } = new RecruitSpawn();
+        #endregion Nord
+
+        #region Bragantia
+        public RecruitSpawn BragantiaMeleeT1 { get; } = new RecruitSpawn();
+        public RecruitSpawn BragantiaRangedT1 { get; } = new RecruitSpawn();
+        public RecruitSpawn BragantiaMeleeT2 { get; } = new RecruitSpawn();
+        public RecruitSpawn BragantiaRangedT2 { get; } = new RecruitSpawn();
+        public RecruitSpawn BragantiaMeleeT3 { get; } = new RecruitSpawn();
+        public RecruitSpawn BragantiaNoble { get; } = new RecruitSpawn();
+        #endregion Bragantia
+
+        #region Massa
+        public RecruitSpawn MassaMeleeT1 { get; } = new RecruitSpawn();
+        public RecruitSpawn MassaRangedT1 { get; } = new RecruitSpawn();
+        public RecruitSpawn MassaMeleeT2 { get; } = new RecruitSpawn();
+        public RecruitSpawn MassaRangedT2 { get; } = new RecruitSpawn();
+        public RecruitSpawn MassaMeleeT3 { get; } = new RecruitSpawn();
+        public RecruitSpawn MassaNoble { get; } = new RecruitSpawn();
+        #endregion Massa
+
+        #region Kannic
+        public RecruitSpawn KannicMeleeT1 { get; } = new RecruitSpawn();
+        public RecruitSpawn KannicRangedT1 { get; } = new RecruitSpawn();
+        public RecruitSpawn KannicMeleeT2 { get; } = new RecruitSpawn();
+        public RecruitSpawn KannicRangedT2 { get; } = new RecruitSpawn();
+        public RecruitSpawn KannicMeleeT3 { get; } = new RecruitSpawn();
+        public RecruitSpawn KannicNoble { get; } = new RecruitSpawn();
+        public RecruitSpawn KannicHoplite { get; } = new RecruitSpawn();
+        public RecruitSpawn KannicRiderT3 { get; } = new RecruitSpawn();
+        public RecruitSpawn KannicRiderT4 { get; } = new RecruitSpawn();
+        
+
+        #endregion Kannic
+
         #region empire
         public RecruitSpawn EmpireMeleeT1 { get; } = new RecruitSpawn();
         public RecruitSpawn EmpireRangedT1 { get; } = new RecruitSpawn();
@@ -204,6 +245,33 @@ namespace BannerKings.CulturesExpanded
                 yield return GeroiaRangedT3;
                 yield return GeroiaNoble;
                 yield return GeroiaSlave;
+                yield return NordMeleeT1;
+                yield return NordMeleeT2;
+                yield return NordMeleeT3;
+                yield return NordNoble;
+                yield return NordRangedT1;
+                yield return NordRangedT2;
+                yield return KannicMeleeT1;
+                yield return KannicMeleeT2;
+                yield return KannicMeleeT3;
+                yield return KannicNoble;
+                yield return KannicRangedT1;
+                yield return KannicRangedT2;
+                yield return KannicHoplite;
+                yield return KannicRiderT3;
+                yield return KannicRiderT4;
+                yield return MassaMeleeT1;
+                yield return MassaMeleeT2;
+                yield return MassaMeleeT3;
+                yield return MassaNoble;
+                yield return MassaRangedT1;
+                yield return MassaRangedT2;
+                yield return BragantiaMeleeT1;
+                yield return BragantiaMeleeT2;
+                yield return BragantiaMeleeT3;
+                yield return BragantiaNoble;
+                yield return BragantiaRangedT1;
+                yield return BragantiaRangedT2;
             }
         }
 
@@ -434,6 +502,280 @@ namespace BannerKings.CulturesExpanded
             SturgiaTyal.AddFiefString("town_S5");
 
             #endregion sturgia
+
+            #region Nord
+            var nord = GetCulture("nord");
+            NordMeleeT1.Initialize(GetTroop("bk_nord_levy"),
+                nord,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.7f
+                    }
+                });
+
+            NordRangedT1.Initialize(GetTroop("bk_nord_levy_archer"),
+                nord,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.3f
+                    }
+                });
+
+            NordMeleeT2.Initialize(GetTroop("bk_nord_militiaman"),
+                nord,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Tenants, 0.5f
+                    }
+                });
+
+            NordRangedT2.Initialize(GetTroop("bk_nord_militiaman_archer"),
+                nord,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Tenants, 0.3f
+                    },
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.15f
+                    }
+                });
+
+            NordMeleeT3.Initialize(GetTroop("bk_nord_sergeant"),
+                nord,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Craftsmen, 0.5f
+                    }
+                });
+
+            NordNoble.Initialize(GetTroop("bk_nord_squire"),
+                nord,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Nobles, 1f
+                    }
+                });
+
+            #endregion Nord
+
+            #region Massa
+            var massa = GetCulture("massa");
+            MassaMeleeT1.Initialize(GetTroop("bk_massa_levy"),
+                massa,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.7f
+                    }
+                });
+
+            MassaRangedT1.Initialize(GetTroop("bk_massa_levy_sling"),
+                massa,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.3f
+                    }
+                });
+
+            MassaMeleeT2.Initialize(GetTroop("bk_massa_militiaman"),
+                massa,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Tenants, 0.25f
+                    }
+                });
+
+            MassaRangedT2.Initialize(GetTroop("bk_massa_militiaman_sling"),
+                massa,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Tenants, 0.3f
+                    },
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.15f
+                    }
+                });
+
+            MassaMeleeT3.Initialize(GetTroop("bk_massa_sergeant"),
+                massa,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Craftsmen, 0.5f
+                    }
+                });
+
+            MassaNoble.Initialize(GetTroop("bk_massa_squire"),
+                massa,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Nobles, 1f
+                    }
+                });
+
+            #endregion Massa
+
+            #region Kannic
+            var kannic = GetCulture("kannic");
+            KannicMeleeT1.Initialize(GetTroop("bk_kannic_levy"),
+                kannic,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.7f
+                    }
+                });
+
+            KannicRangedT1.Initialize(GetTroop("bk_kannic_levy_archer"),
+                kannic,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.3f
+                    }
+                });
+
+            KannicMeleeT2.Initialize(GetTroop("bk_kannic_militiaman"),
+                kannic,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Tenants, 0.25f
+                    }
+                });
+
+            KannicRangedT2.Initialize(GetTroop("bk_kannic_militiaman_archer"),
+                kannic,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Tenants, 0.3f
+                    },
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.15f
+                    }
+                });
+
+            KannicMeleeT3.Initialize(GetTroop("bk_kannic_sergeant"),
+                kannic,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Craftsmen, 0.5f
+                    }
+                });
+
+            KannicRiderT3.Initialize(GetTroop("bk_kanic_rider"),
+                kannic,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Tenants, 0.15f
+                    }
+                });
+
+            KannicRiderT4.Initialize(GetTroop("bk_kanic_horseman"),
+                kannic,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Craftsmen, 0.15f
+                    }
+                });
+
+            KannicHoplite.Initialize(GetTroop("bk_kanic_citizen"),
+                kannic,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Nobles, 0.5f
+                    },
+                    {
+                        Managers.PopulationManager.PopType.Craftsmen, 0.25f
+                    }
+                }); 
+
+            KannicNoble.Initialize(GetTroop("bk_kanic_highborn"),
+                kannic,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Nobles, 1f
+                    }
+                });
+
+            #endregion Kannic
+
+            #region Bragantia
+            var bragantia = GetCulture("bragantia");
+            BragantiaMeleeT1.Initialize(GetTroop("bk_bragantia_levy"),
+                bragantia,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.7f
+                    }
+                });
+
+            BragantiaRangedT1.Initialize(GetTroop("bk_bragantia_levy_crossbow"),
+                bragantia,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.3f
+                    }
+                });
+
+            BragantiaMeleeT2.Initialize(GetTroop("bk_bragantia_militiaman"),
+                bragantia,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Tenants, 0.5f
+                    }
+                });
+
+            BragantiaRangedT2.Initialize(GetTroop("bk_bragantia_militiaman_crossbow"),
+                bragantia,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Tenants, 0.3f
+                    },
+                    {
+                        Managers.PopulationManager.PopType.Serfs, 0.15f
+                    }
+                });
+
+            BragantiaMeleeT3.Initialize(GetTroop("bk_bragantia_sergeant"),
+                bragantia,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Craftsmen, 0.5f
+                    }
+                });
+
+            BragantiaNoble.Initialize(GetTroop("bk_bragantia_squire"),
+                bragantia,
+                new Dictionary<Managers.PopulationManager.PopType, float>()
+                {
+                    {
+                        Managers.PopulationManager.PopType.Nobles, 1f
+                    }
+                });
+
+            #endregion Bragantia
 
             #region empire
             var empire = GetCulture("empire");

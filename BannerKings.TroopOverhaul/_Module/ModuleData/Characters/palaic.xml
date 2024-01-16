@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <NPCCharacters>
 
-  <NPCCharacter id="bk_palaic_boss" default_group="Infantry" level="26" name="{=!}Dryaticoi Exiled Chief" occupation="Bandit" culture="Culture.palaic">
+  <NPCCharacter id="bk_palaic_boss" default_group="Infantry" level="26" name="{=!}Dryaticoi Exiled Chief" occupation="Bandit" culture="Culture.bk_dryatic_bandits">
     <face>
       <face_key_template value="BodyProperty.fighter_battania" />
     </face>
@@ -79,7 +79,7 @@
     </Equipments>
   </NPCCharacter>
 
-  <NPCCharacter id="bk_palaic_pillager" default_group="Infantry" level="21" name="{=!}Dryaticoi Pillager" occupation="Bandit" culture="Culture.palaic">
+  <NPCCharacter id="bk_palaic_pillager" default_group="Infantry" level="21" name="{=!}Dryaticoi Pillager" occupation="Bandit" culture="Culture.bk_dryatic_bandits">
     <face>
       <face_key_template value="BodyProperty.fighter_battania" />
     </face>
@@ -141,7 +141,7 @@
   </NPCCharacter>
   
 
-  <NPCCharacter id="bk_palaic_raider" default_group="Infantry" level="16" name="{=!}Dryaticoi Raider" occupation="Bandit" culture="Culture.palaic">
+  <NPCCharacter id="bk_palaic_raider" default_group="Infantry" level="16" name="{=!}Dryaticoi Raider" occupation="Bandit" culture="Culture.bk_dryatic_bandits">
     <face>
       <face_key_template value="BodyProperty.fighter_battania" />
     </face>
@@ -195,7 +195,7 @@
                 level="11"
                 name="{=!}Dryaticoi Bandit"
                 occupation="Bandit"
-                culture="Culture.palaic"
+                culture="Culture.bk_dryatic_bandits"
 				is_basic_troop="true"
                 skill_template="SkillSet.bk_militia_skirmisher_skills">
     <face>

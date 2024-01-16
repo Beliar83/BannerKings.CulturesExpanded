@@ -238,56 +238,22 @@
 			<feat id="aserai_increased_wages" />
 		</cultural_feats>
 		<possible_clan_banner_icon_ids>
-			<icon
-				id="110" />
-			<icon
-				id="155" />
-			<icon
-				id="156" />
-			<icon
-				id="200" />
-			<icon
-				id="201" />
-			<icon
-				id="204" />
-			<icon
-				id="212" />
-			<icon
-				id="218" />
-			<icon
-				id="219" />
-			<icon
-				id="220" />
-			<icon
-				id="221" />
-			<icon
-				id="222" />
-			<icon
-				id="223" />
-			<icon
-				id="321" />
-			<icon
-				id="400" />
-			<icon
-				id="401" />
-			<icon
-				id="403" />
-			<icon
-				id="404" />
-			<icon
-				id="405" />
-			<icon
-				id="425" />
-			<icon
-				id="426" />
-			<icon
-				id="427" />
-			<icon
-				id="428" />
-			<icon
-				id="430" />
-			<icon
-				id="309" />
+			<icon id="10131" />
+			<icon id="10132" />
+			<icon id="10133" />
+			<icon id="10134" />
+			<icon id="10135" />
+			<icon id="10136" />
+			<icon id="10137" />
+			<icon id="10138" />
+			<icon id="10139" />
+			<icon id="101310" />
+			<icon id="101311" />
+			<icon id="101312" />
+			<icon id="101313" />
+			<icon id="101314" />
+			<icon id="101315" />
+			<icon id="101316" />
 		</possible_clan_banner_icon_ids>
 		<notable_and_wanderer_templates>
 			<template
@@ -856,55 +822,49 @@
 			<name name="{=!}Mareinoling" />
 			<name name="{=!}Fauhonskunja" />
 			<name name="{=!}Hlaineling" />
-			<name name="{=!}Gunthaling" />
+			<name name="{=!}Gunthaling" />		
+			<name name="{=!}Kalboling" />
+			<name name="{=!}Auhsaling" />
+			<name name="{=!}Gaitsling" />
+			<name name="{=!}Hunthling" />
+			<name name="{=!}Raidaling" />
+			<name name="{=!}Akreling" />		
+			<name name="{=!}Graseling" />
+			<name name="{=!}Bagmeling" />		
+			<name name="{=!}Triweling" />
+			<name name="{=!}Hohaneling" />		
+			<name name="{=!}Weineling" />
+			<name name="{=!}Akuzjoling" />
 		</clan_names>
 		<cultural_feats>
-			<feat
-				id="vlandian_renown_mercenary_income" />
-			<feat
-				id="vlandian_villages_production_bonus" />
-			<feat
-				id="vlandian_increased_army_influence_cost" />
+			<feat id="vlandian_renown_mercenary_income" />
+			<feat id="BKCE_massa_pillage" />
+			<feat id="khuzait_increased_animal_production" />
+			<feat id="BKCE_village_militia" />			
+			<feat id="BKCE_massa_unruly" />
+			<feat id="battanian_slower_construction" />
 		</cultural_feats>
 		<possible_clan_banner_icon_ids>
-			<icon
-				id="140" />
-			<icon
-				id="141" />
-			<icon
-				id="142" />
-			<icon
-				id="143" />
-			<icon
-				id="144" />
-			<icon
-				id="145" />
-			<icon
-				id="146" />
-			<icon
-				id="159" />
-			<icon
-				id="205" />
-			<icon
-				id="206" />
-			<icon
-				id="207" />
-			<icon
-				id="417" />
-			<icon
-				id="418" />
-			<icon
-				id="419" />
-			<icon
-				id="300" />
-			<icon
-				id="301" />
-			<icon
-				id="302" />
-			<icon
-				id="303" />
-			<icon
-				id="315" />
+			<icon id="10039" />
+			<icon id="100315" />
+			<icon id="100316" />
+			<icon id="10036" />
+			<icon id="10221" />
+			<icon id="10222" />
+			<icon id="10223" />
+			<icon id="10224" />		
+			<icon id="10225" />
+			<icon id="10226" />
+			<icon id="10227" />
+			<icon id="10228" />		
+			<icon id="10229" />		
+			<icon id="102210" />
+			<icon id="102211" />
+			<icon id="102212" />
+			<icon id="102213" />
+			<icon id="102214" />
+			<icon id="102215" />
+			<icon id="102216" />
 		</possible_clan_banner_icon_ids>
 		<notable_and_wanderer_templates>
 			<template
@@ -1482,44 +1442,26 @@
 				id="vlandian_increased_army_influence_cost" />
 		</cultural_feats>
 		<possible_clan_banner_icon_ids>
-			<icon
-				id="140" />
-			<icon
-				id="141" />
-			<icon
-				id="142" />
-			<icon
-				id="143" />
-			<icon
-				id="144" />
-			<icon
-				id="145" />
-			<icon
-				id="146" />
-			<icon
-				id="159" />
-			<icon
-				id="205" />
-			<icon
-				id="206" />
-			<icon
-				id="207" />
-			<icon
-				id="417" />
-			<icon
-				id="418" />
-			<icon
-				id="419" />
-			<icon
-				id="300" />
-			<icon
-				id="301" />
-			<icon
-				id="302" />
-			<icon
-				id="303" />
-			<icon
-				id="315" />
+			<icon id="10039" />
+			<icon id="100315" />
+			<icon id="100316" />
+			<icon id="10036" />
+			<icon id="10221" />
+			<icon id="10222" />
+			<icon id="10223" />
+			<icon id="10224" />		
+			<icon id="10225" />
+			<icon id="10226" />
+			<icon id="10227" />
+			<icon id="10228" />		
+			<icon id="10229" />		
+			<icon id="102210" />
+			<icon id="102211" />
+			<icon id="102212" />
+			<icon id="102213" />
+			<icon id="102214" />
+			<icon id="102215" />
+			<icon id="102216" />
 		</possible_clan_banner_icon_ids>
 		<notable_and_wanderer_templates>
 			<template
@@ -2147,7 +2089,7 @@
 		rebels_party_template="PartyTemplate.rebels_aserai_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_aserai"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
-		text="{=!}"
+		text="{=!}The Kannic are an ancient Calradian civilization based on the southern coasts of the Perass and Jade seas. They first built Razih, and later proceeded to colonize the entire southern coast. They were renowned for their masonry and shipbuilding: before the Calradoi or the Geroiako dominated the seas, it was the domain of the Kannic triremes, adorned with the vines of their goddess. The Vine Goddess, Ailatyn, guides the Kannic both in trade and war. To other cultures, they seem avaricious, but to the Kannic, making profit is a holy endeavour. The remainings of the Kannic now lie at Lys - their last large colony -, for much of their original lands have been taken by the Nahawasi, something for which the Kannic carry deep resentment. Their pristine stone cities, they say, shall one day be cleansed from the hut-dwelling nomads."
 		tournament_master="NPCCharacter.tournament_master_aserai"
 		villager="NPCCharacter.villager_aserai"
 		caravan_master="NPCCharacter.caravan_master_kannic"
@@ -2226,126 +2168,65 @@
 			<name name="{=!}Eshmun" />
 			<name name="{=!}Beneshor" />
 			<name name="{=!}Hanneshor" />
-			<name name="{=!}Baliaton" />
+			<name name="{=!}Baliaton" />			
+			<name name="{=!}Hamilkar" />
+			<name name="{=!}Azareshor" />
+			<name name="{=!}Hanno" />
+			<name name="{=!}Bodo" />
+			<name name="{=!}Barekeshor" />
+			<name name="{=!}Adonoshor" />
+			<name name="{=!}Ahimilkar" />
+			<name name="{=!}Hiram" />
 		</male_names>
 		<female_names>
 			<name name="{=!}Eshora" />
 			<name name="{=!}Adonia" />
-			<name name="{=!}Adama" />
+			<name name="{=!}Adama" />		
+			<name name="{=!}Elishat" />
+			<name name="{=!}Hanna" />
+			<name name="{=!}Addira" />		
+			<name name="{=!}Adonoshora" />
+			<name name="{=!}Azareshora" />
+			<name name="{=!}Hanneshora" />
+			<name name="{=!}Dagona" />
+			<name name="{=!}Eshmuna" />
 		</female_names>
 		<clan_names>
-			<name
-				name="{=VV6p47Ee}Banu Arumaq" />
-			<name
-				name="{=By82n3gR}Banu Aska" />
-			<name
-				name="{=QBtprltg}Banu Ayan" />
-			<name
-				name="{=uwalgjVy}Banu Dilis" />
-			<name
-				name="{=IcB0xdbd}Banu Dhamin" />
-			<name
-				name="{=86LT9H6v}Banu Fasus" />
-			<name
-				name="{=0znqTt5G}Banu Harranad" />
-			<name
-				name="{=ZEwqRhHO}Banu Hund" />
-			<name
-				name="{=TIhFAZld}Banu Ijaraz" />
-			<name
-				name="{=c39lybQJ}Banu Julul" />
-			<name
-				name="{=Iwe7Xpke}Banu Kinyan" />
-			<name
-				name="{=UKcaINTn}Banu Khashal" />
-			<name
-				name="{=irccq0qs}Banu Laikh" />
-			<name
-				name="{=DygS1Bef}Banu Mushala" />
-			<name
-				name="{=bgNQtbS7}Banu Nir" />
-			<name
-				name="{=yrYO33f8}Banu Qaram" />
-			<name
-				name="{=7oBUn2V1}Banu Rawi" />
-			<name
-				name="{=fDbOCRMM}Banu Shum" />
-			<name
-				name="{=wRVVs7t4}Banu Sirsan" />
-			<name
-				name="{=SGFsmCJa}Banu Tammar" />
-			<name
-				name="{=sAa3o3vw}Banu Tharuq" />
-			<name
-				name="{=EbkJbzwO}Banu Unuth" />
-			<name
-				name="{=SJJobqeR}Banu Widhas" />
-			<name
-				name="{=oY2rbPH2}Banu Yurib" />
-			<name
-				name="{=L4XUK5n4}Banu Yatash" />
-			<name
-				name="{=WFfbxYu5}Banu Zus" />
+			<name name="{=!}Yamid" />
+			<name name="{=!}Abanid" />
+			<name name="{=!}Shamayid" />
+			<name name="{=!}Aynid" />
+			<name name="{=!}Shairid" />
+			<name name="{=!}Hekalid" />		
+			<name name="{=!}Korid" />
+			<name name="{=!}Kaspid" />
+			<name name="{=!}Albinid" />
+			<name name="{=!}Meqid" />
+			<name name="{=!}Zarid" />
+			<name name="{=!}Shurshid" />
 		</clan_names>
 		<cultural_feats>
-			<feat
-				id="aserai_cheaper_caravans" />
-			<feat
-				id="aserai_desert_speed" />
-			<feat
-				id="aserai_increased_wages" />
+			<feat id="BKCE_megalopolis" />
+			<feat id="BKCE_sailing_speed" />
+			<feat id="aserai_cheaper_caravans" />
+			<feat id="battanian_militia_production" />
+			<feat id="BKCE_kannic_troops" />
 		</cultural_feats>
 		<possible_clan_banner_icon_ids>
-			<icon
-				id="110" />
-			<icon
-				id="155" />
-			<icon
-				id="156" />
-			<icon
-				id="200" />
-			<icon
-				id="201" />
-			<icon
-				id="204" />
-			<icon
-				id="212" />
-			<icon
-				id="218" />
-			<icon
-				id="219" />
-			<icon
-				id="220" />
-			<icon
-				id="221" />
-			<icon
-				id="222" />
-			<icon
-				id="223" />
-			<icon
-				id="321" />
-			<icon
-				id="400" />
-			<icon
-				id="401" />
-			<icon
-				id="403" />
-			<icon
-				id="404" />
-			<icon
-				id="405" />
-			<icon
-				id="425" />
-			<icon
-				id="426" />
-			<icon
-				id="427" />
-			<icon
-				id="428" />
-			<icon
-				id="430" />
-			<icon
-				id="309" />
+			<icon id="10041" />
+			<icon id="10043" />
+			<icon id="10045" />
+			<icon id="10046" />
+			<icon id="10049" />
+			<icon id="100414" />
+			<icon id="100415" />
+			<icon id="100416" />
+			<icon id="100413" />
+			<icon id="10048" />
+			<icon id="10063" />
+			<icon id="10061" />
+			<icon id="10177" />
+			<icon id="10066" />
 		</possible_clan_banner_icon_ids>
 		<notable_and_wanderer_templates>
 			<template
@@ -2516,7 +2397,7 @@
            rebels_party_template="PartyTemplate.rebels_aserai_template"
            vassal_reward_party_template="PartyTemplate.vassal_reward_troops_aserai"
            default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
-           text="{=!}"
+           text="{=!}The Darshi are an ancient civilization that sprung by the Teyagh river and its sibling, the Nahr al-Kals. For millenia they have mastered trading far and wide, as well as farming grains and dates by the riverbanks, making use of any fertile land they could control. Their cities, built with great stone walls, withstood the raids of barbarians long before the Calradoi would pride themselves over their masonry. Currently, many of the originally northern Darshi settlements are now ruled by the Khuzait horselords, and the Darshianshahr finds itself in a defensive position."
            tournament_master="NPCCharacter.tournament_master_aserai"
            villager="NPCCharacter.villager_aserai"
            caravan_master="NPCCharacter.caravan_master_darshi"
@@ -2679,36 +2560,35 @@
 	  <name name="{=!}Aluhan" />
     </clan_names>
     <cultural_feats>
-      <feat id="aserai_cheaper_caravans" />
-      <feat id="aserai_desert_speed" />
-      <feat id="aserai_increased_wages" />
+	  <feat id="BKCE_megalopolis" />
+      <feat id="aserai_cheaper_caravans" />    
+      <feat id="BKCE_south_production" />
+      <feat id="aserai_cheaper_caravans" />    
+      <feat id="BKCE_darshi_infantry" />
     </cultural_feats>
     <possible_clan_banner_icon_ids>
-      <icon id="110" />
-      <icon id="155" />
-      <icon id="156" />
-      <icon id="200" />
-      <icon id="201" />
-      <icon id="204" />
-      <icon id="212" />
-      <icon id="218" />
-      <icon id="219" />
-      <icon id="220" />
-      <icon id="221" />
-      <icon id="222" />
-      <icon id="223" />
-      <icon id="321" />
-      <icon id="400" />
-      <icon id="401" />
-      <icon id="403" />
-      <icon id="404" />
-      <icon id="405" />
-      <icon id="425" />
-      <icon id="426" />
-      <icon id="427" />
-      <icon id="428" />
-      <icon id="430" />
-      <icon id="309" />
+      <icon id="101613" />
+      <icon id="10171" />
+      <icon id="10172" />
+      <icon id="10173" />
+      <icon id="10175" />
+      <icon id="10174" />
+      <icon id="10176" />
+      <icon id="10181" />
+      <icon id="10182" />
+      <icon id="10183" />
+      <icon id="10184" />
+      <icon id="10186" />
+      <icon id="10187" />
+      <icon id="10188" />
+      <icon id="10189" />
+      <icon id="101811" />
+      <icon id="101813" />
+      <icon id="10191" />
+      <icon id="10192" />
+      <icon id="10193" />
+      <icon id="10194" />
+      <icon id="10195" />
     </possible_clan_banner_icon_ids>
     <notable_and_wanderer_templates>
       <template name="NPCCharacter.spc_wanderer_darshi_0" />
@@ -2899,38 +2779,51 @@
       <name name="{=!}Ardar" />
 	  <name name="{=!}Maon" />
 	  <name name="{=!}Sassar" />
+	  
+	  <name name="{=!}Ardar" />
+	  <name name="{=!}Maon" />
+	  <name name="{=!}Sassar" />
+	  <name name="{=!}Ardar" />
+	  <name name="{=!}Maon" />
+	  <name name="{=!}Sassar" />
+	  <name name="{=!}Ardar" />
+	  <name name="{=!}Maon" />
+	  <name name="{=!}Sassar" />
     </clan_names>
     <cultural_feats>
+	  <feat id="BKCE_geroia_trade" />
       <feat id="aserai_cheaper_caravans" />
-      <feat id="aserai_desert_speed" />
-      <feat id="aserai_increased_wages" />
+      <feat id="BKCE_sailing_speed" />
+      <feat id="BKCE_sailing_battle" /> 
+      <feat id="BKCE_geroia_slaves" />
+	  <feat id="aserai_increased_wages" />
     </cultural_feats>
     <possible_clan_banner_icon_ids>
-      <icon id="110" />
-      <icon id="155" />
-      <icon id="156" />
-      <icon id="200" />
-      <icon id="201" />
-      <icon id="204" />
-      <icon id="212" />
-      <icon id="218" />
-      <icon id="219" />
-      <icon id="220" />
-      <icon id="221" />
-      <icon id="222" />
-      <icon id="223" />
-      <icon id="321" />
-      <icon id="400" />
-      <icon id="401" />
-      <icon id="403" />
-      <icon id="404" />
-      <icon id="405" />
-      <icon id="425" />
-      <icon id="426" />
-      <icon id="427" />
-      <icon id="428" />
-      <icon id="430" />
-      <icon id="309" />
+      <icon id="10306" />
+      <icon id="10305" />
+      <icon id="10304" />
+      <icon id="10302" />
+      <icon id="103010" />
+      <icon id="103013" />
+      <icon id="103014" />
+      <icon id="103015" />
+      <icon id="103016" />
+      <icon id="10316" />
+      <icon id="103111" />
+      <icon id="10318" />
+      <icon id="10315" />
+      <icon id="10325" />
+      <icon id="103214" />
+      <icon id="103216" />
+      <icon id="103213" />
+      <icon id="103212" />
+      <icon id="10055" />
+      <icon id="10059" />
+      <icon id="100511" />
+      <icon id="102915" />
+      <icon id="102916" />
+      <icon id="102911" />
+      <icon id="102910" />
     </possible_clan_banner_icon_ids>
     <notable_and_wanderer_templates>
 			<template
@@ -3411,6 +3304,22 @@
       <name name="{=WpTXwQw1}Vuoni" />
 	  <name name="{=!}Tapio" />
 	  <name name="{=!}Tuisko" />
+	  <name name="{=!}Aamu" />
+	  <name name="{=!}Aarre" />
+	  <name name="{=!}Aimo" />
+	  <name name="{=!}Airi" />
+	  <name name="{=!}Arvo" />
+	  <name name="{=!}Eero" />
+	  <name name="{=!}Heino" />
+	  <name name="{=!}Hanno" />	  
+	  <name name="{=!}Liro" />
+	  <name name="{=!}Jalo" />
+	  <name name="{=!}Iskko" />
+	  <name name="{=!}Joukko" />
+	  <name name="{=!}Kaapo" />
+	  <name name="{=!}Keijo" />
+	  <name name="{=!}Kauko" />
+	  <name name="{=!}Lari" />
     </male_names>
     <female_names>
       <name name="{=FlexUfSP}Alivar" />
@@ -3424,45 +3333,74 @@
       <name name="{=gG1O5V1n}Olianar" />
       <name name="{=XAF12HV0}Vikka" />
 	  <name name="{=!}Laila" />
+	  <name name="{=!}Aira" />
+	  <name name="{=!}Alli" />
+	  <name name="{=!}Ella" />
+	  <name name="{=!}Elina" />
+	  <name name="{=!}Elsa" />
+	  <name name="{=!}Fanni" />
+	  <name name="{=!}Hanna" />
+	  <name name="{=!}Heidi" />
+	  <name name="{=!}Alli" />
+	  <name name="{=!}Ella" />
+	  <name name="{=!}Elina" />
+	  <name name="{=!}Elsa" />
+	  <name name="{=!}Fanni" />
+	  <name name="{=!}Likka" />
+	  <name name="{=!}Lina" />
+	  <name name="{=!}Liris" />
+	  <name name="{=!}Lahja" />
+	  <name name="{=!}Kukka" />
+	  <name name="{=!}Lauri" />
     </female_names>
     <clan_names>
       <name name="{=!}Keminen" />
       <name name="{=!}Vecinen" />
       <name name="{=!}Kentenen" />	  
 	  <name name="{=!}Kulanen" />
-      <name name="{=!}Vecinen" />
+      <name name="{=!}Merinen" />
       <name name="{=!}Puunen" />
-	  <name name="{=!}Linnanen" />
+	  <name name="{=!}Linnanen" />  
+	  <name name="{=!}Laidunen" />
+      <name name="{=!}Peltonen" />  
+      <name name="{=!}Maanen" />  
+	  <name name="{=!}Hirvinen" />
+      <name name="{=!}Kettunen" />
+      <name name="{=!}Sucinen" />
+	  <name name="{=!}Hukkanen" />
+	  <name name="{=!}Hepoinen" />
+      <name name="{=!}Lehmanen" />
+      <name name="{=!}Voohinen" />	  
+	  <name name="{=!}Taivasnen" />
+      <name name="{=!}Kaydanen" />
+	  <name name="{=!}Meccanen" />
+      <name name="{=!}Luminen" />
     </clan_names>
     <cultural_feats>
       <feat id="battanian_forest_speed" />
-      <feat id="battanian_militia_production" />
-      <feat id="battanian_slower_construction" />
+      <feat id="BKCE_vakken_production" />
+	  <feat id="BKCE_vakken_snow" />
+	  <feat id="BKCE_village_militia" />
+      <feat id="BKCE_vakken_swidden" />
+	  <feat id="battanian_slower_construction" />
     </cultural_feats>
     <possible_clan_banner_icon_ids>
-      <icon id="112" />
-      <icon id="113" />
-      <icon id="114" />
-      <icon id="115" />
-      <icon id="116" />
-      <icon id="117" />
-      <icon id="118" />
-      <icon id="132" />
-      <icon id="138" />
-      <icon id="139" />
-      <icon id="307" />
-      <icon id="331" />
-      <icon id="407" />
-      <icon id="408" />
-      <icon id="409" />
-      <icon id="410" />
-      <icon id="439" />
-      <icon id="440" />
-      <icon id="441" />
-      <icon id="442" />
-      <icon id="443" />
-      <icon id="444" />
-      <icon id="445" />
+      <icon id="10351" />
+      <icon id="10352" />
+      <icon id="10353" />
+      <icon id="10354" />
+      <icon id="10355" />
+      <icon id="10356" />
+      <icon id="10357" />
+      <icon id="10358" />
+      <icon id="10359" />
+      <icon id="103510" />
+      <icon id="103511" />
+      <icon id="103512" />
+      <icon id="103513" />
+      <icon id="103514" />
+      <icon id="103515" />
+      <icon id="103516" />
     </possible_clan_banner_icon_ids>
     <notable_and_wanderer_templates>
       <template name="NPCCharacter.spc_notable_vakken_0" />

@@ -1,4 +1,5 @@
 ﻿using BannerKings.Behaviours;
+using BannerKings.CulturesExpanded.Cultures;
 using BannerKings.CulturesExpanded.Goals;
 using System.Collections.Generic;
 using TaleWorlds.CampaignSystem;
@@ -23,6 +24,7 @@ namespace BannerKings.CulturesExpanded.Behaviors
         public override void RegisterEvents()
         {
             CampaignEvents.WeeklyTickEvent.AddNonSerializedListener(this, OnWeeklyTick);
+            CampaignEvents.OnSessionLaunchedEvent.AddNonSerializedListener(this, (CampaignGameStarter starter) => BKCEFeats.Instance.UpdateVanilla());
         }
 
         public override void SyncData(IDataStore dataStore)

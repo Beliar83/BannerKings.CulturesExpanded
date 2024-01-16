@@ -390,7 +390,7 @@ namespace BannerKings.CulturesExpanded.Cultures
                 battania,
                 new TextObject("{=!}Pendreic"),
                 new TextObject("{=!}Pendreic"),
-                new TextObject("{=!}Pendragonate"));
+                new TextObject("{=!}Pendreiciaeth"));
 
             BattaniaKing = CulturalTitleName.CreateKingdom("BattaniaKing",
                 battania,
