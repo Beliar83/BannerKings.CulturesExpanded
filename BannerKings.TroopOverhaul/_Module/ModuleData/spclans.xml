@@ -141,6 +141,15 @@
            super_faction="Kingdom.bragantia"
            is_noble="true"
            banner_key="8.159.22.1528.1528.764.764.1.0.0.316.123.171.483.483.764.764.1.0.0.125.143.116.281.296.755.777.1.0.0" />
+		   
+    <Faction id="bk_clan_bragantia_2"
+           name="{=!}de Bisco"
+           tier="4"
+           owner="Hero.bk_bragantia_2"
+           culture="Culture.bragantia"
+           super_faction="Kingdom.bragantia"
+           is_noble="true"
+           banner_key="12.22.224.1528.1528.764.764.1.0.0.10055.212.162.483.483.764.764.1.0.0" />
 	
 	<Faction id="bk_clan_massa_1"
            name="{=!}Respendaling"

@@ -21,7 +21,7 @@
       <Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
     </CommonAreas>
   </Settlement>
-  <Settlement id="castle_Isles" name="{=!}Poncta Bisco" owner="Faction.bk_clan_bragantia_1" posX="102.198" posY="341.671" culture="Culture.bragantia" gate_posX="103.0227" gate_posY="340.8208">
+  <Settlement id="castle_Isles" name="{=!}Poncta Bisco" owner="Faction.bk_clan_bragantia_2" posX="102.198" posY="341.671" culture="Culture.bragantia" gate_posX="103.0227" gate_posY="340.8208">
     <Components>
       <Town id="castle_Isles_comp" is_castle="true" level="2" background_crop_position="0.0" background_mesh="gui_bg_castle_vlanda" wait_mesh="wait_vlandia_town" gate_rotation="0.908" prosperity="537" />
     </Components>
@@ -262,7 +262,8 @@
       <Area type="Bog" name="{=iXA5SttU}Bog" />
     </CommonAreas>
   </Settlement>
-  <Settlement id="town_Tihr" name="{=!}Tihr" owner="Faction.bk_clan_jumne_1" posX="172.637" posY="589.918" culture="Culture.nord" gate_posX="170.9158" gate_posY="587.5662" text="{=1SnAH5K8}Rovalatys, in the mountains of the Ebor peninsula, was never fully an imperial town. Nordic migrants, drawn to the region by rumors of riches to be made prospecting for silver or hunting for furs, long outnumbered Calradians even before the Vlandian invasion. The Vlandians too recognized its potential, and despite its harsh winters this land is among the more populous regions of the kingdom, with bountiful fields in the valleys of the mountains feeding the constant flow of settlers from the south drawn here by their hunger for wealth.">
+  <Settlement id="town_Tihr" name="{=!}Tihr" owner="Faction.bk_clan_jumne_1" posX="172.637" posY="589.918" culture="Culture.nord" gate_posX="170.9158" gate_posY="587.5662" 
+			  text="{=!}Tihr was once a fishing settlement of the Jumne, where settlers aimed for Rovalatys would come ashore. For some time, it was under the yoke of the Winlunding, whose migrations overwhelmed the Calradoi occupation. Nevertheless, some Jumne population already existed within the Ebor peninsula, and both populations were able to cohabitate. Yet, once the Jumne started another mass migration of their own, Tihr was taken from the Wilunding, and expanded into a great port of its own - the main destination for northern settlers to arrive in the continent. Today, the northern Ebor and most of the Bay of Sargot is controlled by Jumne chieftains.">
     <Components>
       <Town id="town_comp_Tihr" is_castle="false" level="1" background_crop_position="0.0" background_mesh="gui_bg_town_sturgia" wait_mesh="wait_sturgia_town" gate_rotation="0.808" prosperity="2800" />
     </Components>
@@ -1345,7 +1346,7 @@
       <Area type="Bog" name="{=iXA5SttU}Bog" />
     </CommonAreas>
   </Settlement>
-  <Settlement id="town_Geroia_1" name="{=!}Zaharra Gero Hiria" owner="Faction.bk_clan_geroia_3" posX="432.274" posY="244.813" culture="Culture.geroia" gate_posX="433.9463" gate_posY="240.267" text="{=!}">
+  <Settlement id="town_Geroia_1" name="{=!}Zaharra Gero Hiria" owner="Faction.bk_clan_geroia_3" posX="432.6267" posY="245.7047" culture="Culture.geroia" gate_posX="434.299" gate_posY="241.1587" text="{=!}">
     <Components>
       <Town id="town_Geroia_1_comp" is_castle="false" level="3" background_crop_position="0.0" background_mesh="menu_empire_3" wait_mesh="wait_empire_town" gate_rotation="0.108" prosperity="5200" />
     </Components>
