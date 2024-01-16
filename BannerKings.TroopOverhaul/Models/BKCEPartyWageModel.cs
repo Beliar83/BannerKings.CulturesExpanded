@@ -33,7 +33,7 @@ namespace BannerKings.CulturesExpanded.Models
         {
             float cost = base.GetTroopRecruitmentCost(troop, buyerHero, withoutItemCost);
 
-            if (buyerHero.Culture.HasFeat(BKCEFeats.Instance.Siri1))
+            if (buyerHero != null && buyerHero.Culture.HasFeat(BKCEFeats.Instance.Siri1))
             {
                 if (!troop.HasMount() && troop.Equipment.HasWeaponOfClass(WeaponClass.Bow))
                 {
