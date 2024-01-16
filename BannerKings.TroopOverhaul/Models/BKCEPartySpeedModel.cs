@@ -5,6 +5,8 @@ using TaleWorlds.Core;
 using TaleWorlds.Localization;
 using BannerKings.Settings;
 using BannerKings.CulturesExpanded.Cultures;
+using TaleWorlds.CampaignSystem.ComponentInterfaces;
+using Helpers;
 
 namespace BannerKings.CulturesExpanded.Models
 {
@@ -34,6 +36,17 @@ namespace BannerKings.CulturesExpanded.Models
             }
 
             ExplainedNumber newFinalSpeed = base.CalculateFinalSpeed(mobileParty, finalSpeed);
+
+            if (PartyBaseHelper.HasFeat(mobileParty.Party, BKCEFeats.Instance.Vakken2))
+            {
+                MapWeatherModel.WeatherEvent weatherEventInPosition = TaleWorlds.CampaignSystem.Campaign.Current.Models.MapWeatherModel
+                               .GetWeatherEventInPosition(mobileParty.Position2D);
+                if (weatherEventInPosition == MapWeatherModel.WeatherEvent.Snowy || weatherEventInPosition == MapWeatherModel.WeatherEvent.Blizzard)
+                {
+                    finalSpeed.AddFactor(0.1f, GameTexts.FindText("str_culture"));
+                }
+            }
+
             return newFinalSpeed;
         }
     }

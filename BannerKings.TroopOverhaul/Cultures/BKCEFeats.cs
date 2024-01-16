@@ -62,28 +62,28 @@ namespace BannerKings.CulturesExpanded.Cultures
                 "{=!}Paighanan: Darshi infantry take 30% more experience to upgrade.",
                 0.3f,
                 false,
-                FeatObject.AdditionType.Add);
+                FeatObject.AdditionType.AddFactor);
 
             Kannic1 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_kannic_troops"));
             Kannic1.Initialize("BKCE_kannic_troops",
                 "{=!}Mercenary Reliance: Volunteers cost more upkeep and replenish slower (10%).",
-                0.15f,
+                0.1f,
                 false,
-                FeatObject.AdditionType.Add);
+                FeatObject.AdditionType.AddFactor);
 
             Megalopolis = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_megalopolis"));
             Megalopolis.Initialize("BKCE_megalopolis",
                 "{=!}Megalopolis Tradition: Cities have 30% more population capacity.",
-                0.15f,
+                0.3f,
                 true,
-                FeatObject.AdditionType.Add);
+                FeatObject.AdditionType.AddFactor);
 
             SailingSpeed = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_sailing_speed"));
             SailingSpeed.Initialize("BKCE_sailing_speed",
                 "{=!}Naval Tradition: Parties are 15% faster while sailing. No morale penalty while sailing.",
                 0.15f,
                 true,
-                FeatObject.AdditionType.Add);
+                FeatObject.AdditionType.AddFactor);
 
             SailingBattle = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_sailing_battle"));
             SailingBattle.Initialize("BKCE_sailing_battle",
@@ -95,7 +95,7 @@ namespace BannerKings.CulturesExpanded.Cultures
             VillageMilitia = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_village_militia"));
             VillageMilitia.Initialize("BKCE_village_militia",
                 "{=!}Village Militia Tradition: Villages produce +2 militia.",
-                0.2f,
+                2f,
                 true,
                 FeatObject.AdditionType.Add);
 
@@ -109,23 +109,23 @@ namespace BannerKings.CulturesExpanded.Cultures
             Bragantia1 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_bragantia_production"));
             Bragantia1.Initialize("BKCE_bragantia_production",
                 "{=!}Biscanian Tradition: cattle, grape and olive villages are 30% more productive.",
-                0.2f,
+                0.3f,
                 true,
-                FeatObject.AdditionType.Add);
+                FeatObject.AdditionType.AddFactor);
 
             Empire1 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_empire_production"));
             Empire1.Initialize("BKCE_empire_production",
                 "{=!}Calradoi Tradition: livestock and olive villages are 20% more productive.",
                 0.2f,
                 true,
-                FeatObject.AdditionType.Add);
+                FeatObject.AdditionType.AddFactor);
 
             Vakken1 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_vakken_production"));
             Vakken1.Initialize("BKCE_vakken_production",
                 "{=!}Meccastaaja Tradition: villages produce 20% more furs, wood and honey.",
                 0.2f,
                 true,
-                FeatObject.AdditionType.Add);
+                FeatObject.AdditionType.AddFactor);
 
             Vakken2 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_vakken_snow"));
             Vakken2.Initialize("BKCE_vakken_snow",
@@ -137,16 +137,16 @@ namespace BannerKings.CulturesExpanded.Cultures
             Vakken3 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_vakken_swidden"));
             Vakken3.Initialize("BKCE_vakken_swidden",
                 "{=!}Swidden Agriculture: Agriculture and livestock villages are 30% less productive.",
-                0.2f,
+                -0.3f,
                 true,
-                FeatObject.AdditionType.Add);
+                FeatObject.AdditionType.AddFactor);
 
             SouthernAgriculture = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_south_production"));
             SouthernAgriculture.Initialize("BKCE_south_production",
                 "{=!}Agriculture Tradition: 25% production bonus to grains, papyrus and dates.",
                 0.25f,
                 true,
-                FeatObject.AdditionType.Add);
+                FeatObject.AdditionType.AddFactor);
 
             Siri1 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_siri_archers"));
             Siri1.Initialize("BKCE_siri_archers",

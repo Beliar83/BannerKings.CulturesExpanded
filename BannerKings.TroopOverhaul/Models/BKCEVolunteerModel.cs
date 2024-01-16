@@ -2,6 +2,7 @@
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.CampaignSystem;
 using BannerKings.CulturesExpanded.Religions;
+using BannerKings.CulturesExpanded.Cultures;
 
 namespace BannerKings.CulturesExpanded.Models
 {
@@ -19,6 +20,14 @@ namespace BannerKings.CulturesExpanded.Models
                 }
             }
 
+            return result;
+        }
+
+        public override ExplainedNumber GetDraftEfficiency(Hero hero, Settlement settlement)
+        {
+            ExplainedNumber result = base.GetDraftEfficiency(hero, settlement);
+
+            Utils.Helpers.ApplyFeat(BKCEFeats.Instance.Demobilization, settlement.Party, ref result);
             return result;
         }
     }

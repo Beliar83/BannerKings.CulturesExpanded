@@ -1,5 +1,6 @@
 ﻿using BannerKings.CulturesExpanded.Cultures;
 using BannerKings.Models.Vanilla;
+using Helpers;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
@@ -18,6 +19,11 @@ namespace BannerKings.CulturesExpanded.Models
                 {
                     wage.AddFactor(0.25f, new TaleWorlds.Localization.TextObject("{=!}Sailing"));
                 }
+            }
+
+            if (PartyBaseHelper.HasFeat(mobileParty.Party, BKCEFeats.Instance.Kannic1))
+            {
+                wage.AddFactor(BKCEFeats.Instance.Kannic1.EffectBonus, GameTexts.FindText("str_culture"));
             }
 
             return wage;

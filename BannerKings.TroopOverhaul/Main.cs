@@ -27,6 +27,7 @@ namespace BannerKings.CulturesExpanded
             }
 
             campaignStarter.AddBehavior(new CrownGuardBehavior());
+            campaignStarter.AddBehavior(new FeatBehavior());
 
             campaignStarter.AddModel(new BKCEInfluenceModel());
             campaignStarter.AddModel(new BKCELoyaltyModel());
@@ -43,6 +44,10 @@ namespace BannerKings.CulturesExpanded
             campaignStarter.AddModel(new BKCEVillageProductionModel());
             campaignStarter.AddModel(new BKCEEconomyModel());
             campaignStarter.AddModel(new BKCEMilitiaModel());
+            campaignStarter.AddModel(new BKCERaidModel());
+            campaignStarter.AddModel(new BKCEPartyWageModel());
+            campaignStarter.AddModel(new BKCEBattleSimulationModel());
+            campaignStarter.AddModel(new BKCEPartyFoodModel()); 
 
             BannerKingsConfig.Instance.AddInitializer(BKTORecruitSpawns.Instance);
             BannerKingsConfig.Instance.AddInitializer(BKCEPopulationNames.Instance);
@@ -59,6 +64,7 @@ namespace BannerKings.CulturesExpanded
             BannerKingsConfig.Instance.CultureModel = new BKCECultureModel();
             BannerKingsConfig.Instance.ReligionModel = new BKCEReligionModel();
             BannerKingsConfig.Instance.LegitimacyModel = new BKCELegitimacyModel();
+            BannerKingsConfig.Instance.GrowthModel = new BKCEGrowthModel();
 
             BKCEFeats.Instance.Initialize();
             BannerKingsConfig.Instance.TitlesGeneratorPath = BasePath.Name + "Modules/BannerKings.CulturesExpanded/ModuleData/titles.xml";
