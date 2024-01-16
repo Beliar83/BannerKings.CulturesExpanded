@@ -610,7 +610,7 @@
   </NPCCharacter>
 
   
-  <NPCCharacter id="bk_battanian_sergeant_spear" default_group="Infantry" level="21" name="{=!}Battanian Picked Warrior" occupation="Soldier" culture="Culture.battania">
+  <NPCCharacter id="bk_battanian_sergeant_spear" default_group="Infantry" level="21" name="{=!}Battanian Picked Lineman" occupation="Soldier" culture="Culture.battania">
     <face>
       <face_key_template value="BodyProperty.fighter_battania" />
     </face>

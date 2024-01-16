@@ -6,15 +6,15 @@
     <face>
       <face_key_template value="BodyProperty.fighter_siri" />
     </face>
-    <skills>
-      <skill id="Athletics" value="110" />
-      <skill id="Riding" value="170" />
-      <skill id="OneHanded" value="120" />
-      <skill id="TwoHanded" value="50" />
-      <skill id="Polearm" value="200" />
-      <skill id="Bow" value="50" />
+     <skills>
+      <skill id="Athletics" value="180" />
+      <skill id="Riding" value="100" />
+      <skill id="OneHanded" value="80" />
+      <skill id="TwoHanded" value="150" />
+      <skill id="Polearm" value="160" />
+      <skill id="Bow" value="200" />
       <skill id="Crossbow" value="50" />
-      <skill id="Throwing" value="100" />
+      <skill id="Throwing" value="50" />
     </skills>
     <upgrade_targets>
     </upgrade_targets>
@@ -90,15 +90,15 @@
     <face>
       <face_key_template value="BodyProperty.fighter_siri" />
     </face>
-    <skills>
-      <skill id="Athletics" value="100" />
-      <skill id="Riding" value="140" />
-      <skill id="OneHanded" value="100" />
+   <skills>
+      <skill id="Athletics" value="150" />
+      <skill id="Riding" value="80" />
+      <skill id="OneHanded" value="70" />
       <skill id="TwoHanded" value="40" />
-      <skill id="Polearm" value="160" />
-      <skill id="Bow" value="40" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="160" />
       <skill id="Crossbow" value="40" />
-      <skill id="Throwing" value="80" />
+      <skill id="Throwing" value="40" />
     </skills>
     <upgrade_targets>
       <upgrade_target id="NPCCharacter.bk_siri_kandi" />
