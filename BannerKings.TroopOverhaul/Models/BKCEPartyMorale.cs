@@ -42,7 +42,7 @@ namespace BannerKings.CulturesExpanded.Models
                 if (mobileParty.ActualClan.Culture.HasFeat(BKCEFeats.Instance.SailingSpeed) &&
                     TaleWorlds.CampaignSystem.Campaign.Current.MapSceneWrapper.GetFaceTerrainType(mobileParty.CurrentNavigationFace) == TerrainType.Swamp)
                 {
-                    result.AddFactor(-12f, new TaleWorlds.Localization.TextObject("{=!}Sailing"));
+                    result.Add(-12f, new TaleWorlds.Localization.TextObject("{=!}Sailing"));
                 }
             }
 
