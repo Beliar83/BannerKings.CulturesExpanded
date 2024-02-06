@@ -50,7 +50,7 @@ namespace BannerKings.Managers.Goals.Decisions
         public AseraiEmpireGoal() : base("goal_aserai_empire", GoalCategory.Unique, GoalUpdateType.Settlement)
         {
             var name = new TextObject("{=!}Form al-Khilaafa al-Aserai");
-            var description = new TextObject("{=!}Consolidate the Wilunding claim in the Calradian continent by forming the first Wilunding Bretwalda, the old Wilunding term for a great kingdom. The Bretwalda shall contain all of the land originally conceded to the Wilunding, as well as their own colonies and recent conquests within the western hemisphere.{newline}{newline}");
+            var description = new TextObject("{=!}Reaffirm the Nahasawi dominion over the Nahasa. Though they have not built the cities they now inhabit, they have claimed and rightfully conquered them from their oponents.{newline}{newline}");
 
             Initialize(name, description);
         }

@@ -15,25 +15,26 @@ namespace BannerKings.CulturesExpanded.Goals
     public class DarshiEmpireGoal : EmpireGoal
     {
         public override List<string> SettlementIds => new List<string> {
-                "castle_V1",
-                "castle_V2",
-                "castle_V3",
-                "castle_V4",
-                "castle_V6",
-                "castle_V7",
-                "castle_V8",
-                "town_V1",
-                "town_V2",
-                "town_V3",
-                "town_V5",
-                "town_V6",
-                "town_V7",
-                "town_V4",
-                "town_V11",
-                "town_V8",
-                "town_Isles",
-                "castle_Isles",
-                "town_V10"
+                "town_Darshi_1",
+                "town_Darshi_2",
+                "town_Darshi_3",
+                "town_Darshi_4",
+                "town_Darshi_5",
+                "town_Darshi_6",
+                "town_Darshi_7",
+                "castle_Darshi_1",
+                "castle_Darshi_2",
+                "castle_Darshi_3",
+                "castle_Darshi_4",
+                "castle_Darshi_5",
+                "castle_Darshi_6",
+                "castle_Darshi_7",
+                "castle_Darshi_8",
+                "town_K2",
+                "town_K3",
+                "town_K4",
+                "town_K5",
+                "town_K6"
             };
 
         public override string TitleId => "goal_darshi_empire";
