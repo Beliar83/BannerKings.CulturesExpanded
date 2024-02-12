@@ -52,6 +52,15 @@ namespace BannerKings.CulturesExpanded.Models
                 }
             }
 
+            if (owner.Culture.HasFeat(BKCEFeats.Instance.Iltanlar1))
+            {
+                if (village.IsMiningVillage() || village.VillageType == BKVillageTypes.Instance.Limestone ||
+                    village.VillageType == BKVillageTypes.Instance.Marble)
+                {
+                    result *= 1f + BKCEFeats.Instance.Iltanlar1.EffectBonus;
+                }
+            }
+
             return result;
         }
     }

@@ -21,12 +21,8 @@ namespace BannerKings.CulturesExpanded.Models
 
                 if (mobileParty.Army != null) speed.AddFactor(-0.2f, new TextObject("{=!}Sailing army"));
                 else if (mobileParty.IsCaravan) speed.AddFactor(0.12f, new TextObject("{=!}Sailing caravan"));
-
-                string culture = mobileParty.ActualClan != null ? mobileParty.ActualClan.Culture.StringId :
-                    mobileParty.Owner.Culture.StringId;
                 
                 Utils.Helpers.ApplyFeat(BKCEFeats.Instance.SailingSpeed, mobileParty.Party, ref speed);
-
                 if (BannerKingsSettings.Instance.SlowerParties > 0f)
                 {
                     speed.AddFactor(-BannerKingsSettings.Instance.SlowerParties, new TextObject("{=OohdenyR}Slower Parties setting"));
