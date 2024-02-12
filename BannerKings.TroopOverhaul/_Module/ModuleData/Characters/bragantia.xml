@@ -26,7 +26,7 @@
 		  <equipment slot="Item0" id="Item.vlandia_mace_3_t5" />
 		  <equipment slot="Item1" id="Item.AR_vlandian_throwing_spear_2_t4" />
 		  <equipment slot="Item2" id="Item.heavy_heater_shield" />
-		    <equipment slot="Item3" id="Item.AR_western_spear_5_t4" />
+		  <equipment slot="Item3" id="Item.AR_western_spear_5_t4" />
 		</EquipmentRoster>
 		<EquipmentRoster>
 		  <equipment slot="Head" id="Item.tv_vlandia_helmet_k5" />
@@ -36,7 +36,7 @@
 		  <equipment slot="Item0" id="Item.AR_vlandia_axe_5_t5" />
 		  <equipment slot="Item1" id="Item.AR_vlandian_throwing_spear_2_t4" />
 		  <equipment slot="Item2" id="Item.heavy_heater_shield" />
-		    <equipment slot="Item3" id="Item.AR_western_spear_5_t4" />
+		  <equipment slot="Item3" id="Item.AR_western_spear_5_t4" />
 		</EquipmentRoster>
 		<EquipmentRoster>
 		  <equipment slot="Head" id="Item.tv_vlandia_helmet_k4" />
@@ -47,7 +47,7 @@
 		  <equipment slot="Item0" id="Item.vlandia_mace_3_t5" />
 		  <equipment slot="Item1" id="Item.AR_vlandian_throwing_spear_2_t4" />
 		  <equipment slot="Item2" id="Item.heavy_heater_shield" />
-		    <equipment slot="Item3" id="Item.AR_western_spear_5_t4" />
+		  <equipment slot="Item3" id="Item.AR_western_spear_5_t4" />
 		</EquipmentRoster>
 		<EquipmentRoster>
 		  <equipment slot="Head" id="Item.tv_vlandia_helmet_t4" />
@@ -57,7 +57,7 @@
 		  <equipment slot="Item0" id="Item.vlandia_mace_3_t5" />
 		  <equipment slot="Item1" id="Item.AR_vlandian_throwing_spear_2_t4" />
 		  <equipment slot="Item2" id="Item.heavy_heater_shield" />
-		    <equipment slot="Item3" id="Item.western_spear_4_t4" />
+		  <equipment slot="Item3" id="Item.western_spear_4_t4" />
 		</EquipmentRoster>	
 		<EquipmentRoster>
 		  <equipment slot="Head" id="Item.tv_vlandia_lord_helmet_f" />
@@ -67,7 +67,7 @@
 		  <equipment slot="Item0" id="Item.vlandia_sword_5_t5" />
 		  <equipment slot="Item1" id="Item.AR_vlandian_throwing_spear_2_t4" />
 		  <equipment slot="Item2" id="Item.heavy_heater_shield" />
-		    <equipment slot="Item3" id="Item.western_spear_4_t4" />
+		  <equipment slot="Item3" id="Item.western_spear_4_t4" />
 		</EquipmentRoster>	
 		<EquipmentRoster>
 		  <equipment slot="Head" id="Item.tv_vlandia_lord_helmet_f2" />
@@ -333,7 +333,7 @@
   <NPCCharacter id="bk_bragantia_levy"
                 default_group="Infantry"
                 level="11"
-                name="{=!}Bragantjan Levy"
+                name="{=!}Biscanjan Levy"
                 occupation="Soldier"
                 culture="Culture.bragantia"
 				is_basic_troop="true"
