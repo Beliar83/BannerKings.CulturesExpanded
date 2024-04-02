@@ -2,16 +2,8 @@
 
 <base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
 	<titles autoGenerate="true">
-		<kingdom faction="vlandia" government="Tribal" succession="WilundingElective" inheritance="Seniority" genderLaw="Agnatic" deJure="lord_4_1">
-			<duchy name="{=kS1GtIuD}Sargotha" deJure="lord_4_1">
-				<county settlement="town_V1" deJure="lord_4_1">
-					<barony settlement="castle_V7" deJure="lord_4_1" />
-				</county>
-				<county settlement="town_V7" deJure="lord_4_16">
-					<barony settlement="castle_V1" deJure="lord_V11_l" />
-				</county>
-			</duchy>
-			<duchy name="{=pTPcS7UL}Biscanend" deJure="lord_4_6">
+		<kingdom faction="vlandia" id="vlandia" fullName="{=faction_vlandia}Wilundinga Ríce" government="Feudal" succession="WilundingElective" inheritance="Seniority" genderLaw="Agnatic" deJure="lord_4_1">
+			<duchy name="{=duchy_biscania}Biscania" deJure="lord_4_6">
 				<county settlement="town_V6" deJure="lord_4_6" />
 				<county settlement="town_V5" deJure="lord_4_1">
 					<barony settlement="castle_V2" deJure="lord_4_27" />
@@ -20,28 +12,48 @@
 					<barony settlement="castle_Isles" deJure="bk_bragantia_1" />
 				</county>
 			</duchy>
-			<duchy name="{=VkkdAZ6s}Paravenon" deJure="lord_4_3">
-				<county settlement="town_V4" deJure="lord_4_3">
-					<barony settlement="castle_V3" deJure="lord_4_3" />
+			<duchy name="{=duchy_epir}Epiria" deJure="lord_4_16">
+				<county settlement="town_V1" deJure="lord_4_1">
+					<barony settlement="castle_V1" deJure="lord_V11_l" />
 				</county>
-				<county settlement="town_V3" deJure="lord_4_22"/>
+				<county settlement="town_V7" deJure="lord_4_16">
+					<barony settlement="castle_V9" deJure="lord_4_6" />
+				</county>
+			</duchy>
+			<duchy name="{=duchy_rhennod}Rhennod" deJure="lord_4_23">
+				<county settlement="town_V10" deJure="lord_4_21">
+					<barony settlement="castle_V7" deJure="lord_4_1" />
+				</county>
 				<county settlement="town_V2" deJure="lord_4_23">
 					<barony settlement="castle_V8" deJure="lord_4_23" />
 				</county>
 			</duchy>
-			<duchy name="{=l8d0pJII}Eborend" deJure="bk_jumne_1">
-				<county settlement="town_V9" deJure="bk_jumne_2">
-					<barony settlement="castle_V4" deJure="lord_4_28" />
-					<barony settlement="castle_V6" deJure="lord_4_22" />
+			<duchy name="{=duchy_trand}Trand" deJure="lord_4_21">
+				<county settlement="town_V4" deJure="lord_4_21">
+					<barony settlement="castle_V3" deJure="lord_4_21" />
 				</county>
+				<county settlement="town_V3" deJure="lord_4_22"/>
+			</duchy>
+		</kingdom>
+		
+		<kingdom id="ebor" name="{=duchy_ebor}Eborend" government="Tribal" succession="WilundingElective" inheritance="Seniority" genderLaw="Agnatic">
+			<duchy name="{=duchy_north_rhennod}Northónn Rhennod" deJure="bk_jumne_1">
 				<county settlement="town_V8" deJure="bk_jumne_2"/>
 				<county settlement="town_Tihr" deJure="bk_jumne_1">
 					<barony settlement="castle_V5" deJure="bk_jumne_1" />
 				</county>
 			</duchy>
+			<duchy name="{=duchy_ebor}Eborend">
+				<county settlement="town_V9" deJure="bk_jumne_3">
+					<barony settlement="castle_V4" deJure="lord_4_28" />
+				</county>
+				<county settlement="town_V11" deJure="bk_jumne_2">
+					<barony settlement="castle_V6" deJure="bk_jumne_2" />
+				</county>
+			</duchy>
 		</kingdom>
 		
-		<duchy name="{=!}Niuja Landa" government="Tribal" succession="WilundingElective" inheritance="Seniority" genderLaw="Agnatic" deJure="bk_massa_1">
+		<duchy name="{=duchy_massa}Ansiwe Fragifts" government="Tribal" succession="WilundingElective" inheritance="Seniority" genderLaw="Agnatic" deJure="bk_massa_1">
 			<county settlement="town_Massa_2" deJure="bk_massa_1">
 				<barony settlement="castle_Massa_1" deJure="bk_massa_3" />
 			</county>
