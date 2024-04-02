@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using BannerKings.CulturesExpanded.CC;
 using HarmonyLib;
+using BannerKings.Managers.Recruits;
 
 namespace BannerKings.CulturesExpanded
 {
@@ -28,6 +29,7 @@ namespace BannerKings.CulturesExpanded
 
             campaignStarter.AddBehavior(new CrownGuardBehavior());
             campaignStarter.AddBehavior(new FeatBehavior());
+            //campaignStarter.AddBehavior(new DryaticBehavior());
 
             campaignStarter.AddModel(new BKCEInfluenceModel());
             campaignStarter.AddModel(new BKCELoyaltyModel());
@@ -47,9 +49,10 @@ namespace BannerKings.CulturesExpanded
             campaignStarter.AddModel(new BKCERaidModel());
             campaignStarter.AddModel(new BKCEPartyWageModel());
             campaignStarter.AddModel(new BKCEBattleSimulationModel());
-            campaignStarter.AddModel(new BKCEPartyFoodModel()); 
+            campaignStarter.AddModel(new BKCEPartyFoodModel());
+            campaignStarter.AddModel(new BKCEEquipmentModel());
 
-            BannerKingsConfig.Instance.AddInitializer(BKTORecruitSpawns.Instance);
+            BannerKingsConfig.Instance.AddInitializer(BKCERecruitSpawns.Instance);
             BannerKingsConfig.Instance.AddInitializer(BKCEPopulationNames.Instance);
             BannerKingsConfig.Instance.AddInitializer(BKCETitleNames.Instance);
             BannerKingsConfig.Instance.AddInitializer(BKTOGoals.Instance);
@@ -68,6 +71,7 @@ namespace BannerKings.CulturesExpanded
 
             BKCEFeats.Instance.Initialize();
             BannerKingsConfig.Instance.TitlesGeneratorPath = BasePath.Name + "Modules/BannerKings.CulturesExpanded/ModuleData/titles.xml";
+            BannerKingsConfig.Instance.RecruitsXmlPath = BasePath.Name + "Modules/BannerKings.CulturesExpanded/ModuleData/recruits.xml";
         }
 
         protected override void OnSubModuleLoad()

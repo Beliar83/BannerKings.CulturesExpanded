@@ -165,6 +165,24 @@
     <skill id="Throwing"
            value="40" />
   </SkillSet>
+  <SkillSet id="bk_militia_melee_pike_skills">
+    <skill id="Athletics"
+           value="70" />
+    <skill id="Riding"
+           value="10" />
+    <skill id="OneHanded"
+           value="60" />
+    <skill id="TwoHanded"
+           value="20" />
+    <skill id="Polearm"
+           value="110" />
+    <skill id="Bow"
+           value="30" />
+    <skill id="Crossbow"
+           value="30" />
+    <skill id="Throwing"
+           value="40" />
+  </SkillSet>
   
   <SkillSet id="bk_militia_skirmisher_skills">
     <skill id="Athletics"
