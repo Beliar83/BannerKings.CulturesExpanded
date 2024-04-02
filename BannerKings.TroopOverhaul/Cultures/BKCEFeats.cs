@@ -16,6 +16,8 @@ namespace BannerKings.CulturesExpanded.Cultures
         public FeatObject Demobilization { get; set; }
         public FeatObject Bragantia1 { get; set; }
         public FeatObject Empire1 { get; set; }
+        public FeatObject Empire2 { get; set; }
+        public FeatObject Empire3 { get; set; }
         public FeatObject Siri1 { get; set; }
         public FeatObject Megalopolis { get; set; }
         public FeatObject Kannic1 { get; set; }
@@ -24,11 +26,51 @@ namespace BannerKings.CulturesExpanded.Cultures
         public FeatObject Massa2 { get; set; }
         public FeatObject Geroia1 { get; set; }
         public FeatObject Geroia2 { get; set; }
+        public FeatObject Iltanlar1 { get; set; }
+        public FeatObject Iltanlar2 { get; set; }
+        public FeatObject Lokti1 { get; set; }
+        public FeatObject FoodConsumption { get; set; }
+        public FeatObject IndependentLords { get; set; }
 
         public override IEnumerable<FeatObject> All => throw new System.NotImplementedException();
 
         public override void Initialize()
         {
+            IndependentLords = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_independent_lords"));
+            IndependentLords.Initialize("BKCE_independent_lords",
+                "{=!}Independent Lords: Lords are 25% more likely to join rebel groups. Lords tend to like their ruler less.",
+                0.25f,
+                false,
+                FeatObject.AdditionType.AddFactor);
+
+            FoodConsumption = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_food_consumption"));
+            FoodConsumption.Initialize("BKCE_food_consumption",
+                "{=!}Food Rationing Tradition: Fiefs consume 30% less food.",
+                -0.3f,
+                true,
+                FeatObject.AdditionType.AddFactor);
+
+            Lokti1 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_lokti_bandits"));
+            Lokti1.Initialize("BKCE_lokti_bandits",
+                "{=!}Justice Tradition: Fiefs have +1 security.",
+                1f,
+                true,
+                FeatObject.AdditionType.Add);
+
+            Iltanlar1 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_iltanlar_mining"));
+            Iltanlar1.Initialize("BKCE_iltanlar_mining",
+                "{=!}Sulan Daglar Tradition: Mining and Quarry type villages are 30% more productive.",
+                0.3f,
+                true,
+                FeatObject.AdditionType.AddFactor);
+
+            Iltanlar2 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_iltanlar_crafting"));
+            Iltanlar2.Initialize("BKCE_iltanlar_crafting",
+                "{=!}Sulan Daglar Tradition: Mining and Quarry type villages are 30% more productive.",
+                0.3f,
+                true,
+                FeatObject.AdditionType.AddFactor);
+
             Geroia1 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_geroia_trade"));
             Geroia1.Initialize("BKCE_geroia_trade",
                 "{=!}Perassic Tradition: Fiefs have increased trade power (20%).",
@@ -115,8 +157,22 @@ namespace BannerKings.CulturesExpanded.Cultures
 
             Empire1 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_empire_production"));
             Empire1.Initialize("BKCE_empire_production",
-                "{=!}Calradoi Tradition: livestock and olive villages are 20% more productive.",
-                0.2f,
+                "{=!}Calradian Rural Tradition: grain, olive, grape and steed villages are 15% more productive.",
+                0.15f,
+                true,
+                FeatObject.AdditionType.AddFactor);
+
+            Empire2 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_empire_construction"));
+            Empire2.Initialize("BKCE_empire_construction",
+                "{=!}Calradian Masonry Tradition: construction projects are 15% faster.",
+                0.15f,
+                true,
+                FeatObject.AdditionType.AddFactor);
+
+            Empire3 = Game.Current.ObjectManager.RegisterPresumedObject(new FeatObject("BKCE_empire_production"));
+            Empire3.Initialize("BKCE_empire_production",
+                "{=!}Calradian Rural Tradition: grain, olive, grape and steed villages are 15% more productive.",
+                0.15f,
                 true,
                 FeatObject.AdditionType.AddFactor);
 
@@ -201,13 +257,13 @@ namespace BannerKings.CulturesExpanded.Cultures
                 FeatObject.AdditionType.Add);
 
             DefaultCulturalFeats.VlandianCastleVillageProductionFeat.Initialize("{=!}vlandian_villages_production_bonus",
-                "{=!}Buhr Tradition: villages bound to castles (burhs) are 10% more productive.",
+                "{=!}Burh Tradition: villages bound to castles (burhs) are 10% more productive.",
                 0.1f,
                 true,
                 FeatObject.AdditionType.AddFactor);
 
             DefaultCulturalFeats.VlandianRenownMercenaryFeat.Initialize("{=!}vlandian_renown_mercenary_income",
-                "{=!}Mercenary Tradition: 5% more renown from the battles, 15% more income while serving as a mercenary.",
+                "{=!}Wilunding Tradition: 5% more renown from the battles, 15% more income while serving as a mercenary.",
                 0.05f,
                 true,
                 FeatObject.AdditionType.AddFactor);
@@ -220,6 +276,18 @@ namespace BannerKings.CulturesExpanded.Cultures
 
             DefaultCulturalFeats.SturgianArmyCohesionFeat.Initialize("{=!}sturgian_decreased_cohesion_rate",
                 "{=!}Cohesive Leadership: armies lose 20% less daily cohesion.",
+                -0.2f,
+                true,
+                FeatObject.AdditionType.AddFactor);
+
+            DefaultCulturalFeats.EmpireGarrisonWageFeat.Initialize("{=!}empire_decreased_garrison_wage",
+                "{=!}Calradoi Tradition: 20% less garrison troop wage.",
+                -0.2f,
+                true,
+                FeatObject.AdditionType.AddFactor);
+
+            DefaultCulturalFeats.EmpireArmyInfluenceFeat.Initialize("{=!}empire_army_influence",
+                "{=!}Legions Tradition: Being in army brings 25% more influence.",
                 -0.2f,
                 true,
                 FeatObject.AdditionType.AddFactor);
