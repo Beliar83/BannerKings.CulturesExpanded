@@ -56,9 +56,10 @@ namespace BannerKings.CulturesExpanded.Religions
             var siri = Utils.Helpers.GetCulture("siri");
             var swadia = Utils.Helpers.GetCulture("swadia");
             var rhodok = Utils.Helpers.GetCulture("rhodok");
-            var osrickin = Utils.Helpers.GetCulture("osrickin");
             var massa = Utils.Helpers.GetCulture("massa");
             var kannic = Utils.Helpers.GetCulture("kannic");
+            var balion = Utils.Helpers.GetCulture("balion");
+            var geroia = Utils.Helpers.GetCulture("geroia");
 
             Ahhak.Initialize(BKCEFaiths.Instance.Ahhak,
                new List<CultureObject>()
@@ -69,7 +70,7 @@ namespace BannerKings.CulturesExpanded.Religions
             Kannic.Initialize(BKCEFaiths.Instance.Kannic,
                new List<CultureObject>()
                {
-                    kannic
+                    kannic, geroia
                });
 
             ImmortalFlame.Initialize(BKCEFaiths.Instance.ImmortalFlame,
@@ -113,7 +114,7 @@ namespace BannerKings.CulturesExpanded.Religions
                 new List<CultureObject> { imperial });
 
             Osfeyd.Initialize(BKCEFaiths.Instance.Osfeyd,
-                new List<CultureObject> { vlandia, massa });
+                new List<CultureObject> { vlandia, massa, swadia, rhodok, balion });
 
             SixWinds.Initialize(BKCEFaiths.Instance.SixWinds,
                 new List<CultureObject> { khuzait });
