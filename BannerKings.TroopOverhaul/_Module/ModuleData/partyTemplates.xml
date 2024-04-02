@@ -39,6 +39,24 @@
 	</MBPartyTemplate>
 	
 	<MBPartyTemplate
+		id="bk_massa_bandits_party_template">
+		<stacks>
+			<PartyTemplateStack
+				min_value="8"
+				max_value="12"
+				troop="NPCCharacter.bk_massa_bandit" />
+			<PartyTemplateStack
+				min_value="4"
+				max_value="8"
+				troop="NPCCharacter.bk_massa_bandit_raider" />
+			<PartyTemplateStack
+				min_value="2"
+				max_value="4"
+				troop="NPCCharacter.bk_massa_bandit_chief" />
+		</stacks>
+	</MBPartyTemplate>
+	
+	<MBPartyTemplate
 		id="bk_massa_bandits_party_boss_template">
 		<stacks>
 			<PartyTemplateStack
@@ -137,6 +155,42 @@
 				min_value="10"
 				max_value="15"
 				troop="NPCCharacter.bk_massa_squire" />
+		</stacks>
+	</MBPartyTemplate>
+	
+	<MBPartyTemplate
+		id="bk_rhodok_party_template">
+		<stacks>
+			<PartyTemplateStack
+				min_value="15"
+				max_value="20"
+				troop="NPCCharacter.bk_rhodok_sergeant" />
+			<PartyTemplateStack
+				min_value="10"
+				max_value="15"
+				troop="NPCCharacter.bk_rhodok_militiaman_crossbow" />
+			<PartyTemplateStack
+				min_value="10"
+				max_value="15"
+				troop="NPCCharacter.bk_rhodok_squire" />
+		</stacks>
+	</MBPartyTemplate>
+	
+	<MBPartyTemplate
+		id="bk_swadia_party_template">
+		<stacks>
+			<PartyTemplateStack
+				min_value="15"
+				max_value="20"
+				troop="NPCCharacter.bk_swadia_sergeant" />
+			<PartyTemplateStack
+				min_value="10"
+				max_value="15"
+				troop="NPCCharacter.bk_swadia_militiaman_crossbow" />
+			<PartyTemplateStack
+				min_value="10"
+				max_value="15"
+				troop="NPCCharacter.bk_swadia_squire" />
 		</stacks>
 	</MBPartyTemplate>
 	
@@ -281,6 +335,34 @@
 				min_value="1"
 				max_value="1"
 				troop="NPCCharacter.bk_vlandia_levy_crossbow" />
+		</stacks>
+	</MBPartyTemplate>
+	
+	<MBPartyTemplate
+		id="bkce_militia_rhodok_template">
+		<stacks>
+			<PartyTemplateStack
+				min_value="1"
+				max_value="1"
+				troop="NPCCharacter.bk_rhodok_levy" />
+			<PartyTemplateStack
+				min_value="1"
+				max_value="1"
+				troop="NPCCharacter.bk_rhodok_levy_crossbow" />
+		</stacks>
+	</MBPartyTemplate>
+	
+	<MBPartyTemplate
+		id="bkce_militia_swadia_template">
+		<stacks>
+			<PartyTemplateStack
+				min_value="1"
+				max_value="1"
+				troop="NPCCharacter.bk_swadia_levy" />
+			<PartyTemplateStack
+				min_value="1"
+				max_value="1"
+				troop="NPCCharacter.bk_swadia_levy_crossbow" />
 		</stacks>
 	</MBPartyTemplate>
 	
@@ -445,6 +527,48 @@
 				min_value="1"
 				max_value="1"
 				troop="NPCCharacter.bk_massa_levy_sling" />
+		</stacks>
+	</MBPartyTemplate>
+	
+	<MBPartyTemplate
+		id="bkce_militia_lokti_template">
+		<stacks>
+			<PartyTemplateStack
+				min_value="1"
+				max_value="1"
+				troop="NPCCharacter.bk_lokti_levy" />
+			<PartyTemplateStack
+				min_value="1"
+				max_value="1"
+				troop="NPCCharacter.bk_lokti_levy_archer" />
+		</stacks>
+	</MBPartyTemplate>
+	
+	<MBPartyTemplate
+		id="bkce_militia_zendar_template">
+		<stacks>
+			<PartyTemplateStack
+				min_value="1"
+				max_value="1"
+				troop="NPCCharacter.bk_zendar_levy" />
+			<PartyTemplateStack
+				min_value="1"
+				max_value="1"
+				troop="NPCCharacter.bk_zendar_levy_crossbow" />
+		</stacks>
+	</MBPartyTemplate>
+	
+	<MBPartyTemplate
+		id="bkce_militia_iltanlar_template">
+		<stacks>
+			<PartyTemplateStack
+				min_value="1"
+				max_value="1"
+				troop="NPCCharacter.bk_iltanlar_levy" />
+			<PartyTemplateStack
+				min_value="1"
+				max_value="1"
+				troop="NPCCharacter.bk_iltanlar_levy_archer" />
 		</stacks>
 	</MBPartyTemplate>
 </partyTemplates>

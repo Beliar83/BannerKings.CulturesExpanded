@@ -40,11 +40,19 @@
         <xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.bk_imperial_militiaman_archer</xsl:attribute>
     </xsl:template>
 	
+	<xsl:template match="Culture[@id='empire']/@default_party_template">
+        <xsl:attribute name="default_party_template">PartyTemplate.bkce_militia_empire_template</xsl:attribute>
+    </xsl:template>
+	
 	<xsl:template match="Culture[@id='empire']/basic_mercenary_troops">
         <basic_mercenary_troops>
             <template name="NPCCharacter.bk_imperial_mercenary" />
         </basic_mercenary_troops>
     </xsl:template>
+	
+	<xsl:template match="Culture[@id='empire']/@text">
+        <xsl:attribute name="text">The Calradoi are the people of the Empire, though by now they have given their name to the entire continent which they dominate. A thousand years ago, they were an undistinguished tribe living in the hill country between the southern sea and the Battanian woods. One tradition set them apart from their neighbors - the Calradoi had no kings. Their citizenry has always taken an intense interest in the art of self-government, the balance between protecting the liberty of individuals and the needs of the state. Perhaps this is why they had a slight edge in the endless wars between one town and another, keeping armies in the field just a little longer, bouncing back just a little more quickly from a defeat. Some of their neighbors federated with them; others were overrun. Eventually the Calradoi formed an empire, which evolved into a monarchy in all but name. Their leaders are no longer distinguished civic elders but great landholders scattered across the continent; the striking force of their armies is no longer citizen-infantry but heavily armored cataphracts in the retinues of the wealthy. But they still take their civic traditions very seriously, believing that the Calradian ideal can unite a continent in peace, if only the ”barbarians” beyond their borders would agree to submit to it.</xsl:attribute>
+    </xsl:template>	
 	
 	
 
@@ -169,19 +177,14 @@
 
     <xsl:template match="Culture[@id='vlandia']/@basic_troop">
         <xsl:attribute name="basic_troop">NPCCharacter.bk_vlandia_levy</xsl:attribute>
-    </xsl:template>
-	
-	<xsl:template match="Culture[@id='vlandia']/@name">
-        <xsl:attribute name="name">Wilunding</xsl:attribute>
-    </xsl:template>
-	
+    </xsl:template>	
 	
 	<xsl:template match="Culture[@id='vlandia']/@melee_militia_troop">
         <xsl:attribute name="melee_militia_troop">NPCCharacter.bk_vlandia_levy</xsl:attribute>
     </xsl:template>
 
     <xsl:template match="Culture[@id='vlandia']/@ranged_militia_troop">
-        <xsl:attribute name="ranged_militia_troop">NPCCharacter.bk_vlandia_levy_crossbow</xsl:attribute>
+        <xsl:attribute name="ranged_militia_troop">NPCCharacter.bk_vlandia_levy_longbow</xsl:attribute>
     </xsl:template>
 	
 	<xsl:template match="Culture[@id='vlandia']/@melee_elite_militia_troop">
@@ -189,8 +192,12 @@
     </xsl:template>
 
     <xsl:template match="Culture[@id='vlandia']/@ranged_elite_militia_troop">
-        <xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.bk_vlandia_militiaman_crossbow</xsl:attribute>
+        <xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.bk_vlandia_militiaman_longbow</xsl:attribute>
     </xsl:template>
+	
+	<xsl:template match="Culture[@id='vlandia']/@text">
+        <xsl:attribute name="text">Claiming themselves the descendants of Osric Iron-Arm, the Osrickin are one the largest Wilunding tribes that migrated from west-over-seas. Among the original tribes, the Osrickin hold the greatest sway, represented by Derthert dey Meroc, who styles himself 'King of all the Wilunding' - a comfortable lie. Theirs is also the tradition of horsemanship and gallantry, which they hold highest amongst the original tribes. The Osrickin, having consolidated power over the Calradoi, were at the vanguard of reorganizing their kingdom into a feudal, organized structure, rather than a confederation of squabbling tribes. Such ideas were taken from the conquered Calradoi institutions and nobility, many of whom intermarried with the newly-settling Wilunding families - an easier choice than being butchered. Such mixing created a culture and language distinctively divergent from their original Wilunding origins. For relegating the other tribes to inferior positions, as well as their increasingly Calradoi-like tendencies, other Wilunding tribes accuse the Osrickin of betraying tradition, and claim their lineage a farse.</xsl:attribute>
+    </xsl:template>	
 	
 	
 	

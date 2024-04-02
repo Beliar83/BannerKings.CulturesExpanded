@@ -2,33 +2,40 @@
 <Heroes>
 
   <Hero id="bk_darshi_1_1" faction="Faction.bk_clan_darshi_1" text="{=!}" />
-  <Hero id="bk_darshi_1_2" faction="Faction.bk_clan_darshi_2" text="{=!}" />
-  <Hero id="bk_darshi_1_3" faction="Faction.bk_clan_darshi_3" text="{=!}" />
-  <Hero id="bk_darshi_1_4" faction="Faction.bk_clan_darshi_4" text="{=!}" />
-  <Hero id="bk_darshi_1_5" faction="Faction.bk_clan_darshi_5" text="{=!}" />
-  <Hero id="bk_darshi_1_6" faction="Faction.bk_clan_darshi_6" text="{=!}" />
-  <Hero id="bk_darshi_1_7" faction="Faction.bk_clan_darshi_7" text="{=!}" />
-  <Hero id="bk_darshi_1_8" faction="Faction.bk_clan_darshi_8" text="{=!}" />
-  <Hero id="bk_darshi_1_9" faction="Faction.bk_clan_darshi_9" text="{=!}" />
-  <Hero id="bk_darshi_10_1" faction="Faction.bk_clan_darshi_10" text="{=!}" />
-  
+  <Hero id="bk_darshi_1_2" faction="Faction.bk_clan_darshi_1" text="{=!}" father="Hero.bk_darshi_1_1" />
+  <Hero id="bk_darshi_1_3" faction="Faction.bk_clan_darshi_1" text="{=!}" father="Hero.bk_darshi_1_1" />
   <Hero id="lord_1_14"
 		faction="Faction.clan_empire_south_1"
 		father="Hero.bk_darshi_1_1"
 		text="{=uX0dbuLa}The southern third of the Empire is ruled by Rhagaea, widow of the murdered emperor. For her, politics is personal: all men want their families to inherit what they have, and if you loved Arenicos then you will support the rights of his heirs. Arenicos was indeed loved, and also there are some Calradians who believe that the endless squabbling and civil wars can only be overcome by a king, or, if necessary, by a queen. " />
 
   
+  <Hero id="bk_darshi_2_1" faction="Faction.bk_clan_darshi_2" text="{=!}" />
+  <Hero id="bk_darshi_3_1" faction="Faction.bk_clan_darshi_3" text="{=!}" />
+  <Hero id="bk_darshi_4_1" faction="Faction.bk_clan_darshi_4" text="{=!}" />
+  <Hero id="bk_darshi_5_1" faction="Faction.bk_clan_darshi_5" text="{=!}" />
+  <Hero id="bk_darshi_6_1" faction="Faction.bk_clan_darshi_6" text="{=!}" />
+  <Hero id="bk_darshi_7_1" faction="Faction.bk_clan_darshi_7" text="{=!}" />
+  <Hero id="bk_darshi_8_1" faction="Faction.bk_clan_darshi_8" text="{=!}" />
+  <Hero id="bk_darshi_9_1" faction="Faction.bk_clan_darshi_9" text="{=!}" />
+  <Hero id="bk_darshi_10_1" faction="Faction.bk_clan_darshi_10" text="{=!}" />
+  
+  
+  
   <Hero id="bk_jumne_1" faction="Faction.bk_clan_jumne_1" text="{=!}" />
   <Hero id="bk_jumne_2" faction="Faction.bk_clan_jumne_2" text="{=!}" />
   <Hero id="bk_jumne_3" faction="Faction.bk_clan_jumne_3" text="{=!}" />
   <Hero id="bk_jumne_4" faction="Faction.bk_clan_jumne_4" text="{=!}" />
   <Hero id="bk_jumne_5" faction="Faction.bk_clan_jumne_5" text="{=!}" />
+  <Hero id="bk_jumne_6" faction="Faction.bk_clan_jumne_6" text="{=!}" />
+  <Hero id="bk_jumne_7" faction="Faction.bk_clan_jumne_7" text="{=!}" />
   
   <Hero id="bk_zendar_1" faction="Faction.bk_clan_zendar" text="{=!}" />
   
   <Hero id="bk_vakken_1" faction="Faction.bk_clan_vakken" text="{=!}" />
   <Hero id="bk_vakken_2" faction="Faction.bk_clan_vakken_2" text="{=!}" />
   <Hero id="bk_vakken_3" faction="Faction.bk_clan_vakken_3" text="{=!}" />
+  <Hero id="bk_vakken_4" faction="Faction.bk_clan_vakken_4" text="{=!}" />
   
   <Hero id="bk_geroia_1" faction="Faction.bk_clan_geroia_1" text="{=!}" />
   <Hero id="bk_geroia_2" faction="Faction.bk_clan_geroia_2" text="{=!}" />
@@ -40,7 +47,11 @@
   <Hero id="bk_kannic_2" faction="Faction.bk_clan_kannic_2" text="{=!}" />
   
   <Hero id="bk_massa_1" faction="Faction.bk_clan_massa_1" text="{=!}" /> 
+  <Hero id="bk_massa_1_1" faction="Faction.bk_clan_massa_1" text="{=!}" father="Hero.bk_massa_1" /> 
+  <Hero id="bk_massa_1_2" faction="Faction.bk_clan_massa_1" text="{=!}" father="Hero.bk_massa_1" /> 
+  
   <Hero id="bk_massa_2" faction="Faction.bk_clan_massa_2" text="{=!}" />
+  <Hero id="bk_massa_3" faction="Faction.bk_clan_massa_3" text="{=!}" />
   
   <Hero id="bk_siri_1" faction="Faction.bk_clan_siri_1" text="{=!}" /> 
   <Hero id="bk_siri_2" faction="Faction.bk_clan_siri_2" text="{=!}" />
@@ -48,7 +59,18 @@
   <Hero id="bk_siri_4" faction="Faction.bk_clan_siri_4" text="{=!}" /> 
   
   <Hero id="bk_bragantia_1" faction="Faction.bk_clan_bragantia_1" text="{=!}" /> 
+  <Hero id="bk_bragantia_1_1" faction="Faction.bk_clan_bragantia_1" text="{=!}" father="Hero.bk_bragantia_1" /> 
+  <Hero id="bk_bragantia_1_2" faction="Faction.bk_clan_bragantia_1" text="{=!}" father="Hero.bk_bragantia_1" /> 
+  
   <Hero id="bk_bragantia_2" faction="Faction.bk_clan_bragantia_2" text="{=!}" /> 
+  
+  <Hero id="bk_lokti_1" faction="Faction.bk_clan_lokti_1" text="{=!}" /> 
+  <Hero id="bk_lokti_2" faction="Faction.bk_clan_lokti_2" text="{=!}" /> 
+  <Hero id="bk_lokti_3" faction="Faction.bk_clan_lokti_3" text="{=!}" /> 
+  <Hero id="bk_lokti_4" faction="Faction.bk_clan_lokti_4" text="{=!}" />
+  
+  <Hero id="bk_iltanlar_1" faction="Faction.bk_clan_iltanlar_1" text="{=!}" /> 
+  <Hero id="bk_iltanlar_2" faction="Faction.bk_clan_iltanlar_2" text="{=!}" /> 
   
 
 </Heroes>
