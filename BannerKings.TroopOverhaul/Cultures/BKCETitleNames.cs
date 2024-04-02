@@ -20,6 +20,17 @@ namespace BannerKings.CulturesExpanded.Cultures
         public CulturalTitleName EmpireKnight { get; private set; }
         #endregion Empire
 
+        #region Zendar
+        public CulturalTitleName ZendarEmperor { get; private set; }
+        public CulturalTitleName ZendarKing { get; private set; }
+        public CulturalTitleName ZendarDuke { get; private set; }
+        public CulturalTitleName ZendarCount { get; private set; }
+        public CulturalTitleName ZendarBaron { get; private set; }
+        public CulturalTitleName ZendarLord { get; private set; }
+        public CulturalTitleName ZendarPrince { get; private set; }
+        public CulturalTitleName ZendarKnight { get; private set; }
+        #endregion Zendar
+
         #region Aserai
         public CulturalTitleName AseraiEmperor { get; private set; }
         public CulturalTitleName AseraiKing { get; private set; }
@@ -53,6 +64,39 @@ namespace BannerKings.CulturesExpanded.Cultures
         public CulturalTitleName VlandiaKnight { get; private set; }
         #endregion Vlandia
 
+        #region Balion
+        public CulturalTitleName BalionEmperor { get; private set; }
+        public CulturalTitleName BalionKing { get; private set; }
+        public CulturalTitleName BalionDuke { get; private set; }
+        public CulturalTitleName BalionCount { get; private set; }
+        public CulturalTitleName BalionBaron { get; private set; }
+        public CulturalTitleName BalionLord { get; private set; }
+        public CulturalTitleName BalionPrince { get; private set; }
+        public CulturalTitleName BalionKnight { get; private set; }
+        #endregion Balion
+
+        #region Swadia
+        public CulturalTitleName SwadiaEmperor { get; private set; }
+        public CulturalTitleName SwadiaKing { get; private set; }
+        public CulturalTitleName SwadiaDuke { get; private set; }
+        public CulturalTitleName SwadiaCount { get; private set; }
+        public CulturalTitleName SwadiaBaron { get; private set; }
+        public CulturalTitleName SwadiaLord { get; private set; }
+        public CulturalTitleName SwadiaPrince { get; private set; }
+        public CulturalTitleName SwadiaKnight { get; private set; }
+        #endregion Swadia
+
+        #region Rhodok
+        public CulturalTitleName RhodokEmperor { get; private set; }
+        public CulturalTitleName RhodokKing { get; private set; }
+        public CulturalTitleName RhodokDuke { get; private set; }
+        public CulturalTitleName RhodokCount { get; private set; }
+        public CulturalTitleName RhodokBaron { get; private set; }
+        public CulturalTitleName RhodokLord { get; private set; }
+        public CulturalTitleName RhodokPrince { get; private set; }
+        public CulturalTitleName RhodokKnight { get; private set; }
+        #endregion Rhodok
+
         #region Sturgia
         public CulturalTitleName SturgiaEmperor { get; private set; }
         public CulturalTitleName SturgiaKing { get; private set; }
@@ -74,6 +118,17 @@ namespace BannerKings.CulturesExpanded.Cultures
         public CulturalTitleName KhuzaitPrince { get; private set; }
         public CulturalTitleName KhuzaitKnight { get; private set; }
         #endregion Khuzait
+
+        #region Iltanlar
+        public CulturalTitleName IltanlarEmperor { get; private set; }
+        public CulturalTitleName IltanlarKing { get; private set; }
+        public CulturalTitleName IltanlarDuke { get; private set; }
+        public CulturalTitleName IltanlarCount { get; private set; }
+        public CulturalTitleName IltanlarBaron { get; private set; }
+        public CulturalTitleName IltanlarLord { get; private set; }
+        public CulturalTitleName IltanlarPrince { get; private set; }
+        public CulturalTitleName IltanlarKnight { get; private set; }
+        #endregion Iltanlar
 
         #region Darshi
         public CulturalTitleName DarshiEmperor { get; private set; }
@@ -152,6 +207,17 @@ namespace BannerKings.CulturesExpanded.Cultures
         public CulturalTitleName BragantiaKnight { get; private set; }
         #endregion Bragantia
 
+        #region Lokti
+        public CulturalTitleName LoktiEmperor { get; private set; }
+        public CulturalTitleName LoktiKing { get; private set; }
+        public CulturalTitleName LoktiDuke { get; private set; }
+        public CulturalTitleName LoktiCount { get; private set; }
+        public CulturalTitleName LoktiBaron { get; private set; }
+        public CulturalTitleName LoktiLord { get; private set; }
+        public CulturalTitleName LoktiPrince { get; private set; }
+        public CulturalTitleName LoktiKnight { get; private set; }
+        #endregion Lokti
+
         public override IEnumerable<CulturalTitleName> All
         {
             get
@@ -183,6 +249,15 @@ namespace BannerKings.CulturesExpanded.Cultures
                 yield return KhuzaitPrince;
                 yield return KhuzaitKnight;
 
+                yield return IltanlarEmperor;
+                yield return IltanlarKing;
+                yield return IltanlarDuke;
+                yield return IltanlarCount;
+                yield return IltanlarBaron;
+                yield return IltanlarLord;
+                yield return IltanlarPrince;
+                yield return IltanlarKnight;
+
                 yield return SturgiaEmperor;
                 yield return SturgiaKing;
                 yield return SturgiaDuke;
@@ -201,6 +276,33 @@ namespace BannerKings.CulturesExpanded.Cultures
                 yield return VlandiaPrince;
                 yield return VlandiaKnight;
 
+                yield return BalionEmperor;
+                yield return BalionKing;
+                yield return BalionDuke;
+                yield return BalionCount;
+                yield return BalionBaron;
+                yield return BalionLord;
+                yield return BalionPrince;
+                yield return BalionKnight;
+
+                yield return SwadiaEmperor;
+                yield return SwadiaKing;
+                yield return SwadiaDuke;
+                yield return SwadiaCount;
+                yield return SwadiaBaron;
+                yield return SwadiaLord;
+                yield return SwadiaPrince;
+                yield return SwadiaKnight;
+
+                yield return RhodokEmperor;
+                yield return RhodokKing;
+                yield return RhodokDuke;
+                yield return RhodokCount;
+                yield return RhodokBaron;
+                yield return RhodokLord;
+                yield return RhodokPrince;
+                yield return RhodokKnight;
+
                 yield return EmpireEmperor;
                 yield return EmpireKing;
                 yield return EmpireDuke;
@@ -209,6 +311,15 @@ namespace BannerKings.CulturesExpanded.Cultures
                 yield return EmpireLord;
                 yield return EmpirePrince;
                 yield return EmpireKnight;
+
+                yield return ZendarEmperor;
+                yield return ZendarKing;
+                yield return ZendarDuke;
+                yield return ZendarCount;
+                yield return ZendarBaron;
+                yield return ZendarLord;
+                yield return ZendarPrince;
+                yield return ZendarKnight;
 
                 yield return VakkenEmperor;
                 yield return VakkenKing;
@@ -228,14 +339,14 @@ namespace BannerKings.CulturesExpanded.Cultures
                 yield return GeroiaPrince;
                 yield return GeroiaKnight;
 
-                //yield return SiriEmperor;
+                yield return SiriEmperor;
                 yield return SiriKing;
-               // yield return SiriDuke;
-                //yield return SiriCount;
-                //yield return SiriBaron;
-                //yield return SiriLord;
-                //yield return SiriPrince;
-                //yield return SiriKnight;
+                yield return SiriDuke;
+                yield return SiriCount;
+                yield return SiriBaron;
+                yield return SiriLord;
+                yield return SiriPrince;
+                yield return SiriKnight;
 
                 yield return MassaEmperor;
                 yield return MassaKing;
@@ -272,6 +383,15 @@ namespace BannerKings.CulturesExpanded.Cultures
                 yield return NordLord;
                 yield return NordPrince;
                 yield return NordKnight;
+
+                yield return LoktiEmperor;
+                yield return LoktiKing;
+                yield return LoktiDuke;
+                yield return LoktiCount;
+                yield return LoktiBaron;
+                yield return LoktiLord;
+                yield return LoktiPrince;
+                yield return LoktiKnight;
             }
         }
 
@@ -292,351 +412,676 @@ namespace BannerKings.CulturesExpanded.Cultures
             var siri = cultures.First(x => x.StringId == "siri");
             var balion = cultures.First(x => x.StringId == "balion");
             var bragantia = cultures.First(x => x.StringId == "bragantia");
+            var iltanlar = cultures.First(x => x.StringId == "iltanlar");
+            var lokti = cultures.First(x => x.StringId == "lokti");
+            var rhodok = cultures.First(x => x.StringId == "rhodok");
+            var swadia = cultures.First(x => x.StringId == "swadia");
+            var zendar = cultures.First(x => x.StringId == "zendar");
+
+            #region Zendar
+            ZendarEmperor = CulturalTitleName.CreateEmpire("ZendarEmperor",
+                zendar,
+                new TextObject("{=emperor_zendar}Aftokrator"),
+                new TextObject("{=empress_zendar}Aftokratira"),
+                new TextObject("{=zendar_zendar}Aftokratoria"));
+
+            ZendarKing = CulturalTitleName.CreateKingdom("ZendarKing",
+                zendar,
+                new TextObject("{=king_zendar}Krátor"),
+                new TextObject("{=queen_zendar}Kráteira"),
+                new TextObject("{=kingdom_zendar}Kratoria"));
+
+            ZendarDuke = CulturalTitleName.CreateDuchy("ZendarDuke",
+                zendar,
+                new TextObject("{=duke_zendar}Prinkips"),
+                new TextObject("{=duchess_zendar}Prinkipissa"),
+                new TextObject("{=duchy_zendar}Dukaton"));
+
+            ZendarCount = CulturalTitleName.CreateCounty("ZendarCount",
+                zendar,
+                new TextObject("{=count_zendar}Komis"),
+                new TextObject("{=countess_zendar}Komissa"),
+                new TextObject("{=county_zendar}Pólis"));
+
+            ZendarBaron = CulturalTitleName.CreateBarony("ZendarBaron",
+                zendar,
+                new TextObject("{=baron_zendar}Polémarkhos"),
+                new TextObject("{=baroness_zendar}Polémarkhousa"),
+                new TextObject("{=barony_zendar}Polemarkhontía"));
+
+            ZendarLord = CulturalTitleName.CreateLordship("ZendarLord",
+                zendar,
+                new TextObject("{=lord_zendar}Coryárkhos"),
+                new TextObject("{=lady_zendar}Coryárkhousa"),
+                new TextObject("{=lordship_zendar}Corys"));
+
+            ZendarPrince = CulturalTitleName.CreatePrince("ZendarPrince",
+                zendar,
+                new TextObject("{=prince_zendar}Prinkips"),
+                new TextObject("{=princess_zendar}Prinkipissa"),
+                new TextObject("{=princes_zendar}Prinkipes"));
+
+            ZendarKnight = CulturalTitleName.CreateKnight("ZendarKnight",
+                zendar,
+                new TextObject("{=knight_zendar}Athanatos"),
+                new TextObject("{=knightess_zendar}Athanate"),
+                new TextObject("{=knights_zendar}Athanatoi"));
+
+            #endregion Zendar
 
             #region Empire
-            if (BKTOSettings.Instance.LatinTitles)
+            if (BKCESettings.Instance.LatinTitles)
             {
                 EmpireEmperor = CulturalTitleName.CreateEmpire("EmpireEmperor",
                   empire,
-                  new TextObject("{=uTLJjN8A}Imperator"),
-                  new TextObject("{=b3dURwfW}Imperatrix"),
-                  new TextObject("{=dSSX7xRm}Imperium"));
+                  new TextObject("{=emperor_empire}Imperator"),
+                  new TextObject("{=empress_empire}Imperatrix"),
+                  new TextObject("{=empire_empire}Imperium"));
 
                 EmpireKing = CulturalTitleName.CreateKingdom("EmpireKing",
                    empire,
-                   new TextObject("{=V6HVF70v}Rex"),
-                   new TextObject("{=BJvarzpV}Regina"),
-                   new TextObject("{=7x3HJ29f}Kingdom"));
+                   new TextObject("{=king_empire}Rex"),
+                   new TextObject("{=queen_empire}Regina"),
+                   new TextObject("{=kingdom_empire}Regnum"));
 
                 EmpireDuke = CulturalTitleName.CreateDuchy("EmpireDuke",
                     empire,
-                    new TextObject("{=8e3aXr1R}Dux"),
-                    new TextObject("{=5aCrjmFi}Ducissa"),
-                    new TextObject("{=HtWGKBDF}Dukedom"));
+                    new TextObject("{=duke_empire}Dux"),
+                    new TextObject("{=duchess_empire}Ducissa"),
+                    new TextObject("{=duchy_empire}Ducatum"));
 
                 EmpireCount = CulturalTitleName.CreateCounty("EmpireCount",
                     empire,
-                    new TextObject("{=AW1t8MxQ}Conte"),
-                    new TextObject("{=ex7NjOtr}Cometessa"),
-                    new TextObject("{=c6ggHVzS}County"));
+                    new TextObject("{=count_empire}Comes"),
+                    new TextObject("{=countess_empire}Cometessa"),
+                    new TextObject("{=county_empire}Comitatus"));
 
                 EmpireBaron = CulturalTitleName.CreateBarony("EmpireBaron",
                     empire,
-                    new TextObject("{=uzYP2iMU}Baro"),
-                    new TextObject("{=dYq0qGzZ}Baronessa"),
-                    new TextObject("{=qOLmvS0B}Barony"));
+                    new TextObject("{=baron_empire}Baro"),
+                    new TextObject("{=baroness_empire}Baronessa"),
+                    new TextObject("{=barony_empire}Baronatum"));
 
                 EmpireLord = CulturalTitleName.CreateLordship("EmpireLord",
                     empire,
-                    new TextObject("{=HGfR1YAx}Dominus"),
-                    new TextObject("{=go9MmDKr}Domina"),
-                    new TextObject("{=dwMA32rq}Lordship"));
+                    new TextObject("{=lord_empire}Dominus"),
+                    new TextObject("{=lady_empire}Domina"),
+                    new TextObject("{=lordship_empire}Dominium"));
+
+                EmpirePrince = CulturalTitleName.CreatePrince("EmpirePrince",
+                    empire,
+                    new TextObject("{=prince_empire}Princeps"),
+                    new TextObject("{=princess_empire}Principissa"),
+                    new TextObject("{=princes_empire}Principes"));
+
+                EmpireKnight = CulturalTitleName.CreateKnight("EmpireKnight",
+                    empire,
+                    new TextObject("{=knight_empire}Pronoiarius"),
+                    new TextObject("{=knightess_empire}Pronoiarius"),
+                    new TextObject("{=knights_empire}Pronoiarii"));
             }
             else
             {
                 EmpireEmperor = CulturalTitleName.CreateEmpire("EmpireEmperor",
                    empire,
-                   new TextObject("{=!}Basileús"),
-                   new TextObject("{=!}Basíleia"),
-                   new TextObject("{=!}Basileía"));
+                   new TextObject("{=emperor_empire_alt}Basileús"),
+                   new TextObject("{=empress_empire_alt}Basíleia"),
+                   new TextObject("{=empire_empire_alt}Basileía"));
 
                 EmpireKing = CulturalTitleName.CreateKingdom("EmpireKing",
                    empire,
-                   new TextObject("{=!}Exarkhos"),
-                   new TextObject("{=!}Exarkhousa"),
-                   new TextObject("{=!}Exarkhontate"));
+                   new TextObject("{=king_empire_alt}Exarkhos"),
+                   new TextObject("{=queen_empire_alt}Exarkhousa"),
+                   new TextObject("{=kingdom_empire_alt}Exarkhontía"));
 
                 EmpireDuke = CulturalTitleName.CreateDuchy("EmpireDuke",
                     empire,
-                    new TextObject("{=!}Doux"),
-                    new TextObject("{=!}Doucissa"),
-                    new TextObject("{=!}Théma"));
+                    new TextObject("{=duke_empire_alt}Doux"),
+                    new TextObject("{=duchess_empire_alt}Doucissa"),
+                    new TextObject("{=duchy_empire_alt}Théma"));
 
                 EmpireCount = CulturalTitleName.CreateCounty("EmpireCount",
                     empire,
-                    new TextObject("{=!}Árkhon"),
-                    new TextObject("{=!}Árkhousa"),
-                    new TextObject("{=!}Árkhontate"));
+                    new TextObject("{=count_empire_alt}Árkhon"),
+                    new TextObject("{=countess_empire_alt}Árkhousa"),
+                    new TextObject("{=county_empire_alt}Arkhontía"));
 
                 EmpireBaron = CulturalTitleName.CreateBarony("EmpireBaron",
                     empire,
-                    new TextObject("{=!}Kephalé"),
-                    new TextObject("{=!}Kephalé"),
-                    new TextObject("{=!}Katepaníkion"));
+                    new TextObject("{=baron_empire_alt}Kephalé"),
+                    new TextObject("{=baroness_empire_alt}Kephalé"),
+                    new TextObject("{=barony_empire_alt}Katepaníkion"));
 
                 EmpireLord = CulturalTitleName.CreateLordship("EmpireLord",
                     empire,
-                    new TextObject("{=HGfR1YAx}Dominus"),
-                    new TextObject("{=go9MmDKr}Domina"),
-                    new TextObject("{=dwMA32rq}Lordship"));
-            }
+                    new TextObject("{=lord_empire_alt}Corysárkhos"),
+                    new TextObject("{=lady_empire_alt}Corysárkhousa"),
+                    new TextObject("{=lordship_empire_alt}Corys"));
 
-            EmpirePrince = CulturalTitleName.CreatePrince("EmpirePrince",
+                EmpirePrince = CulturalTitleName.CreatePrince("EmpirePrince",
                     empire,
-                    new TextObject("{=ouHkQtyZ}Princeps"),
-                    new TextObject("{=gNVEqLz4}Principissa"),
-                    new TextObject("{=!}Princes"));
+                    new TextObject("{=prince_empire_alt}Princeps"),
+                    new TextObject("{=princess_empire_alt}Principissa"),
+                    new TextObject("{=princes_empire_alt}Principes"));
 
-            EmpireKnight = CulturalTitleName.CreateKnight("EmpireKnight",
-                empire,
-                new TextObject("{=oapL1nXd}Pronoiarius"),
-                new TextObject("{=oapL1nXd}Pronoiarius"),
-                new TextObject("{=VLB8LyH0}Pronoiarii"));
+                EmpireKnight = CulturalTitleName.CreateKnight("EmpireKnight",
+                    empire,
+                    new TextObject("{=knight_empire_alt}Pronoiarius"),
+                    new TextObject("{=knightess_empire_alt}Pronoiarius"),
+                    new TextObject("{=knights_empire_alt}Pronoiarii"));
+            }
 
             #endregion Empire
 
             #region Battania
-            BattaniaEmperor = CulturalTitleName.CreateEmpire("BattaniaEmperor",
-                battania,
-                new TextObject("{=!}Pendreic"),
-                new TextObject("{=!}Pendreic"),
-                new TextObject("{=!}Pendreiciaeth"));
+            if (BKCESettings.Instance.GoidelicTitles)
+            {
+                BattaniaEmperor = CulturalTitleName.CreateEmpire("BattaniaEmperor",
+                    battania,
+                    new TextObject("{=emperor_battania_alt}Pendràgon"),
+                    new TextObject("{=empress_battania_alt}Penbandràgon"),
+                    new TextObject("{=empire_battania_alt}Pendràgonachd"));
 
-            BattaniaKing = CulturalTitleName.CreateKingdom("BattaniaKing",
-                battania,
-                new TextObject("{=Mn61rKcx}Ard-Righ"),
-                new TextObject("{=25sz3WPn}Ard-Banrigh"),
-                new TextObject("{=!}Ard-Rioghachd"));
+                BattaniaKing = CulturalTitleName.CreateKingdom("BattaniaKing",
+                    battania,
+                    new TextObject("{=king_battania_alt}Ard-Righ"),
+                    new TextObject("{=queen_battania_alt}Ard-Banrigh"),
+                    new TextObject("{=kingdom_battania_alt}Ard-Rioghachd"));
 
-            BattaniaDuke = CulturalTitleName.CreateDuchy("BattaniaDuke",
-                battania,
-                new TextObject("{=VU1Lsphi}Righ"),
-                new TextObject("{=XLAgsQ0J}Banrigh"),
-                new TextObject("{=!}Rioghachd"));
+                BattaniaDuke = CulturalTitleName.CreateDuchy("BattaniaDuke",
+                    battania,
+                    new TextObject("{=duke_battania_alt}Righ"),
+                    new TextObject("{=duchess_battania_alt}Banrigh"),
+                    new TextObject("{=duchy_battania_alt}Rioghachd"));
 
-            BattaniaCount = CulturalTitleName.CreateCounty("BattaniaCount",
-                battania,
-                new TextObject("{=yUowh1Mz}Mormaer"),
-                new TextObject("{=FMWNKESs}Bantiarna"),
-                new TextObject("{=!}Mormaerdom"));
+                BattaniaCount = CulturalTitleName.CreateCounty("BattaniaCount",
+                    battania,
+                    new TextObject("{=count_battania_alt}Mormaer"),
+                    new TextObject("{=countess_battania_alt}Banmormaer"),
+                    new TextObject("{=county_battania_alt}Mormaeracht"));
 
-            BattaniaBaron = CulturalTitleName.CreateBarony("BattaniaBaron",
-                battania,
-                new TextObject("{=hpbLyVY2}Toisiche"),
-                new TextObject("{=811sxLhn}Thaoiseach"),
-                new TextObject("{=!}Toiseachadh"));
+                BattaniaBaron = CulturalTitleName.CreateBarony("BattaniaBaron",
+                    battania,
+                    new TextObject("{=baron_battania_alt}Taoiseach"),
+                    new TextObject("{=baroness_battania_alt}Bantaoiseach"),
+                    new TextObject("{=barony_battania_alt}Toiseachadh"));
 
-            BattaniaLord = CulturalTitleName.CreateLordship("BattaniaLord",
-                battania,
-                new TextObject("{=0ymhCPeh}Tighearna"),
-                new TextObject("{=tD38koMS}Baintighearna"),
-                new TextObject("{=!}Túath"));
+                BattaniaLord = CulturalTitleName.CreateLordship("BattaniaLord",
+                    battania,
+                    new TextObject("{=lord_battania_alt}Tiarna"),
+                    new TextObject("{=lady_battania_alt}Bantiarna"),
+                    new TextObject("{=lordship_battania_alt}Tigernas"));
 
-            BattaniaPrince = CulturalTitleName.CreatePrince("BattaniaPrince",
-                battania,
-                new TextObject("{=7z7iEwxU}Prionnsa"),
-                new TextObject("{=RYoxePAG}Bana-Phrionnsa"),
-                new TextObject("{=!}Prionnsachan"));
+                BattaniaPrince = CulturalTitleName.CreatePrince("BattaniaPrince",
+                    battania,
+                    new TextObject("{=prince_battania_alt}Flath"),
+                    new TextObject("{=princess_battania_alt}Banflath"),
+                    new TextObject("{=princes_battania_alt}Flathan"));
 
-            BattaniaKnight = CulturalTitleName.CreateKnight("BattaniaKnight",
-                battania,
-                new TextObject("{=V7fYyS93}Fiann"),
-                new TextObject("{=V7fYyS93}Fiann"),
-                new TextObject("{=4b5WsUZ7}Fianna"));
+                BattaniaKnight = CulturalTitleName.CreateKnight("BattaniaKnight",
+                    battania,
+                    new TextObject("{=knight_battania_alt}Fiann"),
+                    new TextObject("{=knightess_battania_alt}Fiannes"),
+                    new TextObject("{=knights_battania_alt}Fianna"));
+            }
+            else
+            {
+                BattaniaEmperor = CulturalTitleName.CreateEmpire("BattaniaEmperor",
+                   battania,
+                   new TextObject("{=emperor_battania}Pendreic"),
+                   new TextObject("{=empress_battania}Pendreices"),
+                   new TextObject("{=empire_battania}Pendreiciaeth"));
+
+                BattaniaKing = CulturalTitleName.CreateKingdom("BattaniaKing",
+                    battania,
+                    new TextObject("{=king_battania}Uchelbrenhin"),
+                    new TextObject("{=queen_battania}Uchelbrenhines"),
+                    new TextObject("{=kingdom_battania}Uchelbrenhinaeth"));
+
+                BattaniaDuke = CulturalTitleName.CreateDuchy("BattaniaDuke",
+                    battania,
+                    new TextObject("{=duke_battania}Brenhin"),
+                    new TextObject("{=duchess_battania}Brenhines"),
+                    new TextObject("{=duchy_battania}Brenhinaeth"));
+
+                BattaniaCount = CulturalTitleName.CreateCounty("BattaniaCount",
+                    battania,
+                    new TextObject("{=count_battania}Tywysauc"),
+                    new TextObject("{=countess_battania}Tywysauces"),
+                    new TextObject("{=county_battania}Tywysauciaeth"));
+
+                BattaniaBaron = CulturalTitleName.CreateBarony("BattaniaBaron",
+                    battania,
+                    new TextObject("{=baron_battania}Teyrn"),
+                    new TextObject("{=baroness_battania}Teyrnes"),
+                    new TextObject("{=barony_battania}Teyrnas"));
+
+                BattaniaLord = CulturalTitleName.CreateLordship("BattaniaLord",
+                    battania,
+                    new TextObject("{=lord_battania}Arglwyt"),
+                    new TextObject("{=lady_battania}Arglwytes"),
+                    new TextObject("{=lordship_battania}Arglwydiaeth"));
+
+                BattaniaPrince = CulturalTitleName.CreatePrince("BattaniaPrince",
+                    battania,
+                    new TextObject("{=prince_battania}Pendewic"),
+                    new TextObject("{=princess_battania}Pendewices"),
+                    new TextObject("{=princes_battania}Pendewiciaidd"));
+
+                BattaniaKnight = CulturalTitleName.CreateKnight("BattaniaKnight",
+                    battania,
+                    new TextObject("{=knight_battania}Fiann"),
+                    new TextObject("{=knightess_battania}Fiannes"),
+                    new TextObject("{=knights_battania}Fianna"));
+            }
 
             #endregion Battania
 
             #region Sturgia
             SturgiaEmperor = CulturalTitleName.CreateEmpire("SturgiaEmperor",
                 sturgia,
-                new TextObject("{=!}Knyaz Polnoti"),
-                new TextObject("{=!}Knyaginya Polnoti"),
-                new TextObject("{=!}Grand Northern Principality"));
+                new TextObject("{=emperor_sturgia}Koról"),
+                new TextObject("{=empress_sturgia}Koroléva"),
+                new TextObject("{=empire_sturgia}Korolévstvo"));
 
             SturgiaKing = CulturalTitleName.CreateKingdom("SturgiaKing",
                 sturgia,
-                new TextObject("{=sFnMQqdQ}Velikiy Knyaz"),
-                new TextObject("{=LmHWN0vt}Velikaya Knyaginya"),
-                new TextObject("{=jz2SCLZS}Grand-Principality"));
+                new TextObject("{=king_sturgia}Velykyy Knjaz"),
+                new TextObject("{=queen_sturgia}Velykyy Knjahýnja"),
+                new TextObject("{=kingdom_sturgia}Velykyy Knjazývstvo"));
 
             SturgiaDuke = CulturalTitleName.CreateDuchy("SturgiaDuke",
                 sturgia,
-                new TextObject("{=1XDPfDim}Knyaz"),
-                new TextObject("{=S3kc2bhW}Knyaginya"),
-                new TextObject("{=5rmKW4c9}Principality"));
+                new TextObject("{=duke_sturgia}Knjaz"),
+                new TextObject("{=duchess_sturgia}Knjahýnja"),
+                new TextObject("{=duchy_sturgia}Knjazývstvo"));
 
             SturgiaCount = CulturalTitleName.CreateCounty("SturgiaCount",
                 sturgia,
-                new TextObject("{=ShdRMhVL}Boyar"),
-                new TextObject("{=KTxFYNyo}Boyarina"), 
-                new TextObject("{=GHeUbN6f}Boyardom"));
+                new TextObject("{=count_sturgia}Bojárin"),
+                new TextObject("{=countess_sturgia}Bojarýnja"), 
+                new TextObject("{=county_sturgia}Bojárstvo"));
 
             SturgiaBaron = CulturalTitleName.CreateBarony("SturgiaBaron",
                 sturgia,
-                new TextObject("{=DanL6SW3}Voivode"),
-                new TextObject("{=bYQLoRUt}Voivodina"),
-                new TextObject("{=eUi8JOkv}Voivodeship"));
+                new TextObject("{=baron_sturgia}Vojevóda"),
+                new TextObject("{=baroness_sturgia}Vojevodýnja"),
+                new TextObject("{=barony_sturgia}Vojevódastvo"));
 
             SturgiaLord = CulturalTitleName.CreateLordship("SturgiaLord",
                 sturgia,
-                new TextObject("{=wc51byvw}Gospodin"),
-                new TextObject("{=Ec79HNiF}Gospoda"),
-                new TextObject("{=wc51byvw}Gospodin"));
+                new TextObject("{=lord_sturgia}Gospodin"),
+                new TextObject("{=lady_sturgia}Gospodja"),
+                new TextObject("{=lordship_sturgia}Gospoda"));
 
             SturgiaPrince = CulturalTitleName.CreatePrince("SturgiaPrince",
                 sturgia,
-                new TextObject("{=1XDPfDim}Knyaz"),
-                new TextObject("{=S3kc2bhW}Knyaginya"),
-                new TextObject("{=!}Princes"));
+                new TextObject("{=prince_sturgia}Knyaz"),
+                new TextObject("{=princess_sturgia}Knyaginya"),
+                new TextObject("{=princes_sturgia}Knjázi"));
 
             SturgiaKnight = CulturalTitleName.CreateKnight("SturgiaKnight",
                 sturgia,
-                new TextObject("{=Qucsad67}Druzhinnik"),
-                new TextObject("{=HEAw5x03}Druzhinnica"),
-                new TextObject("{=TOWzCa0Y}Druzhina"));
+                new TextObject("{=knight_sturgia}Druzhinnik"),
+                new TextObject("{=knightess_sturgia}Druzhinnica"),
+                new TextObject("{=knights_sturgia}Druzhina"));
 
             #endregion Sturgia
 
             #region Vlandia
             VlandiaEmperor = CulturalTitleName.CreateEmpire("VlandiaEmperor",
                 vlandia,
-                new TextObject("{=!}Bretwalda"),
-                new TextObject("{=!}Bretwalda"),
-                new TextObject("{=!}Empire"));
+                new TextObject("{=emperor_vlandia}Emperere"),
+                new TextObject("{=empress_vlandia}Emperesse"),
+                new TextObject("{=empire_vlandia}Empires"));
 
             VlandiaKing = CulturalTitleName.CreateKingdom("VlandiaKing",
                 vlandia,
-                new TextObject("{=!}Kyning"),
-                new TextObject("{=!}Kyninge"),
-                new TextObject("{=!}Kyningdóm"));
+                new TextObject("{=king_vlandia}Reis"),
+                new TextObject("{=queen_vlandia}Reigne"),
+                new TextObject("{=kingdom_vlandia}Regnes"));
 
             VlandiaDuke = CulturalTitleName.CreateDuchy("VlandiaDuke",
                 vlandia,
-                new TextObject("{=!}Ealdorman"),
-                new TextObject("{=!}Hlaefdige"),
-                new TextObject("{=!}Earldóm"));
+                new TextObject("{=duke_vlandia}Princes"),
+                new TextObject("{=duchess_vlandia}Princesse"),
+                new TextObject("{=duchy_vlandia}Principaliz"));
 
             VlandiaCount = CulturalTitleName.CreateCounty("VlandiaCount",
                 vlandia,
-                new TextObject("{=!}Horgrefe"),
-                new TextObject("{=!}Hlaefdige"),
-                new TextObject("{=!}Hold"));
+                new TextObject("{=count_vlandia}Cuens"),
+                new TextObject("{=countess_vlandia}Contesse"),
+                new TextObject("{=county_vlandia}Cuntez"));
 
             VlandiaBaron = CulturalTitleName.CreateBarony("VlandiaBaron",
                 vlandia,
-                new TextObject("{=!}Thegn"),
-                new TextObject("{=!}Hlaefdige"),
-                new TextObject("{=!}Thanate"));
+                new TextObject("{=baron_vlandia}Bers"),
+                new TextObject("{=baroness_vlandia}Bersesse"),
+                new TextObject("{=barony_vlandia}Baronie"));
 
             VlandiaLord = CulturalTitleName.CreateLordship("VlandiaLord",
                 vlandia,
-                new TextObject("{=!}Hlaford"),
-                new TextObject("{=!}Hlaefdige"),
-                new TextObject("{=!}Hlafordship"));
+                new TextObject("{=lord_vlandia}Sire"),
+                new TextObject("{=lady_vlandia}Siresse"),
+                new TextObject("{=lordship_vlandia}Seignurie"));
 
             VlandiaPrince = CulturalTitleName.CreatePrince("VlandiaPrince",
                 vlandia,
-                new TextObject("{=!}Aetheling"),
-                new TextObject("{=!}Aethelinge"),
-                new TextObject("{=!}Aethelingas"));
+                new TextObject("{=prince_vlandia}Edelings"),
+                new TextObject("{=princess_vlandia}Edelesse"),
+                new TextObject("{=princes_vlandia}Edeling"));
 
             VlandiaKnight = CulturalTitleName.CreateKnight("VlandiaKnight",
                 vlandia,
-                new TextObject("{=!}Cniht"),
-                new TextObject("{=!}Cniht"),
-                new TextObject("{=!}Cneohtas"));
+                new TextObject("{=knight_vlandia}Chevalers"),
+                new TextObject("{=knightess_vlandia}Chevalesse"),
+                new TextObject("{=knights_vlandia}Chevaler"));
 
             #endregion Vlandia
+
+            #region Balion
+            BalionEmperor = CulturalTitleName.CreateEmpire("BalionEmperor",
+                balion,
+                new TextObject("{=emperor_balion}Brytenwealda"),
+                new TextObject("{=empress_balion}Brytenwealden"),
+                new TextObject("{=empire_balion}Brytenríce"));
+
+            BalionKing = CulturalTitleName.CreateKingdom("BalionKing",
+                balion,
+                new TextObject("{=king_balion}Cyning"),
+                new TextObject("{=queen_balion}Cwén"),
+                new TextObject("{=kingdom_balion}Ríce"));
+
+            BalionDuke = CulturalTitleName.CreateDuchy("BalionDuke",
+                balion,
+                new TextObject("{=duke_balion}Eorl"),
+                new TextObject("{=duchess_balion}Eorlen"),
+                new TextObject("{=duchy_balion}Eorldóm"));
+
+            BalionCount = CulturalTitleName.CreateCounty("BalionCount",
+                balion,
+                new TextObject("{=count_balion}Ealdormann"),
+                new TextObject("{=countess_balion}Hlaefdíge"),
+                new TextObject("{=county_balion}Schyre"));
+
+            BalionBaron = CulturalTitleName.CreateBarony("BalionBaron",
+                balion,
+                new TextObject("{=baron_balion}Thegen"),
+                new TextObject("{=baroness_balion}Hlaefdíge"),
+                new TextObject("{=barony_balion}Hundred"));
+
+            BalionLord = CulturalTitleName.CreateLordship("BalionLord",
+                balion,
+                new TextObject("{=lord_balion}Hláford"),
+                new TextObject("{=lady_balion}Hlaefdíge"),
+                new TextObject("{=lordship_balion}Hlafordsciepe"));
+
+            BalionPrince = CulturalTitleName.CreatePrince("BalionPrince",
+                balion,
+                new TextObject("{=prince_balion}Aetheling"),
+                new TextObject("{=princess_balion}Hlaefdíge"),
+                new TextObject("{=princes_balion}Aethelingas"));
+
+            BalionKnight = CulturalTitleName.CreateKnight("BalionKnight",
+                balion,
+                new TextObject("{=knight_balion}Gesíth"),
+                new TextObject("{=knightess_balion}Gesíthen"),
+                new TextObject("{=knights_balion}Gesíthas"));
+
+            #endregion Balion
+
+            #region Swadia
+            SwadiaEmperor = CulturalTitleName.CreateEmpire("SwadiaEmperor",
+                 swadia,
+                 new TextObject("{=emperor_swadia}Fronenant"),
+                 new TextObject("{=empress_swadia}Fronenantin"),
+                 new TextObject("{=empire_swadia}Fronenantriche"));
+
+            SwadiaKing = CulturalTitleName.CreateKingdom("SwadiaKing",
+                swadia,
+                new TextObject("{=king_swadia}Kunic"),
+                new TextObject("{=queen_swadia}Kunicin"),
+                new TextObject("{=kingdom_swadia}Kunicriche"));
+
+            SwadiaDuke = CulturalTitleName.CreateDuchy("SwadiaDuke",
+                swadia,
+                new TextObject("{=duke_swadia}Herzoge"),
+                new TextObject("{=duchess_swadia}Herzogin"),
+                new TextObject("{=duchy_swadia}Herzogentuom"));
+
+            SwadiaCount = CulturalTitleName.CreateCounty("SwadiaCount",
+                swadia,
+                new TextObject("{=count_swadia}Grave"),
+                new TextObject("{=countess_swadia}Gravin"),
+                new TextObject("{=county_swadia}Graveschaft"));
+
+            SwadiaBaron = CulturalTitleName.CreateBarony("SwadiaBaron",
+                swadia,
+                new TextObject("{=baron_swadia}Burcgrave"),
+                new TextObject("{=baroness_swadia}Burcgravin"),
+                new TextObject("{=barony_swadia}Burcgraveschaft"));
+
+            SwadiaLord = CulturalTitleName.CreateLordship("SwadiaLord",
+                swadia,
+                new TextObject("{=lord_swadia}Gougrave"),
+                new TextObject("{=lady_swadia}Gougravin"),
+                new TextObject("{=lordship_swadia}Gougraveschaft"));
+
+            SwadiaPrince = CulturalTitleName.CreatePrince("SwadiaPrince",
+                swadia,
+                new TextObject("{=prince_swadia}Edelinc"),
+                new TextObject("{=princess_swadia}Edelvrouwe"),
+                new TextObject("{=princes_swadia}Edelincen"));
+
+            SwadiaKnight = CulturalTitleName.CreateKnight("SwadiaKnight",
+                swadia,
+                new TextObject("{=knight_swadia}Herre"),
+                new TextObject("{=knightess_swadia}Vrouwe"),
+                new TextObject("{=knights_swadia}Herren"));
+
+            #endregion Swadia
+
+            #region Rhodok
+            RhodokEmperor = CulturalTitleName.CreateEmpire("RhodokEmperor",
+                rhodok,
+                new TextObject("{=emperor_rhodok}Vronenent"),
+                new TextObject("{=empress_rhodok}Vronenentin"),
+                new TextObject("{=empire_rhodok}Vronenentriich"));
+
+            RhodokKing = CulturalTitleName.CreateKingdom("RhodokKing",
+                rhodok,
+                new TextObject("{=king_rhodok}Hougekunic"),
+                new TextObject("{=queen_rhodok}Hougekunicin"),
+                new TextObject("{=kingdom_rhodok}Hougeriich"));
+
+            RhodokDuke = CulturalTitleName.CreateDuchy("RhodokDuke",
+                rhodok,
+                new TextObject("{=duke_rhodok}Kunic"),
+                new TextObject("{=duchess_rhodok}Kunicin"),
+                new TextObject("{=duchy_rhodok}Kunicriich"));
+
+            RhodokCount = CulturalTitleName.CreateCounty("RhodokCount",
+                rhodok,
+                new TextObject("{=count_rhodok}Grave"),
+                new TextObject("{=countess_rhodok}Gravin"),
+                new TextObject("{=county_rhodok}Graveschaft"));
+
+            RhodokBaron = CulturalTitleName.CreateBarony("RhodokBaron",
+                rhodok,
+                new TextObject("{=baron_rhodok}Vriherre"),
+                new TextObject("{=baroness_rhodok}Vrifrou"),
+                new TextObject("{=barony_rhodok}Vriherreschaft"));
+
+            RhodokLord = CulturalTitleName.CreateLordship("RhodokLord",
+                rhodok,
+                new TextObject("{=lord_rhodok}Lhandsherre"),
+                new TextObject("{=lady_rhodok}Lhandsfrou"),
+                new TextObject("{=lordship_rhodok}Lhandsherreschaft"));
+
+            RhodokPrince = CulturalTitleName.CreatePrince("RhodokPrince",
+                rhodok,
+                new TextObject("{=prince_rhodok}Edelinc"),
+                new TextObject("{=princess_rhodok}Edelfrou"),
+                new TextObject("{=princes_rhodok}Edelincen"));
+
+            RhodokKnight = CulturalTitleName.CreateKnight("RhodokKnight",
+                rhodok,
+                new TextObject("{=knight_rhodok}Herre"),
+                new TextObject("{=knightess_rhodok}Frou"),
+                new TextObject("{=knights_rhodok}Herren"));
+
+            #endregion Rhodok
 
             #region Khuzait
             KhuzaitEmperor = CulturalTitleName.CreateEmpire("KhuzaitEmperor",
                 khuzait,
-                new TextObject("{=2MOuvAj0}Khagan"),
-                new TextObject("{=SdJk1Vpf}Khatun"),
-                new TextObject("{=!}Khaganate"));
+                new TextObject("{=emperor_khuzait}Erxem Khagan"),
+                new TextObject("{=empress_khuzait}Erxem Khatun"),
+                new TextObject("{=khuzait_khuzait}Ulus"));
 
             KhuzaitKing = CulturalTitleName.CreateKingdom("KhuzaitKing",
                 khuzait,
-                new TextObject("{=ciWnpkW0}Khan"),
-                new TextObject("{=cepkCz19}Khanum"),
-                new TextObject("{=!}Khanate"));
+                new TextObject("{=king_khuzait}Khagan"),
+                new TextObject("{=queen_khuzait}Khatun"),
+                new TextObject("{=kingdom_khuzait}Khaganlik"));
 
             KhuzaitDuke = CulturalTitleName.CreateDuchy("KhuzaitDuke",
                 khuzait,
-                new TextObject("{=!}Beyzade"),
-                new TextObject("{=!}Begumzade"),
-                new TextObject("{=!}Beyzadelik"));
+                new TextObject("{=duke_khuzait}Khan"),
+                new TextObject("{=duchess_khuzait}Khanum"),
+                new TextObject("{=duchy_khuzait}Khanlik"));
 
             KhuzaitCount = CulturalTitleName.CreateCounty("KhuzaitCount",
                 khuzait,
-                new TextObject("{=!}Atabey"),
-                new TextObject("{=!}Atabegum"),
-                new TextObject("{=!}Atabeylik"));
+                new TextObject("{=count_khuzait}Atabeg"),
+                new TextObject("{=countess_khuzait}Atabegum"),
+                new TextObject("{=county_khuzait}Atabeglik"));
 
             KhuzaitBaron = CulturalTitleName.CreateBarony("KhuzaitBaron",
                 khuzait,
-                new TextObject("{=uwuM708D}Bey"),
-                new TextObject("{=Ajj9ptAU}Begum"),
-                new TextObject("{=!}Beylik"));
+                new TextObject("{=baron_khuzait}Beg"),
+                new TextObject("{=baroness_khuzait}Begum"),
+                new TextObject("{=barony_khuzait}Beglik"));
 
             KhuzaitLord = CulturalTitleName.CreateLordship("KhuzaitLord",
                 khuzait,
-                new TextObject("{=YMr5KkWu}Erxem"),
-                new TextObject("{=dB9Rfp6W}Khatagtai"),
-                new TextObject("{=!}Erxemlik"));
+                new TextObject("{=lord_khuzait}Erxem"),
+                new TextObject("{=lady_khuzait}Khatagtai"),
+                new TextObject("{=lordship_khuzait}Erxemlik"));
 
             KhuzaitPrince = CulturalTitleName.CreatePrince("KhuzaitPrince",
                 khuzait,
-                new TextObject("{=!}Khan Khuu"),
-                new TextObject("{=!}Gonji"),
-                new TextObject("{=!}Princes"));
+                new TextObject("{=prince_khuzait}Khan Khuu"),
+                new TextObject("{=princess_khuzait}Gonji"),
+                new TextObject("{=princes_khuzait}Khan Khuunud"));
 
             KhuzaitKnight = CulturalTitleName.CreateKnight("KhuzaitKnight",
                 khuzait,
-                new TextObject("{=!}Kheshig"),
-                new TextObject("{=!}Kheshig"),
-                new TextObject("{=RYd2Z1OU}Kheshignud"));
+                new TextObject("{=knight_khuzait}Kheshig"),
+                new TextObject("{=knightess_khuzait}Kheshigum"),
+                new TextObject("{=knights_khuzait}Kheshignud"));
 
             #endregion Khuzait
+
+            #region Iltanlar
+            IltanlarEmperor = CulturalTitleName.CreateEmpire("IltanlarEmperor",
+                iltanlar,
+                new TextObject("{=emperor_iltanlar}Erxem Khagan"),
+                new TextObject("{=empress_iltanlar}Erxem Khatun"),
+                new TextObject("{=iltanlar_iltanlar}Ulus"));
+
+            IltanlarKing = CulturalTitleName.CreateKingdom("IltanlarKing",
+                iltanlar,
+                new TextObject("{=king_iltanlar}Khagan"),
+                new TextObject("{=queen_iltanlar}Khatun"),
+                new TextObject("{=kingdom_iltanlar}Khaganlik"));
+
+            IltanlarDuke = CulturalTitleName.CreateDuchy("IltanlarDuke",
+                iltanlar,
+                new TextObject("{=duke_iltanlar}Khan"),
+                new TextObject("{=duchess_iltanlar}Khanum"),
+                new TextObject("{=duchy_iltanlar}Khanlik"));
+
+            IltanlarCount = CulturalTitleName.CreateCounty("IltanlarCount",
+                iltanlar,
+                new TextObject("{=count_iltanlar}Atabeg"),
+                new TextObject("{=countess_iltanlar}Atabegum"),
+                new TextObject("{=county_iltanlar}Atabeglik"));
+
+            IltanlarBaron = CulturalTitleName.CreateBarony("IltanlarBaron",
+                iltanlar,
+                new TextObject("{=baron_iltanlar}Beg"),
+                new TextObject("{=baroness_iltanlar}Begum"),
+                new TextObject("{=barony_iltanlar}Beglik"));
+
+            IltanlarLord = CulturalTitleName.CreateLordship("IltanlarLord",
+                iltanlar,
+                new TextObject("{=lord_iltanlar}Erxem"),
+                new TextObject("{=lady_iltanlar}Khatagtai"),
+                new TextObject("{=lordship_iltanlar}Erxemlik"));
+
+            IltanlarPrince = CulturalTitleName.CreatePrince("IltanlarPrince",
+                iltanlar,
+                new TextObject("{=prince_iltanlar}Khan Khuu"),
+                new TextObject("{=princess_iltanlar}Gonji"),
+                new TextObject("{=princes_iltanlar}Khan Khuunud"));
+
+            IltanlarKnight = CulturalTitleName.CreateKnight("IltanlarKnight",
+                iltanlar,
+                new TextObject("{=knight_iltanlar}Kheshig"),
+                new TextObject("{=knightess_iltanlar}Kheshigum"),
+                new TextObject("{=knights_iltanlar}Kheshignud"));
+
+            #endregion Iltanlar
 
             #region Aserai
             AseraiEmperor = CulturalTitleName.CreateEmpire("AseraiEmperor",
                 aserai,
-                new TextObject("{=!}Khalifa"),
-                new TextObject("{=!}Khalifa"),
-                new TextObject("{=!}Khilaafa"));
+                new TextObject("{=emperor_aserai}Khalifa"),
+                new TextObject("{=empress_aserai}Khalifa"),
+                new TextObject("{=empire_aserai}Khilaafa"));
 
             AseraiKing = CulturalTitleName.CreateKingdom("AseraiKing",
                 aserai,
-                new TextObject("{=U0MEYHty}Sultan"),
-                new TextObject("{=DQXH6NeY}Sultana"),
-                new TextObject("{=!}Saltana"));
+                new TextObject("{=king_aserai}Sultan"),
+                new TextObject("{=queen_aserai}Sultana"),
+                new TextObject("{=kingdom_aserai}Saltana"));
 
             AseraiDuke = CulturalTitleName.CreateDuchy("AseraiDuke",
                 aserai,
-                new TextObject("{=!}Amiir"),
-                new TextObject("{=!}Amiira"),
-                new TextObject("{=!}Imaara"));
+                new TextObject("{=duke_aserai}Amiir"),
+                new TextObject("{=duchess_aserai}Amiira"),
+                new TextObject("{=duchy_aserai}Imaara"));
 
             AseraiCount = CulturalTitleName.CreateCounty("AseraiCount",
                 aserai,
-                new TextObject("{=!}Shayk"),
-                new TextObject("{=!}Shaykah"),
-                new TextObject("{=!}Mashyaka"));
+                new TextObject("{=count_aserai}Shayk"),
+                new TextObject("{=countess_aserai}Shaykah"),
+                new TextObject("{=county_aserai}Mashyaka"));
 
             AseraiBaron = CulturalTitleName.CreateBarony("AseraiBaron",
                 aserai,
-                new TextObject("{=shJ1hjYg}Wali"),
-                new TextObject("{=LYY1ZegU}Walia"),
-                new TextObject("{=!}Walya"));
+                new TextObject("{=baron_aserai}Wali"),
+                new TextObject("{=baroness_aserai}Walia"),
+                new TextObject("{=barony_aserai}Walya"));
 
             AseraiLord = CulturalTitleName.CreateLordship("AseraiLord",
                 aserai,
-                new TextObject("{=YNNXm6GE}Mawlaa"),
-                new TextObject("{=VGXsX6Ue}Beghum"),
-                new TextObject("{=!}Daya"));
+                new TextObject("{=lord_aserai}Mawlaa"),
+                new TextObject("{=lady_aserai}Beghum"),
+                new TextObject("{=lordship_aserai}Daya"));
 
             AseraiPrince = CulturalTitleName.CreatePrince("AseraiPrince",
                 aserai,
-                new TextObject("{=!}Shahzade"),
-                new TextObject("{=!}Shahzade"),
-                new TextObject("{=!}Shahzade"));
+                new TextObject("{=prince_aserai}Amiir"),
+                new TextObject("{=princess_aserai}Amiira"),
+                new TextObject("{=princes_aserai}Umaraa"));
 
             AseraiKnight = CulturalTitleName.CreateKnight("AseraiKnight",
                 aserai,
-                new TextObject("{=GmHEzRcz}Faaris"),
-                new TextObject("{=GmHEzRcz}Faaris"),
-                new TextObject("{=kgPoTnBi}Fursaan"));
+                new TextObject("{=knight_aserai}Faaris"),
+                new TextObject("{=knightess_aserai}Faaris"),
+                new TextObject("{=knights_aserai}Fursaan"));
 
             #endregion Aserai
 
@@ -797,51 +1242,51 @@ namespace BannerKings.CulturesExpanded.Cultures
             #region Siri
             SiriEmperor = CulturalTitleName.CreateEmpire("SiriEmperor",
                 siri,
-                new TextObject("{=!}Arciducxate"),
-                new TextObject("{=!}Arciducxata"),
-                new TextObject("{=!}Arciducxateri"));
+                new TextObject("{=emperor_siri}Uruigun Uru"),
+                new TextObject("{=empress_siri}Ngonnenigun Ngonnen"),
+                new TextObject("{=empire_siri}Urkane Ur"));
 
             SiriKing = CulturalTitleName.CreateKingdom("SiriKing",
                 siri,
-                new TextObject("{=!}Arbaab"),
-                new TextObject("{=!}Kandake"),
-                new TextObject("{=!}Arbaab"));
+                new TextObject("{=king_siri}Uru"),
+                new TextObject("{=queen_siri}Ngonnen"),
+                new TextObject("{=kingdom_siri}Urkane"));
 
             SiriDuke = CulturalTitleName.CreateDuchy("SiriDuke",
                 siri,
-                new TextObject("{=!}Ducxate"),
-                new TextObject("{=!}Ducxata"),
-                new TextObject("{=!}Ducxateri"));
+                new TextObject("{=duke_siri}Mek"),
+                new TextObject("{=duchess_siri}Mek-Itt"),
+                new TextObject("{=duchy_siri}Mekk"));
 
             SiriCount = CulturalTitleName.CreateCounty("SiriCount",
                 siri,
-                new TextObject("{=!}Gondh"),
-                new TextObject("{=!}Gonda"),
-                new TextObject("{=!}Gonderi"));
+                new TextObject("{=count_siri}Samet"),
+                new TextObject("{=countess_siri}Samet-Itt"),
+                new TextObject("{=county_siri}Samett"));
 
             SiriBaron = CulturalTitleName.CreateBarony("SiriBaron",
                 siri,
-                new TextObject("{=!}Giudicadh"),
-                new TextObject("{=!}Giudicada"),
-                new TextObject("{=!}Giudicaderi"));
+                new TextObject("{=baron_siri}Dawkatt"),
+                new TextObject("{=baroness_siri}Dawkatt-Itt"),
+                new TextObject("{=barony_siri}Dipp"));
 
             SiriLord = CulturalTitleName.CreateLordship("SiriLord",
                 siri,
-                new TextObject("{=!}Capitaine"),
-                new TextObject("{=!}Capitaine"),
-                new TextObject("{=!}Capitaneri"));
+                new TextObject("{=lord_siri}Ngod"),
+                new TextObject("{=lady_siri}Ngod-Itt"),
+                new TextObject("{=lordship_siri}Erk"));
 
             SiriPrince = CulturalTitleName.CreatePrince("SiriPrince",
                 siri,
-                new TextObject("{=!}Urtod"),
-                new TextObject("{=!}Kandakas"),
-                new TextObject("{=!}Urtod"));
+                new TextObject("{=prince_siri}Pour"),
+                new TextObject("{=princess_siri}Ngonnas"),
+                new TextObject("{=princes_siri}Pournigou"));
 
             SiriKnight = CulturalTitleName.CreateKnight("SiriKnight",
                 siri,
-                new TextObject("{=!}Kabi"),
-                new TextObject("{=!}Kabi"),
-                new TextObject("{=!}Kabi"));
+                new TextObject("{=knight_siri}Dignarel"),
+                new TextObject("{=knightess_siri}Dignarel-Itt"),
+                new TextObject("{=knights_siri}Dignareligou"));
 
             #endregion Siri
 
@@ -849,7 +1294,7 @@ namespace BannerKings.CulturesExpanded.Cultures
             MassaEmperor = CulturalTitleName.CreateEmpire("MassaEmperor",
                 massa,
                 new TextObject("{=!}Fraujinonds"),
-                new TextObject("{=!}Fraujinonds"),
+                new TextObject("{=!}Fraujinondei"),
                 new TextObject("{=!}Fraujinondgardi"));
 
             MassaKing = CulturalTitleName.CreateKingdom("MassaKing",
@@ -947,6 +1392,57 @@ namespace BannerKings.CulturesExpanded.Cultures
 
             #endregion Bragantia
 
+            #region Lokti
+            LoktiEmperor = CulturalTitleName.CreateEmpire("LoktiEmperor",
+                lokti,
+                new TextObject("{=emperor_lokti}Karalius"),
+                new TextObject("{=empress_lokti}Karaliene"),
+                new TextObject("{=empire_lokti}Karalyste"));
+
+            LoktiKing = CulturalTitleName.CreateKingdom("LoktiKing",
+                lokti,
+                new TextObject("{=king_lokti}Kunigu Kunigas"),
+                new TextObject("{=queen_lokti}Kunigieniu Kunigiene"),
+                new TextObject("{=kingdom_lokti}Didi Kunigyste"));
+
+            LoktiDuke = CulturalTitleName.CreateDuchy("LoktiDuke",
+                lokti,
+                new TextObject("{=duke_lokti}Kunigas"),
+                new TextObject("{=duchess_lokti}Kunigiene"),
+                new TextObject("{=duchy_lokti}Kunigystė"));
+
+            LoktiCount = CulturalTitleName.CreateCounty("LoktiCount",
+                lokti,
+                new TextObject("{=baron_lokti}Kunigaikshtis"),
+                new TextObject("{=baroness_lokti}Kunigaikshtiene"),
+                new TextObject("{=barony_lokti}Kunigaikshtyste"));
+
+            LoktiBaron = CulturalTitleName.CreateBarony("LoktiBaron",
+                lokti,
+                new TextObject("{=count_lokti}Vieshpats"),
+                new TextObject("{=countess_lokti}Vieshpatiene"),
+                new TextObject("{=county_lokti}Valschius"));
+
+            LoktiLord = CulturalTitleName.CreateLordship("LoktiLord",
+                lokti,
+                new TextObject("{=lord_lokti}Valdovas"),
+                new TextObject("{=lady_lokti}Valdove"),
+                new TextObject("{=lordship_lokti}Valdovyste"));
+
+            LoktiPrince = CulturalTitleName.CreatePrince("LoktiPrince",
+                lokti,
+                new TextObject("{=prince_lokti}Ipedinis"),
+                new TextObject("{=princess_lokti}Ipedine"),
+                new TextObject("{=princes_lokti}Ipediniai"));
+
+            LoktiKnight = CulturalTitleName.CreateKnight("LoktiKnight",
+                lokti,
+                new TextObject("{=knight_lokti}Leitis"),
+                new TextObject("{=knightess_lokti}Leitis"),
+                new TextObject("{=knights_lokti}Leiciai"));
+
+            #endregion Lokti
+
             #region Geroia
             GeroiaEmperor = CulturalTitleName.CreateEmpire("GeroiaEmperor",
                 geroia,
@@ -1002,17 +1498,6 @@ namespace BannerKings.CulturesExpanded.Cultures
             {
                 DefaultTitleNames.Instance.AddObject(name);
             }
-
-            /*
-             * LaconiaDuke = Polemarchos
-             * 
-             * Kannic
-            adon = lord, master
-             * King = Milkh / Milkhat (female)
-             * Prince Milkhbin / Milkhbint / Milkzar
-            Emperor = rabbrab
-            Lord = rab / rabbat 
-             */
         }
     }
 }

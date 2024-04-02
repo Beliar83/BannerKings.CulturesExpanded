@@ -1,7 +1,4 @@
-﻿using BannerKings.CulturesExpanded.Religions;
-using BannerKings.Managers.Education.Languages;
-using BannerKings.Managers.Recruits;
-using System;
+﻿using BannerKings.Managers.Education.Languages;
 using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.CampaignSystem;
@@ -19,6 +16,11 @@ namespace BannerKings.CulturesExpanded.Cultures
         public Language Bragantian { get; } = new Language("language_bragantian");
         public Language Massa { get; } = new Language("language_massa");
         public Language Siri { get; } = new Language("language_siri");
+        public Language Lokti { get; } = new Language("language_lokti");
+        public Language Rhodok { get; } = new Language("language_rhodok");
+        public Language Swadian { get; } = new Language("language_swadian");
+        public Language Balion { get; } = new Language("language_balion");
+        public Language Iltanlar { get; } = new Language("language_iltanlar");
 
         public override IEnumerable<Language> All { 
             get 
@@ -30,6 +32,7 @@ namespace BannerKings.CulturesExpanded.Cultures
                 yield return Siri;
                 yield return Massa;
                 yield return Bragantian;
+                yield return Lokti;
             }
         }
 
@@ -37,19 +40,104 @@ namespace BannerKings.CulturesExpanded.Cultures
         {
             var cultures = Game.Current.ObjectManager.GetObjectTypeList<CultureObject>();
 
-            DefaultLanguages.Instance.Vlandic.Initialize(new TextObject("{=!}Wilunding"),
-                new TextObject("{=!}The common language spoken in the Wilunding realm, an amalgamation of various dialects. The Wilunding tribes originally hail from Balion, a realm in another continent, where they speak still much similar to their Calradian distant kin."),
+            DefaultLanguages.Instance.Vlandic.Initialize(new TextObject("{=!}Osrickin Wilunding"),
+                new TextObject("{=!}"),
                 new List<CultureObject>(1)
                 {
-                    cultures.First(x => x.StringId == "vlandia"),
-                    cultures.First(x => x.StringId == "balion")
+                    cultures.First(x => x.StringId == "vlandia")
                 },
                 new Dictionary<Language, float> 
                 { 
-                    { DefaultLanguages.Instance.Calradian, 0.15f },
-                    { Jumne, 0.4f },
-                    { Massa, 0.7f }
+                    { DefaultLanguages.Instance.Calradian, 0.3f },
+                    { Massa, 0.1f },
+                    { Balion, 0.3f },
+                    { Swadian, 0.2f },
+                    { Rhodok, 0.2f }
                 });
+
+            Balion.Initialize(new TextObject("{=!}Balionian"),
+              new TextObject("{=!}"),
+              new List<CultureObject>(1)
+              {
+                    cultures.First(x => x.StringId == "balion")
+              },
+              new Dictionary<Language, float>()
+              {
+                   { Jumne, 0.2f },
+                   { DefaultLanguages.Instance.Vlandic, 0.3f },
+                   { Swadian, 0.6f },
+                   { Rhodok, 0.6f },
+                   { Massa, 0.6f }
+              });
+
+            Rhodok.Initialize(new TextObject("{=!}Rhodok Wilunding"),
+              new TextObject("{=!}The language of the Rhodok tribe, one of the most conservative variants of the Wilunding languages, when compared to its source, Balionian. Above all Rhodok  is similar to Swadisch, their closest kin."),
+              new List<CultureObject>(1)
+              {
+                    cultures.First(x => x.StringId == "rhodok")
+              },
+              new Dictionary<Language, float>()
+              {
+                   { DefaultLanguages.Instance.Vlandic, 0.2f },
+                   { Swadian, 0.8f },
+                   { Massa, 0.4f }
+              });
+
+            Swadian.Initialize(new TextObject("{=!}Swadisch Wilunding"),
+              new TextObject("{=!}The language of the Swadisch tribe, one of the most conservative variants of the Wilunding languages, when compared to its source, Balionian. Above all Swadisch is similar to Rhodok, their closest kin."),
+              new List<CultureObject>(1)
+              {
+                    cultures.First(x => x.StringId == "swadia")
+              },
+              new Dictionary<Language, float>()
+              {
+                   { DefaultLanguages.Instance.Vlandic, 0.2f },
+                   { Rhodok, 0.8f },
+                   { Massa, 0.4f }
+              });
+
+            Massa.Initialize(new TextObject("{=!}Massa Wilunding"),
+               new TextObject("{=!}Spoken by the Massa tribe, their language is much similar to Vlandic. Most of their vocabulary still revolves around agricultural and warfare themes, lacking in deep philosophical concepts."),
+               new List<CultureObject>(1)
+               {
+                    cultures.First(x => x.StringId == "massa")
+               },
+               new Dictionary<Language, float>()
+               {
+                   { DefaultLanguages.Instance.Vlandic, 0.2f },
+                   { Swadian, 0.4f },
+                   { Rhodok, 0.4f },
+                   { Balion, 0.6f }
+               });
+
+            DefaultLanguages.Instance.Calradian.Initialize(new TextObject("{=NWqkTdMt}Calradian"),
+                new TextObject("{=GmqBFSgN}The Imperial language of the Calradian empire. Though scholars have made efforts into keeping the language pure, centuries of contact with local cultures have made Calradian adopt small quantities of local vocabularies. Being a language of prestige, Calradian vocabulary are also often adopted by foreign languages, due to it's usefulness in the continent as a Lingua Franca, often used by traders, nobles during their education or peasants looking for a better life within the Empire."),
+                new List<CultureObject>(1)
+                {
+                    cultures.First(x => x.StringId == "empire"),
+                    cultures.First(x => x.StringId == "zendar")
+                },
+                new Dictionary<Language, float> { { DefaultLanguages.Instance.Vlandic, 0.1f }, { DefaultLanguages.Instance.Battanian, 0.1f } });
+
+            DefaultLanguages.Instance.Khuzait.Initialize(new TextObject("{=!}Devseg"),
+                new TextObject("{=rYVgj513}The langauge of the steppe is often described by foreigners as curt, but effective. Due to the near absence of scholarly research in the Khuzait culture, it often lacks terms for technical, or more abstract concepts, and as such it is certain those will be adopted from the Imperial language."),
+                new List<CultureObject>(1)
+                {
+                    cultures.First(x => x.StringId == "khuzait"),
+                    cultures.First(x => x.StringId == "iltanlar")
+                },
+                new Dictionary<Language, float>());
+
+            Lokti.Initialize(new TextObject("{=!}Lokti"),
+               new TextObject("{=!}Spoken in the Biscan Isles, Biscanjan is the amalgamation of the existing Calradoi dialect, itslef already diverging from the main imperial language, with the Massa settlers of the isles."),
+               new List<CultureObject>(1)
+               {
+                    cultures.First(x => x.StringId == "lokti")
+               },
+               new Dictionary<Language, float>()
+               {
+                   {  DefaultLanguages.Instance.Vakken, 0.2f }
+               });
 
             Bragantian.Initialize(new TextObject("{=!}Biscanjan"),
                new TextObject("{=!}Spoken in the Biscan Isles, Biscanjan is the amalgamation of the existing Calradoi dialect, itslef already diverging from the main imperial language, with the Massa settlers of the isles."),
@@ -61,18 +149,6 @@ namespace BannerKings.CulturesExpanded.Cultures
                {
                    {  Massa, 0.2f },
                    {  DefaultLanguages.Instance.Calradian, 0.4f }
-               });
-
-            Massa.Initialize(new TextObject("{=!}Massa"),
-               new TextObject("{=!}Spoken by the Massa tribe, their language is much similar to Vlandic. Most of their vocabulary still revolves around agricultural and warfare themes, lacking in deep philosophical concepts."),
-               new List<CultureObject>(1)
-               {
-                    cultures.First(x => x.StringId == "massa")
-               },
-               new Dictionary<Language, float>()
-               {
-                   {  Jumne, 0.2f },
-                   {  DefaultLanguages.Instance.Vlandic, 0.7f }
                });
 
             Siri.Initialize(new TextObject("{=!}Siri"),

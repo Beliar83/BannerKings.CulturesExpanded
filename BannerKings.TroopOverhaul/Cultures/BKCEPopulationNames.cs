@@ -32,6 +32,22 @@ namespace BannerKings.CulturesExpanded.Cultures
         public CulturalPopulationName VlandiaSlaves { get; set; }
         #endregion Vlandia
 
+        #region Rhodok
+        public CulturalPopulationName RhodokNobles { get; set; }
+        public CulturalPopulationName RhodokCraftsmen { get; set; }
+        public CulturalPopulationName RhodokTenants { get; set; }
+        public CulturalPopulationName RhodokSerfs { get; set; }
+        public CulturalPopulationName RhodokSlaves { get; set; }
+        #endregion Rhodok
+
+        #region Swadia
+        public CulturalPopulationName SwadiaNobles { get; set; }
+        public CulturalPopulationName SwadiaCraftsmen { get; set; }
+        public CulturalPopulationName SwadiaTenants { get; set; }
+        public CulturalPopulationName SwadiaSerfs { get; set; }
+        public CulturalPopulationName SwadiaSlaves { get; set; }
+        #endregion Swadia
+
         #region Kannic
         public CulturalPopulationName KannicNobles { get; set; }
         public CulturalPopulationName KannicCraftsmen { get; set; }
@@ -140,6 +156,18 @@ namespace BannerKings.CulturesExpanded.Cultures
                 yield return VlandiaSerfs;
                 yield return VlandiaSlaves;
 
+                yield return RhodokNobles;
+                yield return RhodokCraftsmen;
+                yield return RhodokTenants;
+                yield return RhodokSerfs;
+                yield return RhodokSlaves;
+
+                yield return SwadiaNobles;
+                yield return SwadiaCraftsmen;
+                yield return SwadiaTenants;
+                yield return SwadiaSerfs;
+                yield return SwadiaSlaves;
+
                 yield return SturgiaNobles;
                 yield return SturgiaCraftsmen;
                 yield return SturgiaTenants;
@@ -199,6 +227,8 @@ namespace BannerKings.CulturesExpanded.Cultures
             var vakken = cultures.First(x => x.StringId == "vakken");
             var bragantia = cultures.First(x => x.StringId == "bragantia");
             var balion = cultures.First(x => x.StringId == "balion");
+            var swadia = cultures.First(x => x.StringId == "swadia");
+            var rhodok = cultures.First(x => x.StringId == "rhodok");
 
             #region Empire
             EmpireNobles = CulturalPopulationName.CreateNobles("EmpireNobles",
@@ -269,24 +299,68 @@ namespace BannerKings.CulturesExpanded.Cultures
             #region Vlandia
             VlandiaNobles = CulturalPopulationName.CreateNobles("VlandiaNobles",
                 vlandia,
-                new TextObject("{=!}Gesithas"));
+                new TextObject("{=!}Gentilez"));
 
             VlandiaCraftsmen = CulturalPopulationName.CreateCraftsmen("VlandiaCraftsmen",
                 vlandia,
-               new TextObject("{=!}Smithas"));
+               new TextObject("{=!}Artefeceres"));
 
             VlandiaTenants = CulturalPopulationName.CreateTenants("VlandiaTenants",
                 vlandia,
-                new TextObject("{=!}Ceorlas"));
+                new TextObject("{=!}Husbondmen"));
 
             VlandiaSerfs = CulturalPopulationName.CreateSerfs("VlandiaSerfs",
                 vlandia,
-                new TextObject("{=!}Cottas"));
+                new TextObject("{=!}Villeins"));
 
             VlandiaSlaves = CulturalPopulationName.CreateSlaves("VlandiaSlaves",
                 vlandia,
-                new TextObject("{=!}Theowe"));
+                new TextObject("{=!}Esclaves"));
             #endregion Vlandia
+
+            #region Rhodok
+            RhodokNobles = CulturalPopulationName.CreateNobles("RhodokNobles",
+                rhodok,
+                new TextObject("{=prince_rhodok}Edelincen"));
+
+            RhodokCraftsmen = CulturalPopulationName.CreateCraftsmen("RhodokCraftsmen",
+                rhodok,
+               new TextObject("{=!}Smitten"));
+
+            RhodokTenants = CulturalPopulationName.CreateTenants("RhodokTenants",
+                rhodok,
+                new TextObject("{=!}Kerlen"));
+
+            RhodokSerfs = CulturalPopulationName.CreateSerfs("RhodokSerfs",
+                rhodok,
+                new TextObject("{=!}Bantmànnen")); 
+
+            RhodokSlaves = CulturalPopulationName.CreateSlaves("RhodokSlaves",
+                rhodok,
+                new TextObject("{=!}Diolinken"));
+            #endregion Rhodok
+
+            #region Swadia
+            SwadiaNobles = CulturalPopulationName.CreateNobles("SwadiaNobles",
+                swadia,
+                new TextObject("{=prince_swadia}Edelincen"));
+
+            SwadiaCraftsmen = CulturalPopulationName.CreateCraftsmen("SwadiaCraftsmen",
+                swadia,
+               new TextObject("{=!}Schmiden"));
+
+            SwadiaTenants = CulturalPopulationName.CreateTenants("SwadiaTenants",
+                swadia,
+                new TextObject("{=!}Kerlen"));
+
+            SwadiaSerfs = CulturalPopulationName.CreateSerfs("SwadiaSerfs",
+                swadia,
+                new TextObject("{=!}Bantmaen"));
+
+            SwadiaSlaves = CulturalPopulationName.CreateSlaves("SwadiaSlaves",
+                swadia,
+                new TextObject("{=!}Diolinken")); //https://www.koeblergerhard.de/ahd/5A/ahd_d.html
+            #endregion Swadia
 
             #region Jumne
             JumneNobles = CulturalPopulationName.CreateNobles("JumneNobles",
