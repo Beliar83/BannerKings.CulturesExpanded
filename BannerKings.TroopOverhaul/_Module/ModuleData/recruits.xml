@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<recruits wipeCodeRecruits="false">
+		<recruit character="bk_lokti_levy_archer" culture="lokti" serfs="0.3" />
+		<recruit character="bk_lokti_militiaman_archer" culture="lokti" serfs="0.1" tenants="0.5"/>
+		<recruit character="bk_lokti_levy" culture="lokti" serfs="0.5" />
+		<recruit character="bk_lokti_militiaman" culture="lokti" serfs="0.1" tenants="0.3"/>
+		<recruit character="bk_lokti_militiaman_bardiche" culture="lokti" serfs="0.1" tenants="0.3"/>
+		<recruit character="bk_lokti_skirmisher" culture="lokti" serfs="0.1" tenants="0.1"/>
+		<recruit character="bk_lokti_sergeant" culture="lokti" craftsmen="0.25" tenants="0.1"/>
+		<recruit character="bk_lokti_sergeant_bardiche" culture="lokti" craftsmen="0.25" tenants="0.1"/>
+		<recruit character="bk_lokti_cavalry" culture="lokti" craftsmen="0.5" tenants="0.1"/>
+		<recruit character="bk_lokti_squire" culture="lokti" nobles="1" />
+		
+		<recruit character="bk_iltanlar_levy_archer" culture="lokti" serfs="0.3" />
+		<recruit character="bk_iltanlar_militiaman_archer" culture="lokti" serfs="0.1" tenants="0.5"/>
+		<recruit character="bk_iltanlar_levy" culture="lokti" serfs="0.5" />
+		<recruit character="bk_iltanlar_militiaman" culture="lokti" serfs="0.1" tenants="0.5"/>
+		<recruit character="bk_iltanlar_sergeant_infantry" culture="lokti" craftsmen="0.5" tenants="0.1"/>
+		<recruit character="bk_iltanlar_squire" culture="iltanlar" nobles="1" />
+		
+		<recruit character="bk_vlandia_levy_longbow" culture="vlandia" serfs="0.3" />
+		<recruit character="bk_vlandia_militiaman_longbow" culture="vlandia" serfs="0.1" tenants="0.5"/>
+		<recruit character="bk_vlandia_levy" culture="vlandia" serfs="0.5" />
+		<recruit character="bk_vlandia_militiaman" culture="vlandia" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_vlandia_billman" culture="vlandia" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_vlandia_militiaman_horseman" culture="vlandia" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_vlandia_sergeant" culture="vlandia" craftsmen="0.25" tenants="0.1"/>
+		<recruit character="bk_vlandia_sergeant_voulge" culture="vlandia" craftsmen="0.25" tenants="0.1"/>
+		<recruit character="bk_vlandia_sergeant_horseman" culture="vlandia" craftsmen="0.5" tenants="0.1"/>
+		<recruit character="bk_vlandia_squire" culture="vlandia" nobles="1" />
+		
+		<recruit character="bk_swadia_levy_crossbow" culture="swadia" serfs="0.3" />
+		<recruit character="bk_swadia_militiaman_crossbow" culture="swadia" serfs="0.1" tenants="0.5"/>
+		<recruit character="bk_swadia_levy" culture="swadia" serfs="0.5" />
+		<recruit character="bk_swadia_militiaman" culture="swadia" serfs="0.1" tenants="0.25"/> 
+		<recruit character="bk_swadia_militiaman_bill" culture="swadia" serfs="0.1" tenants="0.25"/> 
+		<recruit character="bk_swadia_sergeant" culture="swadia" craftsmen="0.5" tenants="0.1"/>
+		<recruit character="bk_swadia_sergeant_bill" culture="swadia" craftsmen="0.4" tenants="0.1"/>
+		<recruit character="bk_swadia_burgman" culture="swadia" craftsmen="0.3" tenants="0.1" spawnVillages="false"/>
+		<recruit character="bk_swadia_squire" culture="swadia" nobles="1" />
+		
+		<recruit character="bk_rhodok_levy_crossbow" culture="rhodok" serfs="0.3" />
+		<recruit character="bk_rhodok_militiaman_crossbow" culture="rhodok" serfs="0.1" tenants="0.5"/>
+		<recruit character="bk_rhodok_levy" culture="rhodok" serfs="0.5" />
+		<recruit character="bk_rhodok_militiaman" culture="rhodok" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_rhodok_militiaman_2hmace" culture="rhodok" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_rhodok_militiaman_pike" culture="rhodok" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_rhodok_sergeant" culture="rhodok" craftsmen="0.3" tenants="0.1"/>
+		<recruit character="bk_rhodok_sergeant_2hmace" culture="rhodok" craftsmen="0.2" tenants="0.1"/>
+		<recruit character="bk_rhodok_sergeant_pike" culture="rhodok" craftsmen="0.2" tenants="0.1"/>
+		<recruit character="bk_vlandia_jaculan_xbow" culture="rhodok" craftsmen="0.2" tenants="0.1"/>
+		<recruit character="bk_rhodok_squire" culture="rhodok" nobles="1" />
+		
+		<recruit character="bk_battanian_levy_archer" culture="battania" serfs="0.3" />
+		<recruit character="bk_battanian_militiaman_archer" culture="battania" serfs="0.1" tenants="0.5"/>
+		<recruit character="bk_battanian_levy" culture="battania" serfs="0.5" />
+		<recruit character="bk_battanian_militiaman" culture="battania" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_battanian_militiaman_2h" culture="battania" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_battanian_skirmisher" culture="battania" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_battanian_sergeant" culture="battania" craftsmen="0.2" tenants="0.1"/>
+		<recruit character="bk_battanian_sergeant_javelin" culture="battania" craftsmen="0.2" tenants="0.1"/>
+		<recruit character="bk_battanian_sergeant_2h" culture="battania" craftsmen="0.2" tenants="0.1"/>
+		<recruit character="bk_battanian_cavalry" culture="battania" craftsmen="0.5" tenants="0.1"/>
+		<recruit character="bk_battanian_squire" culture="battania" nobles="1" />
+		
+		<recruit character="bk_nord_cavalry" culture="nord" craftsmen="0.5" tenants="0.1" />
+		
+		<recruit character="bk_darshi_levy_archer" culture="darshi" serfs="0.5" />
+		<recruit character="bk_darshi_militiaman_archer" culture="darshi" serfs="0.1" tenants="0.3"/>
+		<recruit character="bk_darshi_levy" culture="darshi" serfs="0.5" />
+		<recruit character="bk_darshi_militiaman" culture="darshi" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_darshi_sparabara" culture="darshi" serfs="0.1" tenants="0.2"/> 
+		<recruit character="bk_darshi_camel_rider" culture="darshi" serfs="0.05" tenants="0.15"/> 
+		<recruit character="bk_darshi_scout" culture="darshi" serfs="0.05" tenants="0.15"/> 
+		<recruit character="bk_darshi_sergeant" culture="darshi" craftsmen="0.2" tenants="0.1"/>
+		<recruit character="bk_darshi_sparabara_sergeant" culture="darshi" craftsmen="0.2" tenants="0.1"/>
+		<recruit character="bk_darshi_sergeant_archer" culture="darshi" craftsmen="0.4" tenants="0.1"/>
+		<recruit character="bk_darshi_camel_lancer" culture="darshi" craftsmen="0.1" tenants="0.1"/>
+		<recruit character="bk_darshi_horse_archer" culture="darshi" craftsmen="0.1" tenants="0.1"/>
+		<recruit character="bk_darshi_squire" culture="darshi" nobles="1" />
+		
+		
+		<recruit character="bk_khuzait_levy" culture="khuzait" serfs="1" spawnCastles="false" spawnTowns="false" />
+		<recruit character="bk_khuzait_militiaman" culture="khuzait" serfs="0.1" tenants="0.2" spawnCastles="false" spawnTowns="false" />
+		<recruit character="bk_khuzait_militiaman_lancer" culture="khuzait" serfs="0.1" tenants="0.2" spawnCastles="false" spawnTowns="false" />
+		<recruit character="bk_khuzait_sergeant_lancer" culture="khuzait" craftsmen="0.5" tenants="0.1" spawnCastles="false" spawnTowns="false"/>
+		<recruit character="bk_khuzait_sergeant" culture="khuzait" craftsmen="0.5" tenants="0.1" spawnCastles="false" spawnTowns="false"/>
+		
+		
+		<recruit character="bk_khuzait_levy_xbow" culture="khuzait" serfs="0.4" spawnVillages="false" />
+		<recruit character="bk_khuzait_militiaman_xbow" culture="khuzait" serfs="0.1" tenants="0.5" spawnVillages="false"/>
+		<recruit character="bk_khuzait_levy_infantry" culture="khuzait" serfs="0.6" spawnVillages="false" />
+		<recruit character="bk_khuzait_militiaman_infantry" culture="khuzait" serfs="0.1" tenants="0.5" spawnVillages="false"/> 
+		<recruit character="bk_khuzait_sergeant_infantry" culture="khuzait" craftsmen="0.7" tenants="0.1" spawnVillages="false"/>
+		<recruit character="bk_khuzait_sergeant_infantry_calradic" culture="khuzait" craftsmen="0.3" tenants="0.1" spawnVillages="false"/>
+		<recruit character="bk_khuzait_squire" culture="khuzait" nobles="1" />
+
+		
+		<!-- All possible attributes, all restrictions can be used in conjunction (culture + kingdom + fiefs) but I recommend either kingdom or fief (culture is required) -->
+		<!-- Listing unused population classes is not necessary -->
+		<!-- Only add fiefs when you want to restrict the spawn to exclusively those fiefs -->
+		<!-- Only add kingdom when you want to restrict the spawn to exclusively fiefs of that kingdom -->
+		<!-- For BKCE I use serfs for T2-3 (biased towards T2), tenants T3-4 (biased towards T3), craftsmen T3-4 (biased towards T4), nobles T5
+<recruit character="bk_imperial_militiaman_republic" culture="vlandia" kingdom="vlandia" slaves="0" serfs="0.5" tenants="0" craftsmen="0" nobles="0">
+			<fief id="town_V1" />
+		</recruit>
+		-->
+		
+		
+	</recruits>
+</base>
