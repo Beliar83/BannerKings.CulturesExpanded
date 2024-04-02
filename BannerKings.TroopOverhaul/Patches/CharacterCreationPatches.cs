@@ -60,6 +60,18 @@ namespace BannerKings.CulturesExpanded.Patches
                     "<BodyProperties version='4' age='22.12' weight='0.5' build='0.5'  key='000A600800003004BA478A1C6585B8B57AAB788C8578874555B29832874A693C00777603072DA68200000000000000000000000000000000000000003EFC1042'  />");
                 dic.Add(cultures.First(x => x.StringId == "vakken"),
                     "<BodyProperties version='4' age='22.12' weight='0.5321' build='0.4756'  key='00009C02804426085F77E82344D468A6899589ED89C739E1C856A67498454872009786030965D3770000000000000000000000000000000000000000473C90C2'  />");
+                dic.Add(cultures.First(x => x.StringId == "lokti"),
+                    "<BodyProperties version='4' age='22.12' weight='0.5321' build='0.4756'  key='00009C02804426085F77E82344D468A6899589ED89C739E1C856A67498454872009786030965D3770000000000000000000000000000000000000000473C90C2'  />");
+                dic.Add(cultures.First(x => x.StringId == "zendar"),
+                    "<BodyProperties version='4' age='22.13' weight='0.4667' build='0.8631'  key='0013940D00001A084C59A5A8D3B7882742A9BB768AA88682ABA86275C986BB94006D76030689795A00000000000000000000000000000000000000003ECC7102'  />");
+                dic.Add(cultures.First(x => x.StringId == "swadia"),
+                    "<BodyProperties version='4' age='22.04' weight='0.5108' build='0.4827'  key='00020C0540E41103337A0563651C5BA944E349B9D877AC96A52BA4DD37D2554B0087860308C9CA7A000000000000000000000000000000000000000035041142'  />");
+                dic.Add(cultures.First(x => x.StringId == "rhodok"),
+                    "<BodyProperties version='4' age='22.04' weight='0.6758' build='0.4954'  key='00056804002C145C84249989DB68E77C5E5A97D66A86BB88477A88A98D897CB80047A60304CC4AAD0000000000000000000000000000000000000000127C8002'  />");
+                dic.Add(cultures.First(x => x.StringId == "iltanlar"),
+                    "<BodyProperties version='4' age='22.04' weight='0.5285' build='0.5121'  key='001BE40D801407514746744CD776948967189857C8BEC784DC97D775D928C74800888603089453390000000000000000000000000000000000000000330420C2'  />");
+                dic.Add(cultures.First(x => x.StringId == "dryatic"),
+                    "<BodyProperties version='4' age='22.04' weight='0.3179' build='0.6489'  key='0002140600442448B37549276988C73A3A9774375B96A9E894B7497B76A5348500AA56030A92A57800000000000000000000000000000000000000001F447002'  />");
 
 
                 BodyProperties properties;
