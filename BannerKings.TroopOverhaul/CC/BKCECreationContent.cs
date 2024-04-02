@@ -26,6 +26,12 @@ namespace BannerKings.CulturesExpanded.CC
             _startingPoints.Add("kannic", new Vec2(262.9534f, 263.2021f));
             _startingPoints.Add("balion", new Vec2(61.83505f, 334.9693f));
             _startingPoints.Add("bragantia", new Vec2(61.83505f, 334.9693f));
+            _startingPoints.Add("lokti", new Vec2(800.6518f, 717.6616f));
+            _startingPoints.Add("iltanlar", new Vec2(730.2615f, 536.8068f));
+            _startingPoints.Add("zendar", new Vec2(319.775f, 521.8525f));
+
+            _startingPoints.Add("rhodok", new Vec2(207.04f, 389.04f));
+            _startingPoints.Add("swadia", new Vec2(207.04f, 389.04f));
         }
 
         protected new void AddParentsMenu(CharacterCreation characterCreation) 
@@ -871,9 +877,141 @@ namespace BannerKings.CulturesExpanded.CC
                 0,
                 0,
                 0);
+
+            CharacterCreationCategory wilundingCategory = menu.AddMenuCategory(WilundingCondition);
+            wilundingCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Riding,
+                DefaultSkills.Polearm
+            }, effectedAttribute: DefaultCharacterAttributes.Social, text: new TextObject("{=2TptWc4m}A baron's retainers"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: VlandiaBaronsRetainerOnConsequence, onApply: VlandiaBaronsRetainerOnApply, descriptionText: new TextObject("{=0Suu1Q9q}Your father was a bailiff for a local feudal magnate. He looked after his liege's estates, resolved disputes in the village, and helped train the village levy. He rode with the lord's cavalry, fighting as an armored knight."));
+            wilundingCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Trade,
+                DefaultSkills.Charm
+            }, effectedAttribute: DefaultCharacterAttributes.Intelligence, text: new TextObject("{=651FhzdR}Urban merchants"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: VlandiaMerchantOnConsequence, onApply: VlandiaMerchantOnApply, descriptionText: new TextObject("{=qNZFkxJb}Your family were merchants in one of the main cities of the kingdom. They organized caravans to nearby towns and were active in the local merchant's guild."));
+            wilundingCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Polearm,
+                DefaultSkills.Crossbow
+            }, effectedAttribute: DefaultCharacterAttributes.Endurance, text: new TextObject("{=RDfXuVxT}Yeomen"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: VlandiaYeomanOnConsequence, onApply: VlandiaYeomanOnApply, descriptionText: new TextObject("{=BLZ4mdhb}Your family were small farmers with just enough land to feed themselves and make a small profit. People like them were the pillars of the kingdom's economy, as well as the backbone of the levy."));
+            wilundingCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Crafting,
+                DefaultSkills.TwoHanded
+            }, effectedAttribute: DefaultCharacterAttributes.Vigor, text: new TextObject("{=p2KIhGbE}Urban blacksmith"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: VlandiaBlacksmithOnConsequence, onApply: VlandiaBlacksmithOnApply, descriptionText: new TextObject("{=btsMpRcA}Your family owned a smithy in a city. Your father played an active if minor role in the town council, and also served in the militia."));
+            wilundingCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Scouting,
+                DefaultSkills.Crossbow
+            }, effectedAttribute: DefaultCharacterAttributes.Control, text: new TextObject("{=YcnK0Thk}Hunters"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: VlandiaHunterOnConsequence, onApply: VlandiaHunterOnApply, descriptionText: new TextObject("{=yRFSzSDZ}Your family lived in a village, but did not own their own land. Instead, your father supplemented paid jobs with long trips in the woods, hunting and trapping, always keeping a wary eye for the lord's game wardens."));
+            wilundingCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Roguery,
+                DefaultSkills.Crossbow
+            }, effectedAttribute: DefaultCharacterAttributes.Cunning, text: new TextObject("{=ipQP6aVi}Mercenaries"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: VlandiaMercenaryOnConsequence, onApply: VlandiaMercenaryOnApply, descriptionText: new TextObject("{=yYhX6JQC}Your father joined one of Vlandia's many mercenary companies, composed of men who got such a taste for war in their lord's service that they never took well to peace. Their crossbowmen were much valued across Calradia. Your mother was a camp follower, taking you along in the wake of bloody campaigns."));
+
+            CharacterCreationCategory iltanlarCategory = menu.AddMenuCategory(IltanlarCondition);
+            iltanlarCategory.AddCategoryOption(new TextObject("{=FVaRDe2a}A noyan's kinsfolk"), new MBList<SkillObject>
+            {
+                DefaultSkills.Riding,
+                DefaultSkills.Polearm
+            }, DefaultCharacterAttributes.Endurance, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, KhuzaitNoyansKinsmanOnConsequence, KhuzaitNoyansKinsmanOnApply, new TextObject("{=jAs3kDXh}Your family were the trusted kinsfolk of a Khuzait noyan, and shared his meals in the chieftain's yurt. Your father assisted his chief in running the affairs of the clan and fought in the core of armored lancers in the center of the Khuzait battle line."));
+            iltanlarCategory.AddCategoryOption(new TextObject("{=TkgLEDRM}Merchants"), new MBList<SkillObject>
+            {
+                DefaultSkills.Trade,
+                DefaultSkills.Charm
+            }, DefaultCharacterAttributes.Social, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, KhuzaitMerchantOnConsequence, KhuzaitMerchantOnApply, new TextObject("{=qPg3IDiq}Your family came from one of the merchant clans that dominated the cities in eastern Calradia before the Khuzait conquest. They adjusted quickly to their new masters, keeping the caravan routes running and ensuring that the tariff revenues that once went into imperial coffers now flowed to the khanate."));
+            iltanlarCategory.AddCategoryOption(new TextObject("{=tGEStbxb}Tribespeople"), new MBList<SkillObject>
+            {
+                DefaultSkills.Bow,
+                DefaultSkills.Riding
+            }, DefaultCharacterAttributes.Control, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, KhuzaitTribesmanOnConsequence, KhuzaitTribesmanOnApply, new TextObject("{=URgZ4ai4}Your family were middle-ranking members of one of the Khuzait clans. He had some  herds of his own, but was not rich. When the Khuzait horde was summoned to battle, he fought with the horse archers, shooting and wheeling and wearing down the enemy before the lancers delivered the final punch."));
+            iltanlarCategory.AddCategoryOption(new TextObject("{=gQ2tAvCz}Farmers"), new MBList<SkillObject>
+            {
+                DefaultSkills.Polearm,
+                DefaultSkills.Throwing
+            }, DefaultCharacterAttributes.Vigor, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, KhuzaitFarmerOnConsequence, KhuzaitFarmerOnApply, new TextObject("{=5QSGoRFj}Your family tilled one of the small patches of arable land in the steppes for generations. When the Khuzaits came, they ceased paying taxes to the emperor and providing conscripts for his army, and served the khan instead."));
+            iltanlarCategory.AddCategoryOption(new TextObject("{=vfhVveLW}Shamans"), new MBList<SkillObject>
+            {
+                DefaultSkills.Medicine,
+                DefaultSkills.Charm
+            }, DefaultCharacterAttributes.Intelligence, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, KhuzaitShamanOnConsequence, KhuzaitShamanOnApply, new TextObject("{=WOKNhaG2}Your family were guardians of the sacred traditions of the Khuzaits, channelling the spirits of the wilderness and of the ancestors. They tended the sick and dispensed wisdom, resolving disputes and providing practical advice."));
+            iltanlarCategory.AddCategoryOption(new TextObject("{=Xqba1Obq}Nomads"), new MBList<SkillObject>
+            {
+                DefaultSkills.Scouting,
+                DefaultSkills.Riding
+            }, DefaultCharacterAttributes.Cunning, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, KhuzaitNomadOnConsequence, KhuzaitNomadOnApply, new TextObject("{=9aoQYpZs}Your family's clan never pledged its loyalty to the khan and never settled down, preferring to live out in the deep steppe away from his authority. They remain some of the finest trackers and scouts in the grasslands, as the ability to spot an enemy coming and move quickly is often all that protects their herds from their neighbors' predations."));
+
+            CharacterCreationCategory loktiCategory = menu.AddMenuCategory(LoktiCondition);
+            loktiCategory.AddCategoryOption(new TextObject("{=mc78FEbA}A boyar's companions"), new MBList<SkillObject>
+            {
+                DefaultSkills.Riding,
+                DefaultSkills.TwoHanded
+            }, DefaultCharacterAttributes.Social, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, SturgiaBoyarsCompanionOnConsequence, SturgiaBoyarsCompanionOnApply, new TextObject("{=hob3WVkU}Your father was a member of a boyar's druzhina, the 'companions' that make up his retinue. He sat at his lord's table in the great hall, oversaw the boyar's estates, and stood by his side in the center of the shield wall in battle."));
+            loktiCategory.AddCategoryOption(new TextObject("{=HqzVBfpl}Urban traders"), new MBList<SkillObject>
+            {
+                DefaultSkills.Trade,
+                DefaultSkills.Tactics
+            }, DefaultCharacterAttributes.Cunning, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, SturgiaTraderOnConsequence, SturgiaTraderOnApply, new TextObject("{=bjVMtW3W}Your family were merchants who lived in one of Sturgia's great river ports, organizing the shipment of the north's bounty of furs, honey and other goods to faraway lands."));
+            loktiCategory.AddCategoryOption(new TextObject("{=zrpqSWSh}Free farmers"), new MBList<SkillObject>
+            {
+                DefaultSkills.Athletics,
+                DefaultSkills.Polearm
+            }, DefaultCharacterAttributes.Endurance, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, SturgiaFreemanOnConsequence, SturgiaFreemanOnApply, new TextObject("{=Mcd3ZyKq}Your family had just enough land to feed themselves and make a small profit. People like them were the pillars of the kingdom's economy, as well as the backbone of the levy."));
+            loktiCategory.AddCategoryOption(new TextObject("{=v48N6h1t}Urban artisans"), new MBList<SkillObject>
+            {
+                DefaultSkills.Crafting,
+                DefaultSkills.OneHanded
+            }, DefaultCharacterAttributes.Intelligence, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, SturgiaArtisanOnConsequence, SturgiaArtisanOnApply, new TextObject("{=ueCm5y1C}Your family owned their own workshop in a city, making goods from raw materials brought in from the countryside. Your father played an active if minor role in the town council, and also served in the militia."));
+            loktiCategory.AddCategoryOption(new TextObject("{=YcnK0Thk}Hunters"), new MBList<SkillObject>
+            {
+                DefaultSkills.Scouting,
+                DefaultSkills.Bow
+            }, DefaultCharacterAttributes.Vigor, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, SturgiaHunterOnConsequence, SturgiaHunterOnApply, new TextObject("{=WyZ2UtFF}Your family had no taste for the authority of the boyars. They made their living deep in the woods, slashing and burning fields which they tended for a year or two before moving on. They hunted and trapped fox, hare, ermine, and other fur-bearing animals."));
+            loktiCategory.AddCategoryOption(new TextObject("{=TPoK3GSj}Vagabonds"), new MBList<SkillObject>
+            {
+                DefaultSkills.Roguery,
+                DefaultSkills.Throwing
+            }, DefaultCharacterAttributes.Control, FocusToAdd, SkillLevelToAdd, AttributeLevelToAdd, null, SturgiaVagabondOnConsequence, SturgiaVagabondOnApply, new TextObject("{=2SDWhGmQ}Your family numbered among the poor migrants living in the slums that grow up outside the walls of the river cities, making whatever money they could from a variety of odd jobs. Sometimes they did services for one of the region's many criminal gangs."));
+
+            CharacterCreationCategory zendarCategory = menu.AddMenuCategory(ZendarCondition);
+            zendarCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Riding,
+                DefaultSkills.Polearm
+            }, effectedAttribute: DefaultCharacterAttributes.Vigor, text: new TextObject("{=InN5ZZt3}A landlord's retainers"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: EmpireLandlordsRetainerOnConsequence, onApply: EmpireLandlordsRetainerOnApply, descriptionText: new TextObject("{=ivKl4mV2}Your father was a trusted lieutenant of the local landowning aristocrat. He rode with the lord's cavalry, fighting as an armored lancer."));
+            zendarCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Trade,
+                DefaultSkills.Charm
+            }, effectedAttribute: DefaultCharacterAttributes.Social, text: new TextObject("{=651FhzdR}Urban merchants"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: EmpireMerchantOnConsequence, onApply: EmpireMerchantOnApply, descriptionText: new TextObject("{=FQntPChs}Your family were merchants in one of the main cities of the Empire. They sometimes organized caravans to nearby towns, and discussed issues in the town council."));
+            zendarCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Athletics,
+                DefaultSkills.Polearm
+            }, effectedAttribute: DefaultCharacterAttributes.Endurance, text: new TextObject("{=sb4gg8Ak}Freeholders"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: EmpireFreeholderOnConsequence, onApply: EmpireFreeholderOnApply, descriptionText: new TextObject("{=09z8Q08f}Your family were small farmers with just enough land to feed themselves and make a small profit. People like them were the pillars of the imperial rural economy, as well as the backbone of the levy."));
+            zendarCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Crafting,
+                DefaultSkills.Crossbow
+            }, effectedAttribute: DefaultCharacterAttributes.Intelligence, text: new TextObject("{=v48N6h1t}Urban artisans"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: EmpireArtisanOnConsequence, onApply: EmpireArtisanOnApply, descriptionText: new TextObject("{=ueCm5y1C}Your family owned their own workshop in a city, making goods from raw materials brought in from the countryside. Your father played an active if minor role in the town council, and also served in the militia."));
+            zendarCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Scouting,
+                DefaultSkills.Bow
+            }, effectedAttribute: DefaultCharacterAttributes.Control, text: new TextObject("{=7eWmU2mF}Foresters"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: EmpireWoodsmanOnConsequence, onApply: EmpireWoodsmanOnApply, descriptionText: new TextObject("{=yRFSzSDZ}Your family lived in a village, but did not own their own land. Instead, your father supplemented paid jobs with long trips in the woods, hunting and trapping, always keeping a wary eye for the lord's game wardens."));
+            zendarCategory.AddCategoryOption(effectedSkills: new MBList<SkillObject>
+            {
+                DefaultSkills.Roguery,
+                DefaultSkills.Throwing
+            }, effectedAttribute: DefaultCharacterAttributes.Cunning, text: new TextObject("{=aEke8dSb}Urban vagabonds"), focusToAdd: FocusToAdd, skillLevelToAdd: SkillLevelToAdd, attributeLevelToAdd: AttributeLevelToAdd, optionCondition: null, onSelect: EmpireVagabondOnConsequence, onApply: EmpireVagabondOnApply, descriptionText: new TextObject("{=Jvf6K7TZ}Your family numbered among the many poor migrants living in the slums that grow up outside the walls of imperial cities, making whatever money they could from a variety of odd jobs. Sometimes they did service for one of the Empire's many criminal gangs, and you had an early look at the dark side of life."));
         }
 
+        protected bool WilundingCondition() => GetSelectedCulture().StringId == "rhodok" || GetSelectedCulture().StringId == "swadia";
         protected bool MassaCondition() => GetSelectedCulture().StringId == "massa";
+        protected bool ZendarCondition() => GetSelectedCulture().StringId == "zendar";
+        protected bool LoktiCondition() => GetSelectedCulture().StringId == "lokti";
+        protected bool IltanlarCondition() => GetSelectedCulture().StringId == "iltanlar";
         protected bool DarshiCondition() => GetSelectedCulture().StringId == "darshi";
         protected bool SiriCondition() => GetSelectedCulture().StringId == "siri";
         protected bool GeroiaCondition() => GetSelectedCulture().StringId == "geroia";
