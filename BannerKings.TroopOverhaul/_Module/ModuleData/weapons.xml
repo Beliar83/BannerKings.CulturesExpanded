@@ -36,6 +36,18 @@
 	</Pieces>
   </CraftedItem>
   
+  <CraftedItem id="bk_thrown_spear_western"
+							 name="Throwing Spear - Wilunding"
+							 culture="Culture.vlandia"
+							 crafting_template="TwoHandedPolearm">
+	<Pieces>
+	  <Piece id="spear_blade_14" Type="Blade"/>
+	  <Piece id="default_polearm_guard" Type="Guard"/>
+	  <Piece id="spear_handle_14" Type="Handle"/>
+	  <Piece id="default_polearm_pommel" Type="Pommel"/>
+	</Pieces>
+  </CraftedItem>
+  
    <CraftedItem id="bk_javelin_double_western"
 							 name="{=!}Double Narrow Javelins"
 							 crafting_template="Javelin">
@@ -60,6 +72,19 @@
 	</Pieces>
   </CraftedItem>
   
+  <CraftedItem id="bk_vlandia_voulge_t3"
+							 name="{=!}Osrickin Simple Voulge"
+							 culture="Culture.vlandia"
+							 crafting_template="TwoHandedPolearm">
+	<Pieces>
+	  <Piece id="spear_blade_45" Type="Blade" scale_factor="90"/>
+	  <Piece id="default_polearm_guard" Type="Guard"/>
+	  <Piece id="spear_handle_18" Type="Handle"/>
+	  <Piece id="default_polearm_pommel" Type="Pommel"/>
+	</Pieces>
+  </CraftedItem>
+  
+  
   
   <CraftedItem id="bk_massa_2hlance_t5"
 							 name="{=!}Massa Fine Cavalry Kontos"
@@ -68,7 +93,7 @@
 	<Pieces>
 	  <Piece id="spear_blade_41" Type="Blade"/>
 	  <Piece id="spear_banner_17" Type="Guard"/>
-	  <Piece id="bk_2h_mahogany" Type="Handle"/>
+	  <Piece id="spear_handle_5" Type="Handle"/>
 	  <Piece id="default_polearm_pommel" Type="Pommel"/>
 	</Pieces>
   </CraftedItem>
@@ -80,7 +105,7 @@
 	<Pieces>
 	  <Piece id="spear_blade_8" Type="Blade"/>
 	  <Piece id="spear_banner_16" Type="Guard"/>
-	  <Piece id="bk_2h_mahogany" Type="Handle"/>
+	  <Piece id="spear_handle_5" Type="Handle"/>
 	  <Piece id="default_polearm_pommel" Type="Pommel"/>
 	</Pieces>
   </CraftedItem>
@@ -142,6 +167,28 @@
 	  <Piece id="spear_blade_4" Type="Blade" />
 	  <Piece id="default_polearm_guard" Type="Guard"/>
 	  <Piece id="spear_handle_27" Type="Handle" scale_factor="140"/>
+	  <Piece id="default_polearm_pommel" Type="Pommel" />
+	</Pieces>
+  </CraftedItem>
+  
+   <CraftedItem id="bk_lokti_bardiche_t6"
+							 name="Lokti Fine Cavalry Bardiche"
+							 culture="Culture.lokti"
+							 crafting_template="TwoHandedAxe">
+	<Pieces>
+	  <Piece id="axe_craft_38_head" Type="Blade" />
+	  <Piece id="axe_craft_1_handle" Type="Handle" scale_factor="120"/>
+	  <Piece id="default_polearm_pommel" Type="Pommel" />
+	</Pieces>
+  </CraftedItem>
+  
+  <CraftedItem id="bk_lokti_bardiche_t5"
+							 name="Lokti Cavalry Bardiche"
+							 culture="Culture.lokti"
+							 crafting_template="TwoHandedAxe">
+	<Pieces>
+	  <Piece id="axe_craft_16_head" Type="Blade" />
+	  <Piece id="axe_craft_31_handle" Type="Handle" scale_factor="120"/>
 	  <Piece id="default_polearm_pommel" Type="Pommel" />
 	</Pieces>
   </CraftedItem>
@@ -213,7 +260,7 @@
 							 culture="Culture.darshi"
 							 crafting_template="OneHandedSword">
 	<Pieces>
-	  <Piece id="kanic_blade_2" Type="Blade" scale_factor="250"/>
+	  <Piece id="aserai_blade_2" Type="Blade" scale_factor="250"/>
 	  <Piece id="empire_guard_3" Type="Guard"/>
 	  <Piece id="aserai_grip_1" Type="Handle"/>
 	  <Piece id="sturgian_pommel_4" Type="Pommel"/>
@@ -225,7 +272,7 @@
 							 culture="Culture.darshi"
 							 crafting_template="OneHandedSword">
 	<Pieces>
-	  <Piece id="kanic_blade_1" Type="Blade" scale_factor="250"/>
+	  <Piece id="aserai_blade_10" Type="Blade" scale_factor="250"/>
 	  <Piece id="empire_guard_3" Type="Guard"/>
 	  <Piece id="aserai_grip_1" Type="Handle"/>
 	  <Piece id="sturgian_pommel_4" Type="Pommel"/>
@@ -313,6 +360,67 @@
 	</Pieces>
   </CraftedItem>
   
+  <CraftedItem id="bk_northern_pike_t4"
+							 name="Langspjót"
+							 crafting_template="Pike">
+	<Pieces>
+	  <Piece id="spear_blade_11" Type="Blade" />
+	  <Piece id="default_polearm_guard" Type="Guard" />
+	  <Piece id="spear_handle_5" Type="Handle" />
+	  <Piece id="default_polearm_pommel" Type="Pommel"/>
+	</Pieces>
+  </CraftedItem>
+  
+  <CraftedItem id="bk_nord_2haxe_t3"
+							 name="Jumne Breithox"
+							 crafting_template="TwoHandedAxe">
+	<Pieces>
+	  <Piece id="axe_craft_6_head" Type="Blade" />
+	  <Piece id="axe_craft_29_handle" Type="Handle" />
+	  <Piece id="default_polearm_pommel" Type="Pommel"/>
+	</Pieces>
+  </CraftedItem>
+  
+  <CraftedItem id="bk_rhodok_2hmace_t3"
+							 name="Rhodok Stap"
+							 crafting_template="TwoHandedMace">
+	<Pieces>
+	  <Piece id="mace_head_37" Type="Blade" />
+	  <Piece id="mace_handle_19" Type="Handle" />
+	  <Piece id="default_polearm_pommel" Type="Pommel"/>
+	</Pieces>
+  </CraftedItem>
+  
+  <CraftedItem id="bk_rhodok_2hmace_t4"
+							 name="Rhodok Spitze"
+							 crafting_template="TwoHandedMace">
+	<Pieces>
+	  <Piece id="mace_head_37" Type="Blade" />
+	  <Piece id="mace_handle_19" Type="Handle" />
+	  <Piece id="default_polearm_pommel" Type="Pommel"/>
+	</Pieces>
+  </CraftedItem>
+  
+  <CraftedItem id="bk_rhodok_pike_t3"
+							 name="Rhodok Simple Pike"
+							 crafting_template="Pike">
+	<Pieces>
+	  <Piece id="spear_blade_15" Type="Blade" />
+	  <Piece id="default_polearm_guard" Type="Guard"/>
+	  <Piece id="spear_handle_5" Type="Handle" />
+	  <Piece id="default_polearm_pommel" Type="Pommel"/>
+	</Pieces>
+  </CraftedItem>
+  
+  <CraftedItem id="bk_swadia_bill_t4"
+							 name="Swadian Fine Bill"
+							 crafting_template="TwoHandedAxe">
+	<Pieces>
+	  <Piece id="axe_craft_17_head" Type="Blade" />
+	  <Piece id="axe_craft_10_handle" Type="Handle" />
+	  <Piece id="default_polearm_pommel" Type="Pommel"/>
+	</Pieces>
+  </CraftedItem>
 
   
   <!--

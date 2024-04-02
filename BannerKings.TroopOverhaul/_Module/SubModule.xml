@@ -4,7 +4,7 @@
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/BUTR/Bannerlord.XmlSchemas/master/SubModule.xsd">
 	<Id value="BannerKings.CulturesExpanded" />
 	<Name value="BannerKings - Cultures Expanded" />
-	<Version value="v1.0.1" />
+	<Version value="v1.0.2" />
 	<Official value="false" />
 	<DefaultModule value="true" />
 	<ModuleCategory value="Singleplayer" />
@@ -19,8 +19,8 @@
 		<DependedModule Id="StoryMode" DependentVersion="v1.2.7" Optional="false"/>
 		<DependedModule Id="CustomBattle" DependentVersion="v1.2.7" Optional="false"/>
 		<DependedModule Id="BannerKings" />
-		<DependedModule Id="ExpandedArmouryBL" />
 		<DependedModule Id="RBM" DependentVersion="v3.7.1" Optional="false" />
+		<DependedModule Id="Orbis_Terrae_Armarium" DependentVersion="e1.5.2" Optional="false" />
 		<DependedModule Id="OpenSourceArmoryRBM" />
 		<DependedModule Id="OpenSourceSaddleryRBM" />
 		<DependedModule Id="OpenSourceWeaponryRBM" />		
@@ -33,8 +33,8 @@
 		<DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" />
 		<DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" />
 		<DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" /> 
-		<DependedModuleMetadata id="ExpandedArmouryBL" order="LoadBeforeThis" />
 		<DependedModuleMetadata id="RBM" order="LoadBeforeThis" />
+		<DependedModuleMetadata id="Orbis_Terrae_Armarium" order="LoadBeforeThis" />
 		<DependedModuleMetadata id="OpenSourceArmoryRBM" order="LoadBeforeThis" />
 		<DependedModuleMetadata id="OpenSourceSaddleryRBM" order="LoadBeforeThis" />
 		<DependedModuleMetadata id="OpenSourceWeaponryRBM" order="LoadBeforeThis" />
@@ -51,27 +51,20 @@
 		</SubModule>
 	</SubModules>
 	<Xmls>
-		<XmlNode>                
-			<XmlName id="CraftingPieces" path="crafting_pieces"/>
+		<XmlNode>
+		<XmlName id="Items" path="items"/>
 			<IncludedGameTypes>
-				<GameType value = "Campaign"/>
-				<GameType value = "CampaignStoryMode"/>
+				<Gametype value = "Campaign"/>
+				<Gametype value = "CampaignStoryMode"/>
 				<GameType value = "CustomGame"/>
-				<GameType value = "EditorGame"/>
 			</IncludedGameTypes>
-		</XmlNode>  
+		</XmlNode>
 		<XmlNode>
 			<XmlName id="GameText" path="gt_common" />
 			<IncludedGameTypes>
 				<GameType value = "Campaign"/>
 				<GameType value = "CampaignStoryMode"/>
 			</IncludedGameTypes>
-		</XmlNode>
-		<XmlNode>                
-			<XmlName id="CraftingTemplates" path="crafting_templates"/>
-		</XmlNode> 
-		<XmlNode>
-			<XmlName id="WeaponDescriptions" path="weapon_descriptions"/>
 		</XmlNode>
 	    <XmlNode>                
 			<XmlName id="SkillSets" path="skill_templates"/>

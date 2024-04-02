@@ -494,6 +494,6 @@
 	<xsl:template match="CraftedItem[@id='phrygian_12']/@culture">
         <xsl:attribute name="culture">Culture.kannic</xsl:attribute>
     </xsl:template>
-
+	
 	
 </xsl:stylesheet>
